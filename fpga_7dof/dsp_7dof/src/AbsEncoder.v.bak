@@ -1,0 +1,1 @@
+module AbsEncoder(clk, clk_rd, rst_n, data_out, data_in, cs0_n,);

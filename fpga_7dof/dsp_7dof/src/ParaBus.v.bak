@@ -1,0 +1,89 @@
+/*下面是对外设的各个地址进行了宏定义*/ 
+
+//Read Add 
+`define INT1Add          6'h01 
+`define NMIAdd           6'h02 
+`define R_FIFO_Sta		 6'h03 
+`define R_PA_Sta			 6'h04 
+`define USB_RW			    6'h0d 
+`define R_IO_IN_L			 6'h0e 
+`define R_IO_IN_H			 6'h0f 
+ 
+//Write Add 
+`define LedAdd           6'h01
+ 
+/*模块变量定义*/ 
+module sample_dsp(clk, DSP_Add, DSP_Data, WR, RD, CS0, LED); 
+/*CPLD输入信号的定义*/
+input clk;
+input [7:0] DSP_Add;			//DSP对CPLD的地址定义 
+input WR,RD,CS0;				//读写和CPLD片选定义
+ 
+/*CPLD输出信号的定义*/
+output [3:0] LED;				//4位LED等定义输出 
+ 
+inout [15:0] DSP_Data;		//DSP与CPLD之间的数据线定义为输入输出 
+ 
+/*变量寄存器的定义*/ 
+reg [15:0] DSP_Data_reg; 
+reg [3:0] LED_reg; 
+ 
+////*循环执行判断按键与CAN发送接收的变化*/ 
+//always  
+//begin 
+//
+//end 
+ 
+ 
+/*上边沿写信号发生,主要是将DSP的数据送到CPLD定义的各自的的寄存器中,也就是通过识别不同的地址来把数据写入各自寄存器中*/ 
+always @ (posedge WR) 
+begin 
+	if(CS0==1'b0)///判断CPLD是否被片选 
+	begin 
+		case(DSP_Add)
+			`LedAdd: ///LED灯地址 
+			begin 
+				LED_reg = DSP_Data[3:0]; 
+			end
+		endcase 
+	end 
+end 
+ 
+/*下边沿来读数据,这里主要是从CPLD中读数据到DSP中,与上面的DSP往CPLD中写数据正好相反*/ 
+//always @ (negedge RD)///下边沿产生 
+//begin 
+//if(CS1==1'b0)////CPLD被片选 
+//    begin 
+//		case (DSP_Add) 
+//        	`R_IO_IN_L:////读IO口输入的低字节数据地址 
+//				begin 
+//					DSP_Data_reg=IN[7:0];////将从外部输入的低8位数据送入CPLD中的DSP的数据寄存器 
+//				end 
+//        	`R_IO_IN_H:////读IO口输入的高字节数据地址 
+//				begin 
+//					DSP_Data_reg=IN[15:8];////将从外部输入的高8位数据送入CPLD中的DSP的数据寄存器 
+//				end 
+//			`INT1Add:////读外部可屏蔽中断1地址 
+//				begin 
+//					DSP_Data_reg[4:0]=EXINT_reg;////将5个外部中断数据送入CPLD中的DSP数据寄存器中 
+//				end 
+//			`NMIAdd:////读外部不可屏蔽中断地址 
+//				begin 
+//					DSP_Data_reg[1:0]={NMI2_reg,NMI1_reg}; 
+//				end 
+//			`R_FIFO_Sta:////读USB的FIFO的状态地址 
+//				begin 
+//					DSP_Data_reg[2:0]={FIFO_PROG,FIFO_FULL,FIFO_EMPTY};/////将读到的3个不同的状态值放入CPLD的DSP数据寄存器中 
+//				end 
+//			`R_PA_Sta:////读USB的PA口的状态地址 
+//				begin 
+//					DSP_Data_reg[1:0]={PA1,PA0}; 
+//				end 
+//		endcase 
+//	end 
+//end 
+ 
+assign LED = LED_reg;
+assign DSP_Data = (CS0 == 1'b0 && RD == 1'b0) ? DSP_Data_reg : 8'hz;  
+ 
+endmodule 

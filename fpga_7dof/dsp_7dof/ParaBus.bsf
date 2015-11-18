@@ -1,0 +1,239 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 304 496)
+	(text "ParaBus" (rect 5 0 54 12)(font "Arial" ))
+	(text "inst" (rect 8 464 36 476)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DSP_Add[7..0]" (rect 0 0 92 12)(font "Arial" ))
+		(text "DSP_Add[7..0]" (rect 21 27 113 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "WR" (rect 0 0 14 12)(font "Arial" ))
+		(text "WR" (rect 21 43 35 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "RD" (rect 0 0 14 12)(font "Arial" ))
+		(text "RD" (rect 21 59 35 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "CS0" (rect 0 0 21 12)(font "Arial" ))
+		(text "CS0" (rect 21 75 42 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "IncEncoder1[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "IncEncoder1[15..0]" (rect 21 91 148 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "IncEncoder2[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "IncEncoder2[15..0]" (rect 21 107 148 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "IncEncoder3[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "IncEncoder3[15..0]" (rect 21 123 148 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "IncEncoder4[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "IncEncoder4[15..0]" (rect 21 139 148 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "IncEncoder5[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "IncEncoder5[15..0]" (rect 21 155 148 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "IncEncoder6[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "IncEncoder6[15..0]" (rect 21 171 148 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "IncEncoder7[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "IncEncoder7[15..0]" (rect 21 187 148 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "AbsEncoder0[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "AbsEncoder0[15..0]" (rect 21 203 148 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "AbsEncoder1[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "AbsEncoder1[15..0]" (rect 21 219 148 231)(font "Arial" ))
+		(line (pt 0 224)(pt 16 224)(line_width 3))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "AbsEncoder2[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "AbsEncoder2[15..0]" (rect 21 235 148 247)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240)(line_width 3))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "AbsEncoder3[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "AbsEncoder3[15..0]" (rect 21 251 148 263)(font "Arial" ))
+		(line (pt 0 256)(pt 16 256)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "AbsEncoder4[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "AbsEncoder4[15..0]" (rect 21 267 148 279)(font "Arial" ))
+		(line (pt 0 272)(pt 16 272)(line_width 3))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "AbsEncoder5[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "AbsEncoder5[15..0]" (rect 21 283 148 295)(font "Arial" ))
+		(line (pt 0 288)(pt 16 288)(line_width 3))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "AbsEncoder6[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "AbsEncoder6[15..0]" (rect 21 299 148 311)(font "Arial" ))
+		(line (pt 0 304)(pt 16 304)(line_width 3))
+	)
+	(port
+		(pt 0 320)
+		(input)
+		(text "AbsEncoder7[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "AbsEncoder7[15..0]" (rect 21 315 148 327)(font "Arial" ))
+		(line (pt 0 320)(pt 16 320)(line_width 3))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "AbsEncoder8[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "AbsEncoder8[15..0]" (rect 21 331 148 343)(font "Arial" ))
+		(line (pt 0 336)(pt 16 336)(line_width 3))
+	)
+	(port
+		(pt 0 352)
+		(input)
+		(text "AbsEncoder9[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "AbsEncoder9[15..0]" (rect 21 347 148 359)(font "Arial" ))
+		(line (pt 0 352)(pt 16 352)(line_width 3))
+	)
+	(port
+		(pt 0 368)
+		(input)
+		(text "AbsEncoderA[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "AbsEncoderA[15..0]" (rect 21 363 148 375)(font "Arial" ))
+		(line (pt 0 368)(pt 16 368)(line_width 3))
+	)
+	(port
+		(pt 0 384)
+		(input)
+		(text "AbsEncoderB[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "AbsEncoderB[15..0]" (rect 21 379 148 391)(font "Arial" ))
+		(line (pt 0 384)(pt 16 384)(line_width 3))
+	)
+	(port
+		(pt 0 400)
+		(input)
+		(text "AbsEncoderC[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "AbsEncoderC[15..0]" (rect 21 395 148 407)(font "Arial" ))
+		(line (pt 0 400)(pt 16 400)(line_width 3))
+	)
+	(port
+		(pt 0 416)
+		(input)
+		(text "AbsEncoderD[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "AbsEncoderD[15..0]" (rect 21 411 148 423)(font "Arial" ))
+		(line (pt 0 416)(pt 16 416)(line_width 3))
+	)
+	(port
+		(pt 0 432)
+		(input)
+		(text "AbsEncoderE[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "AbsEncoderE[15..0]" (rect 21 427 148 439)(font "Arial" ))
+		(line (pt 0 432)(pt 16 432)(line_width 3))
+	)
+	(port
+		(pt 0 448)
+		(input)
+		(text "AbsEncoderF[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "AbsEncoderF[15..0]" (rect 21 443 148 455)(font "Arial" ))
+		(line (pt 0 448)(pt 16 448)(line_width 3))
+	)
+	(port
+		(pt 288 48)
+		(output)
+		(text "LED[3..0]" (rect 0 0 63 12)(font "Arial" ))
+		(text "LED[3..0]" (rect 204 43 267 55)(font "Arial" ))
+		(line (pt 288 48)(pt 272 48)(line_width 3))
+	)
+	(port
+		(pt 288 64)
+		(output)
+		(text "IncEncoderRd" (rect 0 0 84 12)(font "Arial" ))
+		(text "IncEncoderRd" (rect 183 59 267 71)(font "Arial" ))
+		(line (pt 288 64)(pt 272 64)(line_width 1))
+	)
+	(port
+		(pt 288 32)
+		(bidir)
+		(text "DSP_Data[15..0]" (rect 0 0 106 12)(font "Arial" ))
+		(text "DSP_Data[15..0]" (rect 161 27 267 39)(font "Arial" ))
+		(line (pt 288 32)(pt 272 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 272 464)(line_width 1))
+	)
+)

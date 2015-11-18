@@ -1,0 +1,818 @@
+<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@1: EP2C8 (0x020B20DD)" sof_file="../sample_dsp.sof">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <position_info>
+      <single attribute="active tab" value="0"/>
+      <single attribute="data horizontal scroll position" value="0"/>
+      <single attribute="data vertical scroll position" value="0"/>
+      <single attribute="setup horizontal scroll position" value="0"/>
+      <single attribute="setup vertical scroll position" value="0"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="1"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="129024"/>
+    </position_info>
+    <signal_set global_temp="1" name="signal_set: 2012/03/03 22:07:16  #0">
+      <clock name="clk_1M:inst45|clk_1M" polarity="posedge" tap_mode="probeonly"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="2048" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|clk_rd" tap_mode="classic" type="combinatorial"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[0]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[10]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[11]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[12]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[13]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[14]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[15]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[1]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[2]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[3]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[4]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[5]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[6]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[7]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[8]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[9]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[0]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[10]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[11]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[12]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[13]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[14]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[15]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[1]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[2]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[3]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[4]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[5]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[6]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[7]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[8]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[9]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|outputflag" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="chAn[0]" tap_mode="probeonly" type="input pin"/>
+          <wire name="chBn[0]" tap_mode="probeonly" type="input pin"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|clk_rd" tap_mode="classic" type="combinatorial"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[0]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[10]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[11]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[12]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[13]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[14]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[15]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[1]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[2]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[3]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[4]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[5]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[6]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[7]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[8]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[9]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[0]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[10]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[11]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[12]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[13]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[14]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[15]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[1]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[2]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[3]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[4]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[5]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[6]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[7]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[8]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[9]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|outputflag" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="chAn[0]" tap_mode="probeonly" type="input pin"/>
+          <wire name="chBn[0]" tap_mode="probeonly" type="input pin"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|clk_rd" tap_mode="classic" type="combinatorial"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[0]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[10]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[11]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[12]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[13]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[14]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[15]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[1]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[2]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[3]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[4]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[5]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[6]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[7]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[8]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|data[9]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[0]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[10]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[11]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[12]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[13]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[14]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[15]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[1]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[2]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[3]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[4]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[5]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[6]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[7]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[8]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[9]" tap_mode="probeonly" type="register"/>
+          <wire name="IncEncoderGroup:inst|Encoder:encoder_0|outputflag" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="chAn[0]" tap_mode="probeonly" type="input pin"/>
+          <wire name="chBn[0]" tap_mode="probeonly" type="input pin"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <net is_signal_inverted="no" name="chAn[0]"/>
+          <net is_signal_inverted="no" name="chBn[0]"/>
+          <bus is_signal_inverted="no" link="all" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[15]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[14]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[13]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[12]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[11]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[10]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[9]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[8]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[7]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[6]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[5]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[4]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[3]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[2]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[1]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="IncEncoderGroup:inst|Encoder:encoder_0|data" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[15]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[14]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[13]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[12]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[11]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[10]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[9]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[8]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[7]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[6]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[5]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[4]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[3]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[2]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[1]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[0]"/>
+          </bus>
+          <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|outputflag"/>
+          <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|clk_rd"/>
+        </data_view>
+        <setup_view>
+          <net is_signal_inverted="no" name="chAn[0]"/>
+          <net is_signal_inverted="no" name="chBn[0]"/>
+          <bus is_signal_inverted="no" link="all" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[15]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[14]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[13]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[12]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[11]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[10]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[9]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[8]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[7]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[6]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[5]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[4]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[3]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[2]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[1]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|databuf[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="IncEncoderGroup:inst|Encoder:encoder_0|data" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[15]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[14]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[13]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[12]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[11]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[10]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[9]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[8]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[7]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[6]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[5]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[4]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[3]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[2]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[1]"/>
+            <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|data[0]"/>
+          </bus>
+          <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|outputflag"/>
+          <net is_signal_inverted="no" name="IncEncoderGroup:inst|Encoder:encoder_0|clk_rd"/>
+        </setup_view>
+      </presentation>
+      <trigger CRC="66AE7E61" attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2012/03/03 22:07:16  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="2048" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">'IncEncoderGroup:inst|Encoder:encoder_0|clk_rd' == rising edge
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>000000000000000000000000000000000000
+            <pwr_up_transitional>000000000000000000000000000000000000</pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+        <log>
+          <data global_temp="1" name="log: 2012/03/03 22:12:00  #0" power_up_mode="false" sample_depth="2047" trigger_position="-1">111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001100000001100110011111100001110100001000000111000000000</data>
+          <extradata>11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</extradata>
+        </log>
+      </trigger>
+    </signal_set>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <embedded_sof_files>
+    <embedded_sof_file id_crc_pairs="30006E00,A519CF13" name="sample_dsp.sof" size="240841">eJztvX9sHUd+J/jtYj2qSdFWP4q26VlHKVKURE88qyeNk5HvOIMiRVmU7Yxp
+e3bgCQJfW3F8djCX1TjJgcIGiyJNe2jHGdOKktXM+XQvE99cNhgsfHuLgw/w
+Au1ZZ8M9aAHv5HCYA/IHMaPT5Y8g4MmHS/66XH2ruvv96Op+3f26H9+T38dW
+871+3/rR1VWf+lbV91v1zJOPAmJM/rMAPz/1O8+/8tu/81vswgV29p/+V5de
+/uavv8K+/uuv/NbL//Q32alT/7jGln7n5W++wE794pdY7eGTp7908nTt1Cn2
+zGPs0d/55jcDSSAwIeM6t3r67JmnTtfOnD0DI/BFeWf+67+0+OiXVpfOnjv1
+xDeeeebl//I3n/8m+9rzl/7z8P7Z1vsPwiRQGfAfPoV/OAwOaDD5H2b4HySq
+8JV/OeLf377wc/IuQtiMwDKKki2AqvywBbPAqWOBCcKWWeaBOCYjVBIajrWs
+I5RZ8cOrO/LvsowbfzBCJTerxGXcgTgQIXPEaSNHsyqqQUfwjBzLD4vEkcXV
+XIwpxAMw/AklwvD6DmAY/aaMUOI0Ku7oUg9zFL7HIdqxst8ZGGKIIWIwtt8Z
+GGKIIYYYojsMifwzDl5KrCxnOA8vo/JfTf4TODjCAbybT3w6kFA3RprvBGGM
+iBdvTWLEELZQeKXGzjKHKGWwKsqItA20s0gOxM23dEJLBWqpY0bRRPGwRmap
+o6OJ4ukaSQdM5wyXjIlSYh2iSNyrrh5ehkQ+xJ2MDETeUTwXkSeLF0Lk6TEk
+5zsLejHIw8uQyIe4kzEk8p5BVMqLu5xBxx0CDy9DIh/iTsbgErk2PfGnw7Tp
+CMTMuG12EudBhL7pSdOdMEwES4niLUlozXBWh8uQhNNJPEzBnCY3xmonikee
+IkBN/iQs+dOEwDckfxph+IZMRe5YHcRHuY5Q3fAw9eBOGCaKrSTxliQ8yGmZ
+xUuZ+Yy1NEuGOCMvH8sCY3fLD9+S/7Zko+APGIXHE8VtcA74EaobP5X/wjth
+mCgqSeItSfy0KZTDsf6g3Z18OUzIO5YsV5sZk1jsIE5sP8IxhlXUaroThDEU
+HVPhzeItSfCWClwYc0EzN8Z34Eak7O+19sbjYhliCCNcvBShgiLCGplURw1I
+2d/HN5IhhkhAKUQ+UiaR3xHG5EP0EC5ehkQ+RBKM6vEAYfA08iH6H6yUWPO2
+NRcvRRN5bUjkhUCUEisvJdZWlLIokPv9F2ZvBzmJfCRRvBAiL0eFL8cac4ji
+4eJlqJH3J8p5YK+MSIcYIh/KGe7l7dcKYy5EyI3xHbgRKft7L5CfTfVoOVCu
+JVLmd8RLyERZI6tW9JdfTWEqKDTVyA51tCXjVvr+Pq/NcaxFSFf4TFktDeZE
+nG9+OJBEPsQQWVDYpDDkI3JIFi+EyNOjRHLm5UVdPgZ1nVartUMiH+KOx0AS
++WDO8vIC42p+QWgxW86g4w7BZ5XIRUviAwS23xkYQAwkkatAeEnpjzHTSTx0
+x1A3zG4mkVw7qbxSQpGgXWVIAn9JFg9TMKdpnhEhqbxSQpEAZh+QUW5KYrmD
+eMMHJd7NJIrZVF4poedLHsRsg9wltvIFM/uAoJtIFIIkipOGU0m8m0kU3Erj
+lRKKBDD7gBDjuI47yeKhU4kb72ZiKDo7jVdKINIoxcKYC5qIS90wd+AmJIhH
+yBHg2fm4eIYYwoTCVFBEqOQW5uiarpEMMUQCSiFyT90oi8hz+rAO8ZnFkMiH
+6IjBnPUM0UuN/FJcrGbxaBLD+dRBQV/YkYvgQylEPjEk8kLAjHe7nSfqgbGS
+V0qsbs5wxdnbQb6pFS9ZvBAiL0eF/6z5EQwuBk4j/yxVLbeUWMu1OR9iiEwY
+2IMlOoo3uDG+AzciZX8fNOTyzA/LNSnN7FXTX55MGcBLiZXlDOfhpRAVFPJt
+Y+smiqdsJMkYenZ2j8GciOP6zyAS+RBDZIGHl0JW9+AO2I/cKzuBQcWArtP6
+au2QyIe40+HhZeCIfDCn4kpcxyhn0HGnYEjkQ9zp8PAycESOYHhJ54/B7U7i
+oTtGvJtJBIym8koJRQK1NkMS+EuyePgQnQ8/CSESxaNPEcDoA6LcRKKodhAP
+nUoS3EyiGbfTeKU0PF/yYDlnuGTk3I/J7APysbHXrieKiyYflM6HnzSwmsor
+JXL6itEHRJgXORyaLB46lVxLcfhJCJuk8EqJnr7i4qUI5kL0ZvfDwZz1HGL/
+UJgKCs1KblIdNSBlfz9gHtJD9AlcvBRN5OXuRy7SPNcQQ4QYEvkQHTHgc3wu
+XgZLIx+i/9FfduSlEHmpR719htAXnkx5UM6iQN737+KlCHs7RB4iryWKtySR
+l8hFvmAdwEuJdYgSMNTI+xjlPHD52xgPMURqlDIEEXkDZmau+v7vflie+WG5
+JqWZ9dS+8mTKEqyf/GpEcSooIlRyMzi6TieKtyThZX4+DTdnuGTkG6CIYjPR
+Mwzm5JDf1gpTQaF3RD7EEFlQ2KQwIg+RJ4u3JOFleK58GJqU3mHQGtaQyIdI
+g8X9zkAXGEQir38ymF5vOIgsKeduOdHeIRgS+RB3OgaRyDUbZvDHcEgn8dDj
+I+Hwk3bYViqvlMZZJ0KHy5AE7yTeeIjOh5+EYInisd4+Zh8Q11jknHYQD51K
+shx+wkiCeNRxJReqOcMlIu9+TGYfkG8ZZecTxVmTD0rnw08amErlldJ++orZ
+B0S5iURBrWTx0KnkON5IPvykgY00Ximtp69gZR+43Q8HddZziH1DcSoo5NvG
+FpLF0zWSIYZIwADuR85SPdgQQ/gYEvkQHcH3OwNdYgA18iH6HqKUWHnOcKUQ
+uaduDIm8a/SXJ1MGlLMokO/9e8XZ2yHyEPlEonghRM5yhktGOdaYQxSPoUbe
+zyjngcu1OR9iiCzgpcTKcobz8FIIc0Hvdj8s7fgPr6yINTLrqf3lyZQBfeVX
+U5wKCs1KbnIdbcFoongh29gOPTu7Bt/vDOSDbmseXgaNyIcYIguG+5E34zNF
+zllQlhl5ydM8Ql09vBRM5M7gEvlgugTA0FggEQNJ5AM6y1viOsZnbv+cLPDw
+8hnUyFlxUfUYA9vX7B8GkciFumbwx9jsJM6DCBPcTCJYShQ3nHXiH6GRIQmn
+k3iYgjlNbozVTuWVEooEMPuATBuL3LE6iIc+KFkOP9lK5ZUSf/pKCvBSZj5z
+7sdk9gFRbiJRjCeK2w2nkhSHnzRQSeOVEjl9xewDgm4iBix2EA+dSsZYx8NP
+GkXH0niltJ6+gq++MOaCZm6M78CNSNnfa+2Nx8UyxBBGuHgpQgVFDPcjH6LP
+wPBSCpGXuh95Xh/WIT6rcPEyJPJeYTCfYEBnPUMMnkY+RP+DlRJr3rbm4qVo
+Ii/3qLcBxlY2cVFKJngpsbailNXd3O+/MHs7yEnkI4nihRD5wB60EwdhvDsA
+Cy3ceLfMjGOKLn4YauT9iXIe2Csj0jsIBp3oyDGA/2++UYEJntLO+k59jlaX
+D2Xr2W2/zZ1+akgmFdSBNVIfhykY8wndEQfk1asyYxQieitvv9Ylc1H4v+YJ
+n3x0Bn+kkrgcdlI+4PZhYu7AzR1lRrPO7c6P1Rm0Ti1Oz9t8HHS2XJU2t3gv
+K8t84q/cdJOKw5yR58BiLbfHU2/bxzpKdA9TGW5u/A+COtOT+tshIl+7LPeJ
++dT5EXlz06UKytlJIJuXrSkMwZ9TErKSX7bSOrpiUpmtgTIudLdZhDhYthV4
+zKFQW2EqPrwQ/GNvpI51xMRX5U5Y6ddyxpob3a04zWVAYfdUlohEXNxx+Dc8
+S/QGHLLAWiM2eIcJw+97MhPrksg9b6zLmDujGyI/d8QScHsJ4No9QuCvN8cI
+sLflz9cOT8WMxIzIYZ+fV+EPK6GzW11kcKLRATK88JMsZ8Rp0XXGhXeUz8ET
+cH9bvFYfD97YqqzTljjhjE8shNmcgzV5bbpRGvJPCttw6xxfvfQdKjYubypW
+cVHg0y0Z/uU5u5sdC0Tn5+5qfmCbENRhAS5tNCoP3hrZK31BMk/GG92DHEVI
+IqejHnWa+wwGu5W5bnOWgG7XaRkqJ9bq+EvL3tFGAUiNXIB3EMqlctYNkTP3
+iPUe3KbgfO8EV79iG2EnLc7/s/s2Syby7rFqUfDuCmtKneHVET1KvQsI1Gl/
+pb2gRvdxVjAlFHU9sC7CG4rIa1bpS5Jdru6t1ipS/JFllU8XL58SC8Tl9Y2M
+RD6eRSMv5H0elv9WlxrjPoLPzgZgFfgFOWrYdVoLYZQ75deVbsHlm+NPNb4L
+rZGzstPtelL4VVkrPjihyxfbyLG3Zce2fTRmasWMfSFyD8de327RyJfBsXiP
+ks8PcYxQeA4utN5NP1zeNwj5eifedRozY5LIrYmHF0tPuFszjUt3wZT4hqUC
+uHj5dJ5LjZxOWt3sIZYMpgLhJaU/xkybOK22ObPoNiojWMRIYg4/ac+1k8rD
+JIJomNgk8Jc28TDHdpBlHZbh1ehmEgVJVWgRmH1ARo2hlyPiM1qcanHlVGIL
+iuHt1IefzKZyYukKhqUGlUj8O0qDjAYRAcw+IOgmEoVUBVvFp2WB/5QCcY5j
+/SfoVELZBHXBGQWefPhJA9xK5cTSDrMPCDGO6+TIuEUcy4pTi+HbZhA4lcjw
+XN5wEw4/aQGz0zixtMI4y5uRuc4cB8v78izgqoSi0svyZ+9d2+7K0bUXmCBs
++gyZCZPbk/+mz1DST2tvRhyXb26PktYXzGj/j95kJbA/uNAgacwxWSo/3Zz7
+kdu+OBVY0W+Mc/zRwc/b52UEO9W5GFsII3po1tk4HQmzJM6r70LdOoQz/IdL
+Tb0QuLOyZzopWu45MAc8eQGyD3AQhD3amHPj6iq7hBKbJ3Yz3RA5R/EPRoF9
+tPCmapyayCdl+IdHrZZWM95XRM7U9S75rC6FFiKHl/p4USLANwEzy/0exx/s
+OrbVZ1YrUaAyvDfGWvxcyWwv0s1F5A1xWdHJr77B1a+3UV2StDixMxln1GbE
+vtjnezix7Fsi7FoERoTk8fV7JstMkxcRiYvt8Bi0LZ+sD4Bn2p/If/+NHh5h
+bj3AEimfVbrWyK/hdOG/1QXstxFbEvmY1f8aufy3RuYayWFp9z+Rr8IZCiN7
+7ZMPTl8p5OYGd7cs3Jea8qmodDZ9Lc/7iF0S+aQ4K1WRtx5XP9qy0jNJ5Ja3
+M9P/RC7wct4JPjpqIkuc7cEoKDWY+S7OwjzZeq8GG6mJvAfLLp7xLieylv48
+D+dZUcp8BLIZbs7cZCDyqL3dp9TXyH+ou2GtkY+hRk7SErkH5RO5gSksrZGv
+LTUUQjW18lJ6ZWU/pmC8EU7gh3y6ukfs5kpNwSFpJtP2DfUTsrxk1dpytxtN
+l4JYxQnFsjPerUa+JYl84sZBpn7FWdztExaw/3Cw74mcC3zWs436Tw4BTkr3
+k7bitn3XnMcOy5I/2S77Zmoi79WibBN0oXIs3LurGwF1c/+uKFnR6i76OXC8
+E5JEzmh7d2yQ64zYFK7GBmGRO/macTSeDHAx1QsC7JfCmWUBlyguQ30+Lkw0
+m6KbLKRC5O14jzOAK/LD+ysqP1MLbBuEpPDaavpYDc04Re+5nX33Q0ECcX6l
+ClXvQ07hb/22eJlAfQdTvXmhO0fXZODYvNJRKhkEzjzo8IBDMGdbVRfu4rHG
+h4bSzDMnoG3uUsLUihjs2WJavu6GdnJOMot4JzWRT+ebFMhS4jxyZ0He3K1U
+qN/AhFqZfhQ/nksdK8uQg2Z4eMmrgl7erPO/OgiWq9uYmJZ5F1PwFvBRkdbR
+1QVhq+Q6zo40ob12JRsCRKvn6hzDP+F6oXoa25L8czWGnZdhqu1OmnxG0ZYV
+jpcsVW4TToP//GEGPqHjDkyXaxr8y6y78OjYZh+RkeypAh6nAmZdRret2qpd
++vxhN9vYbv8FwMYCgdFbus+vW5J6VvCXFyCGyMVH7THaNDOR5wBv/Yr67EVw
+vx8UrwWc20TWcS99gdu9Gb1FtTKvleEpXZZ9qbjC0sbIu85TDkzIYfIuVhPO
+1HdPVobRr8qCHzkq0sbh2Pl0VA8vOSeF4bLFvJ3H7VD8mhy4iQeW5IOgKUjK
+HQsskXKau2uwxsepcBdkVWzq4WGG7mRSVp2ma7kIm9OupUic4efwfa9SeXM6
+Ax2Ktlg7I+deww1426r7WbH2dA6UcRN6vdf2pqMVl5sjMczBpHBk6pLIZ4Qy
+pqW33lHpMQus0yszMtkXbEOroSO604qifCJvw7lZTEtp5HX8/qekBjYaiBmJ
+nPUgR7FoHcaMqvJr2H3uVuwHcYQiJFVES06oS1/MuajhvOMw3Chagns4/amI
+/FWWNg6epVk2wcNLXiK/H2zti6V/nP9fzs/Amw+MzwM/MhJH5CbFUYXPQuRd
+6wlzMMVPyHimiKrBylQLLGphrY/pEKObDmSYFCgKLl4er74Hq5uB2YqDWzlc
+s5z1Mu2Euob3a1JL+RVoKjQLXNReapfsuO0cVopKvCsiXwThPTBG4KYubtlG
+COy4fBtu0TiN3MAqlX0hcvhtqbEI38sax0RbVa6InJuDGLqgAirVeEb51+W/
+923Lhl8IbzH9RwBvHxjHYh+oHXfNqFfrVjBj4I1YKzY+DTnL4oIU1Wg9vOQn
+cgo3pHLCfU3p2gmY3fyQvwlLR2aWY4g8mvHMUytcvSOGl3T+GEjPLeLohNIy
+HbPs12D5JFaM48tMe6yMpvIwiSAaJkgiCisiHjzgsv6jigKXKWwS5/gSAeoL
+KZxYIoh4pYRuIlFU28SpfAcME7O0BxbHE22IVG+zHH4ink3lxNIVlqO3VCLG
+d5R6FLTdWaQdAgxeKaGbSBT1dvFRYOIMEdYmdvEytudledm4L89mu1dKGCY6
+CemMpHFiaQtj8EoJ3UQM4rRVHL1SnEUgwta1naGQxSwHdy2YTjj8pAUrZDOF
+E0sLPqFWTH8fuwLZLv41WdQcmN9P33hGZu+6VLnYyTjrjHHTcDQdFxcJKntb
+WzZRfy0bHYAn3pIvbHQ8tj80lOf+aJIqh5caTexB/efeOPmo3rgPxhZYVKpH
+cfV3Jv9Zp4h91ZrPMEoR+RI39/exLbtFfGUM6n/+OQ5wuykLt3B4dtqmZuuM
+9431Ip1SXRzEAZmNh8l2g+TIvOW9Kv/Gbppl74tdUASv0avwksyJR3lLE5v4
+iMcFYaVnKg0EBfqJ7PqtR3UrxbeMbY0ntLgi9O9Zo06Znsg3pyy7frPmKB9H
++Z1OQJ3wxxwmiZzYZiKPGFcI04RdyXDWZF/HT8CYLGAO2tgTl24dGH09dlue
+yLvovUPiPKwSAeIeqRM+Gy6Lz8H8DLROrHT0xSrVPcGMHQ7178gxiV+1XLxY
+xN6ypmOL0aBj5kM3RP6rIw68iHd/rNlCLMzqHRVHblOrqx0LSoZQVgfWFVzl
+VJlaQ0axnTG3Xm7CXasJv8/0NASP6CZu+kxYhl6/bMXrc6BfMxo14bQMkqKq
+72IyC1/zyB3WOZALkJvIxYT1+bFbbwjC/OmkG4epoyTYCFhmIjfkkfReI5+u
+6pXZJo1cEiS+aJE+kv1YptArbvDjiUv6Aw1f+0RfTTRHy4b6kyvTE6obwdUU
+qqk0dX+Y2969K41cXpaeo4L8WP/4ow8pPH9zTPacp+UDdXOwRMkQVQfsBVDm
+Kggmidz2GAW3Hku19WKSzkTl0Vme1/wXxY+HnKYq94QXu/gg2m/0oDVESfJ1
+fx5cEjnDv7hRjXNUwLSYdOoxsbS3lLz27i5e0trbtYlfmYL5+s2nYD1w8bhx
+UNj8OWoDe7LRauotYSKogVU2kYvInWlCkcitBpFbOLUyC6PjLG2s5iX+krFK
+tPEHvdR0xrir/nZru1su3BWb49+Z6fHQfIVY83o8UTa6IPL6StWCC1iF/KkV
+DwXeQ6L4n6bs1Bq5vR9TK3i1oB5midqex2DVddMbfLISMtaGKCu8pkfz4DWx
+sViSFZ3bNEZ9Eu03erEo24C/EC4oErMHcK+lNFs1tXLUA2tLNtOYQt8nqxWl
+eOPhKGLJJ45dyrksNmLhpK21rtqI+mnb7XVxdkTdsU7hPpMK3jN0Eqb9Jcql
+pi7c8YyBsy5hFwHdBDl4zK6MHvdvir+QBf6E0npsOOGweV9sFUQqMhd5c2Ps
+75PmEhhcW7TBmxidV+KXTgIn9yt5zu9ex/k4R4e3R3guR9fOC1i5jdSFbGPT
+RL114f0X8vr/NJmNk1RpNyNPe23VVTsYqoX1d+ooWL5OzNV9tJXM28ujW0XJ
+CNV3qc66bvjMcpjvuQ0pYdzGD2FecM9p1JxlG9taIH55FiZ3Di9p8dtArWvn
+HbUwhZWePUliWo09YdQxYc7KvI0tzVS93OAD90uO42W74nBobI7tW5SnRw3e
+69mkgHAsFn6R/T2D0cXgK4uKFw9+MN+zemOOVuL2cEfUUfn+n2DqB4zOWQOm
+2DGtHQfLOY2ZmcibNmK+NbZkS3Eh7tclcFH+s3GWOazSblsSW9uRKkyBZiVy
+6PLNUmdECO8u2ESHh8BEKKpQd9CwSYp1iyhY9iANYDWZh2fXxQsu/f5cZ3kz
+9sFQlZGTpDrzkuSmj2jI0AK4EBHRxlJPpKPKRm0NZCDydnG2dB227B8D29iu
+UlVTZK1YOY086Vfp7ZZWg9vaRfUMAZO9248c6wVTadjwEJrHvKrVBb4qHFZy
+2t1gF2dxRiz1hu5SSylHdG8k7mG4tW1GW6vsbTPnXsPgOYyPXocVsjfrCGtK
+FntwINAMn7DXeEywgj0P8xD5os3ExKJF/qYKK8xmRPyzqlbJZekfu01jWg3B
+JOqmSHMQeT6wRpKb/HVCYc3fxVYoZ0ceX8eZwa5RkJ5tBio18gAcLskOcndM
+b0Ph6jJLqhQi7ocSCzrElOPriofQw8OaBe8oxY7EqqHxJ08Mu9ReC5PF45GH
+yC8TLc6vO2D/vzKv104w/PHazVO2qGFWglZTaZ/kW420HrGR/WAJnurRoljd
+YExV9A+B2g9jVt6uoAkHro530MjjVcFeVPS6zSbhtarAsQvld8vMXMepbi77
+dsJRgMcGpd2eYNUt+OgRgKf3KN+w5sQPcHeECmp6J2QlWnMSFwwLy3gOIr92
+3uZiahzIN6U6rcbNT6ESIhWs7wg5DJXjZ3OrwSTqzBBpz4j8NZm/6Q1dLfkE
+b12T7aCAC8M9Vky2OgP3N16d9n3Uf2IQSNBVWcp7ZcF19XiNw0uEjXkjYZmT
+TmQVrYX5VPJcRL5ZhxVLdUPz9H8Hm147D/7UisBZ6KQ9xEajGTesvCRj2w+W
+2h/DIVrcMgVTofxc6bOlGJhko/m2UnmYRJAhCe6Lhxlshwg/RUohTCIyR87s
+NIUWQdQrJXQTiWacRsWpLSjjclSEmZqWqora4sZ8HEvNWB7s3jROLN2hYbzO
+8FLQwjDLHgQ1i4hXSugmEsW8L/46ils2fCzHPOxu5qI4zvprHxQ8xMN3M7Gj
+ji+8PVLxscGJJUXeI14poZtIFNQKvFKedxblIBkdrZZlG2cbeqvmLUkpUoLB
+HIY3Or4Y9KwNmImIdwCqdnl2P1xYahL/ZzLBG7a2ovjxHIXtE9Cdo2saaxCe
+QsYML/y0N03Euh9RHWd8DiWWWNdbSHSD1ebEd/8TzJOTuq5wR01WKVrYB6eT
+jqjTJgNqPJLb+nldymh5yP0J/jhSK2pvp3gVNF585yBtEWfeh0wR/8wBDnBZ
+Zl6FN1lnMMOBVKmV6q4hSHPzleVrrekOy16R9WgviRYczgvKRK6Vvjfb/agu
+kXWV9Xf11GxSr72vgzeu/yji8vCy5++gwWaRj0VS2MQfU0IOXTnJQ+QTmsid
+2klL/Kkl+8wbh3X1eIWeg+3z0NpqWHMSbD0ytWKxnm1jO00oZoTDEdTsiE38
+ldnKLpXV5JDVeOyQHQNE97TnsF5eTtvgGzO39CUvqGvc5hNNMPRArNsMpcaq
+GirbArDe+ClTXCokeuzmJrR5Q8/0YI4sxNjXezHiBMX5DtMG+tZpmd9tC8TG
+Q7rmyjYyKyWI5+nlLcPY0NijquRKJXKd7PqiIzAjdLe6NQtvs6vsEwYQPjtV
+mxZwcwwxtzMi70r6MT2MwNl6V5YUgfeJyJ0Jp4d7qY/r84BY/T4B8GVcEPqX
+Ivwx0YzMYFAr0Hk7B/IQ+dTSKrwnpWsnZf1G8Ru/xu/HX1+ZpFMOMNZytKud
+rJHb0Lv9yJFTPCbf8RGsbNQG8Y90l7irh/Stu6yw5Mi4KCGHEehWsUf5d9ev
+NFaUych5pj+O9aUiLsLuY0U+wFlbt0h8zbvf8RsYoWMfQTbdzc3p2ZldI2cV
+SeSwKNlk8TZh/H+0HL7++4zgEAGdrdE1clKFN9tLm7axjYqXAkcscrCnSG1u
+1yIU3pKZtXUd0lfzEauxyCjuI9PSe6hn4HkA0/rQyGNwXDbWPVJtVkJowvw8
+b79hla+kt6h9q3QZWVmIUxaBusND08UJEG7CBD9vvzGKB1HkQAYin/b/bS6M
+gnXzgo1u4VvzL4NNJvzuD+ej3jlvJ02tRBruhKxhJRM58/86soR2PCbJ74jM
+9Cc2xxFb430fyhZrjfdusmXVrspeR3M2897sPsKeZR0nUM76yX3XUu9iJ0ic
+4yXTKFzk2vQ4h0YOO3Kow59jAJ9OwwtyOMY/fkBHpUjqcpWZrVTjnasi4oXD
+N/E4PAsT2JPsWoKQebin+oEVpDaPg/5owATKK38D8IZ6t4xeKXpdhMHpGRi5
+ZKc95iVanL0w+giAZbRKVdchxAn5+W+b+Dl2fILbIfC4H3sCLDXx1zaDmux2
+Ni5IDddj2gJiVe825w8YFknbU9RB5DavLABCZrLOPdwfGNcgtqkA4c9M1FsI
+wplsqxl8xmI9ymRrus1fBG4ryaE26uIJgD+vlxK9us2a+nuq9kNWUE8gZmwe
+0dhZztx4eDGroMniT8osVKU2u+OAxadUxpwPZkAoCRX+3y3bqwG5Ugxz7ChY
+EYp3Ia1SXRCOHJRqoABmo9X4L+q6UvOXYD003oJHo8ZMcKEcw7c6XuK7vZaM
+fIhdtS2pHZWTeUuz8VSw5jCPLWC2PecLhu5dWOWf2NXCEWtzYHNq8fFRC2p7
+/nggHODsOeBsLKm9S3lwj8P0hmEKhvAZ/JO5w8ywujfh/3sRDSRfoTbdZnKY
+/uUfrcCtp7RC/qAvAX9bhS1WYVyg41CQBDlN6jwS6yhot4XOsyO5Me0XH5+A
+pnNoySSwGZ8s/iCoCnuyGNzJ9lzWgbKIGtsjV0SV7HTjzQqC887ivDYkYYeF
+rk9q0vyF9jzysVyTs8VhL6jt6F64i0Ynr6oiJ/7+wfLxsMly2jD7UBCLdnFT
+Lx5eMhL5radsFBfkfgrjuIB48XvqFWzjmgNKEPcI4Eo9cbDVfBQkwY4yg6JY
+7R2R06AH3JPF+eYJmfLPL+FXXnvVr0IeDkxfbJtFsGAFHo3yIeRwU7XyOYeo
+TWwQspoQ3F4f1ohyYoIzTVI2tPntUdwqMar/5tnrK+8c+WFZ4GvM//JLDvBL
+ugagW5N/G+foHm0PJ/slEYlsJkcGjLO8Hn5JNtNAgzY82nXaIfCmzIpzy6Jq
+ZegyqFNTQW1QPnuo3fLzaVMPxKDXB0tw2Txl0Y9PMmfvKFU5kkSucnjXE7Iv
+RSJvvNOrzgTUqVkbNN4sEQSHNSN79rotjiqzCWAH1WqmVNEfkt9esJqq9DSV
+auRTljmPPZqhUJSCfYz9wCLoE4LeDnPgE/UWA71HXIBV9cVM5Lny7eElG5EL
+JX6SwtYjcpR84/AEuHdz/UhU0/ao4ktJ5I1W8wJQMXfSOOIXPdXIVU6nSBWm
+5WNMfkXfrI3gDM86THoTUj1+MaJ8cyJMRW4dLDWrBigjG3xDa5uaDHDDgRqV
+pbqL39qI3EON3OScl6MzcbrwTiQWeI7M43EbN31WfadTo8DrDsyDhwZ+j7YX
+7/SmIZc0x0hCQHf2dteYjdvaAfxgTClY9vME2M7BZU3k7BAjra3mNDFUFPsd
+0mMil+kckhmZnwP42Fc3LgW/TDwOkaoiNfJVY7VwajceLyuLMThizYMzK5/g
+nB5u7voehtMCvz/RLs7HLKP54VgvTRLFt0Et19Jd3LvEnxPynrH9WvYWC0fB
+blMo2zNFZdJhOkLFlGtqRYo/tQF0R5a4+0e68n5w3pfgePkiwFxLq8Ht1edN
+VZgf4dmI3OlylvcXObPUOO0rlq7lTwYa+bQA3DeuDbhaZ1IHvTnRXUayQjkD
+4ThtbVaPQ48EUyvvKz8A3iY/ZZyG8AB2emb+4SdZtcbQaMV/dQzoa34t+wSJ
+fC5C5BtM7zbQDpFjt+/8RM6t7bNcisss3qqoKbD1Eerz8HsyH5dWNlu3O6id
+JrbJ8G0EqLWZncjj/TEi2NTiy4BjNUnJjuxrtMHk4VZBDpZUam3HL3IC4Otd
+YFAGcZMtjCTZwyQKqz1M+BQROO1PNO5rssFhb2EwgbHhcyrtpDkJHonV9g25
+kgstgqhXSuAmYsi45YtvownfFFZqXcWCKqp5dRLDr6ObCZUqLmtNIoqtihQf
+6+TE0hWaxgatVpyQynQ27oTkfKQc9UoJ3USiGG8Sn5B5PSWfZEtWZy0uBzhn
+he+DEnqlfLs9iaiidcpwektnRL1SAjcRAxaVuGXP0ullQT0p7pDqMjhb/oie
+rNjM4cuA9sICKyuVZM5UErIm28u4UXxkVkTMycY5JlqdWFLA3N/HrkCOgvbA
+F5dlQf/Hw+vgPufY535rUxWk92VZ/DdtvZ0h/95RannNScD9Vsyg/jQhKbi4
+gXxzQjrpvcoFAvcwBx62Ntiu32WuVcHz/iTwhzjZ6OC1PlsjFbEBBrgZd67o
+ZvbUrUq17oSQ1WpSst/Ykr7LcH1N+CLX2wumbi4pS0SV92SwbOIt+OvDM3Wx
+zJRROffO65uoiDtPcl+l/cpSWxguR0o8mnlbTKeoHu1w8WL0vY4Tn3ooEL+C
+ux3fHJODmFfVj867kw64dwNxar8sn2KEtFkAbVcFXDGVOrurfcKuFPjdpMAZ
+Kjlm/rbkitOq06Bwn4WeHhLXsbQjDqBHzZWzAp+zyl59a4YNe6q7kxmf8Hu7
+t0cFnLGIgA+xr4lk87G4qJ61WEmZjEBgN3gReVe+3u/Z47pwr8ti/l388Ltj
+klHGF9sC4dqtyRbhvVMsdmtnI3B1IzuRQ0jkOzMz4H5dxvIzcHCd05OKyv2q
+oY3IVzDN6KyyW1UDN5xulGGivf6qbC8tE3ZpWmqMB2ca7MnS2zgq1YAfAhGe
+P162iT5hgqD9hBwdsYb8ChAO9lkSyTiTd6wU3iGF4qz89yzOLR/0VaVAY/Lw
+cqSZQbDNunEbQ/LjbTphh2Mzu12/Y6PONPz9ezDFD8DTWNLOvM6r4+G3r5Cm
+HpG9Ix9nS+bdZDBwjWYzbeaQh8gBPpVFu32CC/GuHCjcGnsaanpuH/5K6lH8
+Op5Li/MXI8utrcbZvi9mkY1FVl6SITqLGLGL+t/bVMhuUyonY3pNTUV4rson
+rmLvKIm8BrbTYpHnoEG0uWSnrcIO2k2CNwIvwFcB1SadH6Az+l2fXBIWTsvC
+v8FvFdZWGcdN2cbadclwvwR4ByR3LNwLcHHVArEsCYRS3WBkNYEqumCvjaEO
+qxZCmzB1/3bUlZYBXL3fovVseVjNS+Trv0XQqVY2FLwzQri8cm9e5nc0CP/B
+fYtMuZYFYcj91sVojDIetiFH+73Zj1zA3v2rRJyX7W9B6dhqjtxas5qb35P+
+dqkBrJpp/wqGB5ZWe2cfrEYPIyD0Tq4jYSaa8JxUtWrNWd1trzsB+N2lTsOx
+po/WzuOypORbnf+/pfpR94cCl95vlv+h/PdSSww2i6q1z0p14VqO0ZiLl4xE
+LsXJ986Ds/Nvgc7dshyoPaFW2ZwnqsCVhN4uYZaSnRGnSSM/D9EqjLuDZSXy
+/BBgHaLUPiPVo49snLnAVLkcrQfbI6gsUf8IuBBGPiQWzUrkov0GSyPOgouA
+9221zmzjYqDCa7qNeeq6+47T9uYeMzRBjipOViKfbZtH6qC96CYo1FVNCboX
+iNg4Swj8rm968rijHK2/p0rWkwzz8vWW+bz2cSgoHiZX7yfZajmV6mYGIh8F
+30/8ba4XA28cnqp/dOR5gL+kqgi8KoHRH+CcviLy88C8IJw/tWIYSIw4kF0j
+zwb//XB4HbVowMkIGLUfIOAyR1eCM+OWx+vBWP6rMxPNxT0NNXs9uuHkHO7I
+VLpGrjVqf/odLSIFrC2yde+wzqsnn209NFA9YrXN+9Zjpjg5v7cX6ylifVrX
+DCEWgdCn5kBwphPefZDCekjWX3mt7aBLbsXk73ulEznjo1VincZDodFOCPuY
+mxUCtfPaXOIBpvxWVpQxxfblZTW1wsMktqvMVOakB0Qu4C1Ype7opGbEn9iq
+v3dH/T5b1GX1mUIddxTmnT1d8XkYuvJqdE8EzHcF4g+cTAeWnGtLNVAe6ibk
+/a3V76pP7/ohv03Bnsb8PiHz7lZaedvF3R8iU/kewP/atUbeeRjKcfjjOELR
+OcHqPPUk4daUTwvfIcCruKSJs/WfRKdhK6varbIN4n6a16AwE2rC/+AX1DTO
+fsqHnuS1YDBs6X8C3qUNswkVzDipnLKmiClDF5YeFdjwHWdEQNnumK4Ca225
+4bjw3BGrLl7TeDSdzZDNJvg1SVCuPzDir7lyL9gaMJxawdksrNJ7K00VfddU
+srYSb/2Fx+TgdBPhmfv7pN0P32NjWpw9j/abKP7OOf3rzQtUx4xbfnkLk8qE
+fz5MYuf3DBMrmNT2+TYu3jDmSPhd33bCsyUieKvWl/USK/Av4HoysIpv71NT
+L+d+arWu2Kj30c2JZM/OhPHxDMF82fBlyf5+yV/z+RVnR9050DKBZphLi95y
+oS3aBNRykk9QET0dfpqsMvVBOA8Hu2P7fplTUkV3+TiFkRaX4CNOVLUVGTLg
+VpsY29jfm+ecRiDcj1wb6P/AUW6oYvNyVbXTx64vz+mKdHkdJt79PbQAmmmq
+ox8aFEGZ1KS5kTXnSO/TsRMEYhmeFtpU5W/KYv/4Gf8L8U9ErwUimMz7MzZw
+kwlZK3J5dnbRYTHZQ4pg3wzwyXKtKS81mBXyzpWOMcVMPyfh4cwhGth9Sl4W
+9Xwn1wvpnDcRubz8Gd5rnQYSxm4yu4610cXBElJHffRR3K5EflE7xEglpkHk
+5wl4zjgBPOy1OYmoJRO3WMIGBy058jI/YBT69S6M67otXtW1bjlo9TUtwVqt
+lYxDIOakXy7kXTtCCf3nzJJ6zw4c0XwoFhuswSEd16FM4jRUE7QLVQHOUHt6
+JwdCF/wK8AvhWRXyxi5yJGsSJ0fs6Pwmz0JuFcy0n/EMRB4R/1uw0ZXG3r68
+oft+1LZGdL6pd+MwrHIs0SDM9kL7ABqxKZKqdEuOdlTcGR7UhDXZ2+8eloMK
+RI2o1VduL2mGvYDaeGD3FBay6PoE40oB1cTDy1+gqgmoseoYWzYtDXqJTpZX
+GYgcF9ZHlZll/idAr5SR7/hfvIOOUrcukcC8GZV+rg+0CUF3Z6A7NC/cZSPy
+hnb9wIi97f5qXdsyXblP192bFQiIXL0TtMlnYRJ0J86bIyWRiw6Lt6mwdV6q
+Igt6GyHbOa5vfuy/dcZPjMLGSxsU/tpum0MWBj0jdWVxizg38wuyUNZ0QXO4
+qocU4lxQ965LZlltdUhV6K7Matm1gyi+gkOdoEpNj+m55rNCf3c+FALqaBj4
+dK1T40wxoA6galDA1TmJXDwgW9p7VKsicIqqHPPXfdPV1y7PMFg5bMGLvyrZ
+pTmJ7Yh7E24sl5LIwzLoQq8VL1m2c8lq1E7MEH8oqBuf1z/Ul+vQmO5RD7cc
+jSt1BfA+ypPVNuxtgS3ah2LPUkut9RBu69rM2FzH4hHpEzUb0GYD7k4ycsgv
+8WBqpEaILj/vLuB6amWqeWoF1ZduGlgzTefVyHeOcnCP+MrJtfv0ry+sgFCV
+fnp2knsfUmXj1xwmZmYhrUa+YAqcB3eP62bMJQ9izMsjft125FBZle1fM3X2
+WxO6meFcAaur8CHml/zZet8oVdyr73P6aMDY9bY63PotI7ax7POe89aM2qaf
+mXf9gghdgN7C8kZyfJq3BmGsmwSbG0g3GvktqWhK8avistau+JvLvkb+jTms
+o7zivktawxiW9BMHma1E3qwcCLy0OFjEuQYoM6ZW8QCLTf2jsgVZlKM5e0kA
+dwhtDVOP5NoxeZiYc9Sc8YQwEVBfPHoASlMArm+oIb2asiAtSUSxEZfFZG+f
+iFdK6CYSxbJRfAUP8dKLiOi3onxQ5A3KYImB5RArDEOYyarmIm6SDDTeT6Z7
+xxXjTv8+WNNnni3aLLlpRB31SgncRKKQmrMSPyVLYOusA/xdgeIEHNxbR/5t
++KDgEAsb1abVlkQUKzTm9JZIjlAkfMqIV0roJmJ4XCcQt9HUxJHigsMY0Nlg
+JmXJ1j4oeAPfzwaaPbckISIVndmO+fSW6Okri82lmG2+KxBn/IjUDZ8hFSX+
+yQJR/cKxJ2eVxIT4EIQcSWySWjBtrk4RlJlZMRgdVFVyKWbgCrCuEDAlyXHX
+Xxux11Q5umG7t9Y4U7Qw2qpVFTGGybcE1MCafJPe4bYXv9BZleh+coR3F/w/
+oZ/E0dYiFK6fcbWJI773Vu9Zf56rHRnVD6H/5NmPPBQ/sQq+wZD+9ek5be8D
+Owdt5uKOgrftRhg79n2k6O+VyJGizoz5lfCTzlM9qAjiX8iC+StKoHkaiKA/
+85vdWHYuWN2EbsID2n7GgUNCfecHdR2uYS9rO5vFpNLApdlC9HFOFibVKxRC
+nRDEydaoP3hjzllgxyX5tnQINdyvqRsjrL9vii4nkcP/+aZD4S/JjLX9L3BU
+Na40L3Zulq9L5Yp6H8qB/60qh5lfbgrDnwN7PlJm8u1fwbrWGyLHaSkG9Soa
+TspCXsOlfQgsOmUXuybU5CehjzVv+rngGKbyVxzowY5CPPw0b2GddnQx7FGi
+5gAf9nPZ2HX6ajtxs4Q4S0QjkfrXZJmekPXiLRtNPPRbfsnP1kYgKl5qZlYr
+vLSAZKwDOoa8RI6zyuzcEp56ZbMb/hwyEvm2DD83MUPhxefknU9JGEYdpyKM
+saYl8uuZHtAM74BsTzi18r4cSmx8W99URH6PzOPG41xrALtN1KtKqitC+1Ax
+bJcN4lFRB2WW0rTYx49aLowiu8+ajhsxgtP0CsxLBTRi56s2iLUHgX483oht
+C9/uFLq+V6oZVEGe1gTn76fDtKZyErmN4iN/t0lxmpx95Nu4sbPEn8d+C1Qz
+YDj50ppEJEY1roRUGvkL3XfG+sl3q0Hf6BscjAZGtGdk6/RGLAa/QS50iCpD
+rffizuZLWy/DiGYanbD69NCG/60WvNMi5swauDtfsMhQVJz3n5TqnkU8G/xy
+sVrVdmU/N9OpRI8nnZ/RhmaazknkQjnIfoEvoeUR3xnTASSRq4PdpIpO1Lb8
+Nm5p0pLEa+1vNdjV18UvyUTOj6R+xFhwdSUj+u+6NltBIvdtyw7Ifn8BgHdc
+XM50QlAaOwsDWOTOgq7Kp+GsUD/yg1ZrArxzrE6G9rmrrpk3YPMaH7lKS6yp
+Gixg97yttviURF7HH1wlJB9i+nMdrQ/cDNPmuM1f8JQZiBxF8R/3xSl8kVh6
+AVGqWpKoxKW3Hb330Y8ALqgtM9kvA2tOIlq4HsTqJpEcUX/IlRUBx/ntS4Ab
+bBd2TadC3/Q35lUHk1mObJ1vbrbUcg6Rxc6xDExekOJOPVsfJQ6rfu4WHmRt
+MlfTZCttfsRDxeSc1ecsplj4+34dmKb+e8SvWkePO4y8KTtpT9No7Ti7mlqZ
+c2ALFfAbv6eHwZLIHZ/IraCOpnGuSquRfy7tE3bEuiJJZ/2wUJ17M5EDDoXq
+nblOiPTJ5TT0dBsfOV486u/yVYO3l5QZIj/alKGYNaX2epGlV3l/LoOwGSp5
+Rnz3QvGmLtk3RsmPW2RsJ5LxbvYtfKmzSGcES+d2k1rp/L6lKj1mdlU93Oy4
+HSxCCaxWke35FDwo2YW2GcZXPL7Y0AxUAydNh0PaTdcW5DEeYh0lmtDS0FyL
+6YI+Istwj/tZuMKIqh97uL8R7rcuM0V212V2D8kXg3uYR+hRG3dlzbiTdb4r
+FP+RTEz192iletOfFHyZMEeV9M0xi9dO2gKPNbBvHAWuZolv2wbNBJOi/rA7
+xTpzOTgtx7NYghPLv2brt3lR9km2nzj2H6azU5KWIk3I3H92VG/q4VmtgQVR
+hf1Bm0zEYq8HezfxyJ0FBi/sWhsNI9o5OejBgUrl3Jzell+MoMEQlrl/TFd0
+yVBv75hPzTbrlCbRFnG4LGsGzsAF4mdOEEssyJ85rlfgtvx4npqHzSAIE+lK
+XdkfqPAd+vtAJAfaLUI0jWFBBqYJzP/riLtfx78c5i6wkeTZNw+2E8wUoijA
+rjkeNGhBlDxkOac6yjO8FLIQmgH2kWYSJhvKmbDGKgRVrUDrwqUiVeZ1PmOI
+IxvcP1Z/utmPHMU3PmyIC/S03UGXvX//GsCxty0y9bIOw9UssXGxE32dUi6l
+FEnkNpyZaeTFVwnVZqtqhhEuXtO5s2IN8OKXQEuFDXvtBtfgn+KtPrHAdHwt
+IuSDlZCrVNh9R3lr6n0ocMvjI5jlQ6iyWBSJXIEHdSTCCg7NRxQeXtIRuVF8
+8q8OMxRXGd++D9cPcRLjOmhj5uDMoGNoIoxhovoUcVIN3AKRrhEzlcfhfv/0
+NJiQmgm7wHrNc53Q1NpahlSEBabOHk51/bDxSz0uqsxDMpY1QAucoE6DUsAB
+S1tqL6T+OoOaUtF/Tkmp9Yqa0si7Si+E0G80L5HjfIiu03LoeVM7jK9L7cWZ
+Ru38llRi2QlZlD6Ry1pvp9kMsjdEziJ3RkAf0DWxZTPgZ2ULvehvWsKxXSLf
+mFxR6gVlKC1Y85dA0/L7E6zf80tLDSLv0fp3BiiDmkOq/ip7GjUMhS9trlhb
+E/WQyLEZWOLb2k6vBSLnyq2Hly6IHFAj58+pHx3Msie1F3d3S+bmtqRoJPIb
++Nut1wQeLMGnIkw+vpGdyIto5+//ccM23/nlihoQ2/xhNHoEztmDwQEj4zNw
+DMA0WFvNmGJROvlSUwH4+5BRmNernnOSyJ1QrK/Aob4SELkcFq0DQY0cVjds
+e+MAjIMTcCu6CKlxaDQOlivlLjVy7n0gP9z0fQ1engEblwvhvQp47KTdIPLd
+8cVlWeuNL9rZD41cIWIQP/HXUj1k+OniRttPpY4au8Z0uCUx+4X230o3wkqL
+3ZnGBIDaCwGJXHmlrMkWIIlcr4HsOVz7UHZ5RE4IDy9dEfnhhvi1EwTnE1fB
+fVcyy6fTPNTI1QxjTB2tZSZy/5AZiHGwiIDbbeLq72yjO3c2QW/iyaNTgkGY
+CBhN5ZUSigS1LT5MFFabuBK0SBg5kOA3OzjTLYgoDBOZ+cQl9RReKZGVGaMP
+iLCMRV5tiItA3HdCUb9z2ORyLCG7TfRKsQV1XBwnyDByaGkxmYSIRip+ggu6
+0HBiic/RhCF4Kiy3fu2sHXG8tL3oaM7zZcboA6LcRKKot4ufBwedUKyPx7jy
+tHpeZlNK2OiVYrO75ZOdIhS2DjeFiWZz0iKdvVIajisBoj4gHAzqp4LkiFAc
+DfhmpR6LzVD43mg4LwXVTUeT3rJDONtYAVKlXJ2vopKIvic8CTbZKyXIUTiX
+IW9k7V1DcXQAUuK4FMKCPGCVx4UThod4Xh5jsCK7VTew/MTBnrHxpOzvRaDE
+dQUe7NmN+6jK0tQ3YdLBbafUxJDUve4XyC5yFK0tPw/ZsFVUD1QedPF8vX3Q
+tt/aigg+qFrlt2W3+VdVtHzCAdLEw1vdvugGMs53jQJXG3yFe87x67IO3CZ1
+lV801bo1ZsGIOuEY76DxwK1KIwlujDVlf1/sYtfCuu/CLrGmt/yUw04cRDM2
+pdqt8oMPziYzbte8L2BWUntz2+1+WVSmm935usB603hS1pTGfiie/Lc99wYT
+aGgRKL8jhWnkro4uM5GH4u+hmeqT+te3DgvgbzJqzZ60bXhwU3tKu9cZwH+9
+rLeOiVaVSlYiL4hRPTzWIFjF+lNc3CQblBzB9YoK1We84uTu7qj8grs/RJK1
+6P7UFTFLVGZc/ILVxibUw8/UdRwHvqtrNffi/dVYyTmMgfMFEZYiP7BowSi1
+xB/KL9+ft23B37K1c+crc1V9spFhQjwf0WQm8ojv38gK3Nb9inhoBsgtff4B
+gWvniSZyZQB9wkJPlphY94fIQY2ZVZ6myQu23r4EXwJukskCsX/FpfrCDOFj
+tuQtG62mDzXtry3wgloJY+5r/sL/A3EVAkedmSqLeK34SY6LFboziRnHXC+i
+LdycVG4Vzk3o3UZMFMLzpOXipRsi//dPCYKHEyN2kMjxQ+1tWSqXJ30ibw4T
+AdoRZyPygiAmbBg94tt5fhvLGjWXcFnrAPgmiqatyBX2aXbrmmxbHFSVFlhO
+DQtdndFviJx0VySMZfP9o8poHP/pkz5Js/SFiapQkynTEBR9G0QlZx+ek8gB
+j23zHWTDszK8Mxb8APVv+HQZt0eiDIncUWFOau+s+Uj5j0BviXxP6IlMNabU
+4LBdtdT+gaO7uDexJHKLAdPaur+OHi3e9hOnOkDkyGvcO2XBBzlQUyZv4xPB
+rgNORCOPoAdGK2aStBqFIH7b2ZxTBVj/A03PYm5M24IGMlFla9o3Lk5hxsea
+v7h4SUfkbrP4+/f54q9TgeKqg7xx1ELvPArs92x4D5sBTvioMGQ2po7W0lup
+5iVy0fLtGe2sOMHvapx6Iw6oOdsZGH2UYzMAJPIOdYHjI/USbwaTJIutNKmn
+kicsf6r5G37T8AKiij5HbydbxNy6XreqHxWtvyh7g2ctovpK/oSjV/FEsNEP
+j8a1Pxo5f65h1eFhttGTHE7bFfH+eRBKI785RiSR+0Z+Udj7pJF/KJq+EH8i
+xZW5oX+wfNWfWoFwYBrtfnswn2h6YCE1autHLTcQ3gzHWvEguCONOqwyzdtj
+yGzOXBDoOmmYIqCpimp9W8dsELiTw9zYrMq4gKAVltLjdNYxpUolyF/IjDgV
+qsSvyUbo2/44bIsQMaPExm0gD1J9wLUNuddM0qIjM42D/ZraiqdGPu8feuk9
+Ez6uZd0THAz4Nczq0/r2/piiNgOXDNewj7xPZgzZcA8XkAmg95JQNFCBOVjD
+9SKUck+jDRwVyZF2+Dke2XpX+xVq8+qosHCasH6rSsilJ62Q6Dg+zadocot7
+zP/kMFebgJKWJIyZT9nfBw2ZZX9McZEy/q1zddxyF9hdsrL8+WNLKimB/675
+SY1cJP7e6feshwYW+MFo/hk1Lk7OQ2YGpTib5tjMfl1mbRvtUf7Qxu5d/4pV
+fYeO6Xyyg7rvx6Ol7kqONd+oM5MRJo4shSNLzpMfPRly5Euo1jYa3+ouRsgd
+4OuqM11MspUMkLcHytC7oujc763D3OV1uoimYt7dUt2+vWmH4ug4q3Ri33SC
+Sw1gvIOj6zSk38a2KViWF4WRjKGp/dOye3ln2QHxhzjsCQnPgZVZoVsOewPU
+iYdPdObCnFZLOWoYI9yZA/gj5f+oXGiD+mbB4+oknFWAH246EPxUQq+ec0zB
+jy2qbRoYnqEnDjQeXm2gihZvui/DwwMPWazrbLbB7yezEfkqin9wGHDqYZ7d
+es0JNFaFpc8BPIYr4L4NnLjqBib8fhLmydmsRJ4HBM1PMIpTE8BftoG5zRmY
+Dqz/Lk7rxLl81h6McUym0u0iq/6+Y9uVJQL3bImWX3cCh3zmn06v6Hz/p+Ek
+hNrA2/qaInJQbmFWgzp2UeKA7aANnI3WG44aMxeKoBgyDpPYeWKh+BTOIf/G
+9c1WcSxw9ras1mjf4skbF261rwga0fUJQSk08nELcNNxfkUSufeHTTPIqBGu
+fH9LEXmNXZjlLaaeaLmcoibmRYp2tLnpf/g62suutxmJ/ULQhf8QSgTPXgJT
+ML+kVksqMofzbPV+5BnRcLKhMOegRo4OWPr0wkPxkeUF038yEvmPKeHqaFec
+Q75p20JFc1lXX/45EBM4y2xLIp+8cVSqXM/RLJtBusk56oLIsQfhl3A6/5TW
+YMWs7iIVrk5X7PrD+O3iFINPlpLa0z6AwVcZErnSo3CUyXjwkyRyS3yfKiKn
+MFvU3q1RrGcNgMwwrrbE83QNdmCtqUnvgj8QkkTuwufHCC9vfSojkSs19JGp
+F9Ri4IvXZYF/arcR+Ukxp1hSPCAHo7jfd/FE/knnPXPaweRbIv9oGuyrVzV3
+H5vynWExqpXHtFSFPagG0fA1aB7cGs0ms+PeXOcEbVMgzKEMvu5n6KPHG7nC
+M90RLvxQhHdFGBZFWJ5Ei8AaAbJ+HPTGaXtoFXehySUEy1O5+2qNXD7kodLm
+BzMuXLxCR9zt++Y5Erl76ylZhOdsKxDnuFPRbYwt8EpZbD6z04uLtBcaeYhT
+OrMtMwWKUdSc/kV/m2xRRFJFQpDte9SWu2qpMlwX3PHnWRgznjaw33AWGE6t
+CDpyyFFEHpb6LvANizFF5KD3m+4nIt+6TIVvnicrxm2btxI5fkAi/0T7PpZB
+5ArxDhYROChiERCBcluPy0krWpKI/mql8koJRYKGEx8mAh58mPfDQfuGqWGw
+lrm1liQiYLFZND5FALMPiGssck61OJW6vLbC3gblcRKIT8OYTHsFb8yps1IA
+G0CHw08YSeOVEorkQszu7ZHoWgqed4g0rzeZ2QfkW0ZZWUV+io4do7Akppds
+smkJh31HFvK3cANLBnxCUslP0TPjFHHo1mHB+LuyxbYkEcVUKq+U9tNXzD4g
+yk0kCmpJcQazMMKdRQrrtgeOHDYvsw3dcLfY5CanY0DZBrVIVVJK6JUSJGHA
+RhqvlFAkRMbedfvsDHwkR83wgozk107ICNGKMxA/LZO59hcwCTu4X9xzDKls
+vsDdD7V0vjmmk/CWMv8BXEX+M2e81mzFKXBsokbIo8QfRNM+WHlT2NTLPjbc
+bQnY4vT5ll91Vy9qwfl9E/lKpwRwfzKfs1dBCDlgaLEq3F60FIu8oI6SBJwJ
+LS0nGee75h+Reds5aGkd9hXiwLUTofgqw8UqWemnlOmE2qfuZLSORqHCp/S9
+zod5deK0WGG6G9vFwdqhpuog22RNTXUy8C9HctJ0J2S2hJb1l8GbbB3eRyPg
+cWXOzsNfn/UfwnErIri33z5XPigjzJWMQq/Irv0MU7luFOoFvevptpj7D1wV
+uICSpsg5yUrkh4X9vz2w7igd9ugJWQcDy08ETtJuz1Z9Y+bnZHEHvlhhEkZk
+I/J8eFvyyAezYOFgAT4/wlfrbzSIRU0UfRE/Ka8UCiJwztpvjCCRP1W3ib3+
+hMykJHLGbDusK/w4qOOLa/BdXfMf26+MRoBEbk9Qh89Iqn7vCxZMfMPRqg1O
+3ztnR+SAVGop/K0J7V5Y3gxiNiIn9iPrsHrjceA4q+xIcQf3EwjEGR5H+yAy
+pmyl67eqINxjm31B5IzvUYeuH5CU4aCuhdWkMX0/os6LfP+wIywGsIJWcfSX
++qPX58DnqXayfv9pZYaiFnhY8PuzM3CsLm/VQq+UqXv0L/usa0kaZP400BVb
+dy4cmtyqLsjcfgNdyOcu+L+OUT2oLn6iIjORO1e8D5kmcnZ+BexHiGATeoaT
+SCKfV+cZ44ESHCeib1PeJ0T+JOE4tYlEPgZ/hosrY08pYzP80bMEQa9wJPIr
+UwvydexaRZ3O1gqeUb4C9qsCPzjioVWuiDw4JUfVjLuDtvgNLwzDustiARCg
+iRwbmsNel128JHK4n2k7cCxn56zWyOXAuYlNkomF581NxhXoR5YseGJsgqFG
+bt8mI7B9H/XFORI5qGEoEjlXczvHan1B5OJppZHfr/3auIqpQeS4xcoKGuwL
+i+GvuFb7g9xpJSOTukwkbYsaxTGzJHJiCc8OftCwn/VX8UfcimJuAR92ZPB8
+XRTPIozvTxJ5nVvnoHKF2uKDH9ktadMLxB/Xz42pvac4VOgfd4g17/vPQOTK
+gvOsY3nvSo0E54dqJwmtS3GrSSPn9yvyQTOLIyPWyiuEkeQ6muGEIDfnMzK8
+PEkYfDAOVBI5GT2CqxL2UiihNHIuAIl8FF4iNaif7jTsLGRwl2LbfnsELKmR
+g3hIp1gPfpiXWeb3qlrDwPoGzqkt4tC6T6aEOCxJjdyRNfg4WKikTDTXqsmz
+6vQzSS5vyfx+jtrKHKEcZCRy+siypb1SJJGv/B1afp63mzVy3F19SRE5/Zs3
+wGJvg9UPRD7N9tDDANeosKa4qCQ2G9SgMXDtHq7aw4+8Kakpfr8fqsoozvjO
+25r+3q9KNcvmqw2HA/nvJ6jkYlZd2acCGkD/6XKnWDuaPReDCoNVlZcr9oy9
+PakOX9AG7JjxC1fdzWerK67UyIkze45aUwf7ocQDCEuW/bJlKSeU0RGLXv3k
+ICChs69Twv61fBpAP5U/f0zvzLPRH+M3bDirS3UQOHT7mhy41VZAiGNVvYH6
+MjiWGvffg9U8l5FGRvAsMpcqyglIHY0yunuAATmplz+9CVmxj2MJV3A0lKqa
+sOyZ1WnhRb56mq53RfHtm1syPdz3FZ1QVqoEntfb2Epu3BBiYZJoP5Xbk060
+AzdCJZfSZQ+RbxaYwUtj3JGDBQoXA07xDxyt417TFdkLbV9jueJOl4HMw0Er
++DNDBbxwL6uzw398Wt1aJXoItyyrTM2WPLlD7ZQmJiJrLnIgrLN/KB/hEmhL
+CZCq1mpd/zT1NWLB7uF6cPBgKuQdTmfoXQMV9LGv8ik1q6xM3hYqNrz4oK52
+j8jmuvIGjkyt1I6uo1DQfuTxXBCsRgm8zFUpsDeIUilx608eSMnPdXbh+yTt
+XliFWW6xdMmJX5fXh/wlfisS7PGismMEzxsQK4Y2xqhp22Wm40N3X6rWrMrs
+6nXcHl7SD5Ok+NY2Gv8oHRZN3nYeh21XU878lfts+BGepqJWFNPXUZVcBiLP
+DwEXJkZg5eK0GmVired10Mqu3lFo+jia5PB92sgrATbcFLKGHA41KNb6Yaef
+1MIGcJ+0kMgFByeo03iGrqr0u1C6O02O/cg5nvYTEDmKi1E9XBeX14HtoBKO
+RI5ONynraCFEngTlXjH2o6uC/hNN5MzaxKo97+rfMd1/jbZUFyZt1y9x3gid
+O92CoAwlxT8B5YTCVNs8xsJfrXOb8s4vNI5dDqs7LywHefUEdC8MrepUnf6S
+T65n5eV/xl/KbJxCp4WXTEQO8Lfv0AaR40muv3H3ovoVDUHEFCH9SuTfdBis
+vEUovyhVlZqzOjP5ZW0gjNPP65iUmD7Wj/vsCkaB3hSCscMym68Cs9bCeQjf
+a32H8n3KXCK+x50GkX/Fmoa6ankeXXCEUCy5W34mchD5i0eqtiRybimNfGqG
+wKMVZRlYv2yxz+vN1dJr5EFyWYi8m1neuWPA2IMWGos7E8F+20HO2IXHDJRV
+lMVQd32yuMt2pEbOayqm77e2xWmzRr7Pk0NbuOGHJYl8XJchXp5Un2SvI39Q
+O6nR7IdyZYSHl0xEzq/erFgNIkdnX/5Vrn7FdUTxIetjjVxm7Ql5uWhPojE1
+X/QXZWeDX8V0nxg2GXBT6lfohKJ6d3tcLWI1WuSO1ZcqORobXAJ20J9a4VAj
+fsMjIEKNHMo1PcxB5I8esZo08oVZ231hTM8KWbJ57uDhvz6RkzI18ngHiwg2
+ffHoHPJWnKrJI0lEsASpvFICkXCgGB8mAgeanqgRERiU7eBBWtKMSCnYqbxS
+QpEAZh+QaWORO5b2MLG2j0tx2uyEole/UbdiKKH9VNIdfrKVyislFMkDHkMV
+zdGZ3xdPiDX7zLGC2QeEP2AUHtfim2PK3EbAqU2gW0eB8WlrXDZMcE4AF2cI
+IXxiDKyf2mDHH37SQCWNV0ooEsDsA6I3pI1gUYvbc4v2sjO7zDZsB807q7jH
+DdatWZszRw6HrC1G1jm1bGo+/KS16Fgar5RQJETG3hXFGfA5uCBlV+Qr8O5+
+HuBnMI8v3FMHS1Rk1q+QTI6uKft7PWXM42JJAUubzgtKOLq9u7v+zC1uyeOh
+3Sfrxz5fNaYZTxaM9Ufy1Z5ZZyCeaa0FE+IYjPXduFNtzey8YVmwojQUewu8
+E/qngHWnnZHSHYFcvGRUQQkeNzsKjR31Lz2pc6mPO+DamCKujhqQsr+PbyRp
+gaUa9nRo//6c7+OJ25eocu+7ehKgAj/E054rnv760BvNVFVHPxXMvmjVDOJQ
+ii2rCUiw63OTNsy9w4Ra7VyzQgtnTaUXZtX249R/L/XE+FiuXGQncsHO2TCF
+8242gT957Ijkwk/naYPIZceKTo+45qLrqNrGFgoj8vyg/1z4g4XgaBQ2KdQv
++oQg6xxaxZFQafF6ZFHTGRMEKgzdZ77r3xCTtWYmFxP8OOt9tjqjYj1obc1Y
+IJUp3bA+4bp4fSLn4BxtFHhJQzgXLxmJ/O9sxw6J/G5ZvWv/WFEH+48HAZ6/
+DvNI5F8TuMW6Wn7BwV5viNzt8PObst1RmQra234k0xi9LtQP4tu41wOOMWxV
+/BxU2gtOZq/AkoDl+8PJHeK+BvdilZhYeDTs4nWxPjtDwnVO1vP8xeHa5IYn
+5giaI7jgCRDkd622kfaFpl7FLmfaMI9G/jZZIj6RA7/OluHTTbUot7Ewq62l
+7A15KUsj7wJHJFPs4gJiQOT1UdU6HbUlj80s7lmi7InP7ND0xg5MATxCv6a+
+CDtYT+HrqpJIIu8Xo0MIW5luhlszygmFKBfI1cWGlKJS56x5iGlAXpp38ZJZ
+IwckckvvqI8bM76qn2ZCjXZ5m0Z+sTkJI/ISeWYLDZshkSt3CM97FWD8OV+v
+ddBsn2giD7Hvjtei5ds3uSycN4TO1ULrfNwNeJZEQ5jBi8haBwQkqSas5uRg
+YW5sFXP8lvXPdYG78p8+CePCkqo8KUaeKUdkPHInA5GH9nZPcmEvgmPh0ShS
+ObEf+0vfPGjBWnTeQ4bBieiURD4CpRN5WB8u2vNLu/jhAFBnwWEkmFrZmmPw
+0SHH91NJh14uX8zPSI38AGXwXf0sNvenVuqzlApUBPi9M114NpQFcZdlwxYa
+CD8BG7j+QL0TemD5sA2szuQH52jpuXDxkprIK1Kczr+yRJDIxzWRSw6cO6Fe
+OPs/DlvqfID+nFoRwA8qjVx1ph4/tkjhOtc/XRCSG53aKLaHZ7pKpROy6ELB
+A3OvKjnvoaPguHg0SnUbz8nQhMWCpvYT3Js8FbwMOegWp+tI5AT4XHXWqR/T
+U9oPyR/4Y9Q/Eu3CRk/pIhsc+GTcEviJ7e1zVrJBoHLC8RPb7SMt1oCouqR8
+IbtEDw6WiIi/KPsZJe74p9SEVJpxx4Ksux/OdqudHfM3DmAX6qTZKzS/SWka
+CLzwDAGisiuB3+ab+dVuljdgBkSb4LJ/74lK7nlukTdght41ooIer2zqavHP
+NGu7gVSHOtqScSt9f5/XISSi8PHJmdWccTWwH/PQ+zZ90vVAVlDMOus+J5mg
+63EXRL5662mppYzI9hWI94rIu4WYsvRL678Zt06Y0bNvPVv0Kwq1cDZpHywP
+Mg6TWsT/pjLrb8Srf3QDiYx1tGwij0d7lvpmkTAe+gzr7m0EeoxDwQjtcC9T
+3VCpdkHkdTdYDHTQ+g4Ghsj7d0DcAfuY8W6NYvaUec1+wCJdEfmtCm8RdwOJ
+kol8vMOhlB2xP1YdrtW032I+iLjjI/pvltkI5v/trR1ZN1MrLq6GNzRyNihE
+DuIYMZv49z3m6Wjf2hkmgdTK2163M7ogcnJr7GmyH0SuA+HF7GARwUy7eIBA
+PHQ4UDfMbiaRXDupvFJCkeAIjQxJ4C8t4iEC8TAFc5rmGRGSJB59igBmHxBf
+UW3Dcpu4A2NSfEW7pWAqoQ9KvJtJFLOpvFICkVxwSiG/rXzBzD4gjrE3F6Rd
+nOvDUqQ4x9cbOpV0PvykAW6l8UqJnL5i9gEhRn7mTqv4FiNikVaBztqqDoZO
+JW6Kw08aRWen8UqJnL7SDXPV/s7v7wPxkLjUjUyOrhl2PyzAfEcc3B6EyYhm
++NtOjJS4N3054OrqHOc92W/PiG5U0Esn2sRDnTiHo6tZPF0jyYgK/KulzlJ9
+iQcq4vh+5yEXzpGqaL8XW8u4Vaj23g2Rr/47IIG4wF+DGilU+HKIvBArTFEV
+QW/Iioivd4jrfvp+LLqfUyhdELlAIrcvrw8ckYP9m3XgJuOmno/+OyfYKvEu
+9Mlme51nvVtHT4vlnNORBpNdzSXcnmvaUR96pZEXgD63gUvEQCwGmdpu92We
+99G70ci/KGwlznYO6l+DGmn3OZFDsBHcxoHWcuuzaVym/zTlaiFGMosO1wOv
+G0//YY07awXE6jZ/yVDhu7G347dt6HpqxUsWL4TI2/tJtmsVwOT71Bnw/Um2
+e6jd9ffFObkrIn+bDeTUCsCLfcbYMXDbvo/DVAEtq1yb8xg8Pm6lOA2pj+Gl
+lDtSZibyIs3MbZyOkAMsi3Bsj7zUpldFFRA/qDAEzjf+cwphrlnqu6T6xMUj
+VGapMCQukyn7+6Ahi9LYzNgPdG/k7yPzOypHBc1Zek9lkOX5kmjAWFQsX1y2
+h9dCVFBQNZJ/BBBXR0+ZYnVjxdN5g6MAj3s8jXiLEC8pGAuTMMafGLYNmIH2
+Cmsb7uUFb6kTduRD9yhqXoSA3RKV0/Zr42MR4wb3j9WfLokc6/R84PBrJvLG
+dEUskWUk8sJAi/cF6A32fWuP/BC9T9LDS7eTwtyvv2GNVOHT19F48c5Enh6s
+s4hnuin2XSPPy2kUNfJCll9YEZFkAi8kFt2VFTaXAM2TG+Y6GrvDwz4QeaQj
+j1dpbHig0j+LGBk0EAHe8+VlpEyIjceLm8+Y9PBayOoedCRydiImVrN4ApH3
+eJZXbBdigFaiihHXQp1+c7pNO4RfLfIV95LIn5mP4cP90siH2A+k6BQdcYBO
+FpScKMxMg+EPyUTusJMxsRrFO2nkKsV0/hjcjhOv+xKhO0a8m0kEjKbySglF
+gmF3hiTwlxiXEbsRpRN8j6ZprE8iUTz6FAGMPiDCMhZ5Nc5lxBcPnUrMbibC
+WB7KDqOjV0rC6SspsNxZJAdmc4RZjPMB+djYydVjxceEer2hD0qsm4mhzFdT
+eaVETl8x+oAI87yTQ2PFBf4eOpVcM7uZUMtUzXG7zY5eKS2nr9Q/kT+5+KmI
+uQRESFyxHbiZ71P29772RruZQ82rN5Q0eitsqWaIBGSc7zKKM1/cCyRa6mil
+rY4akLK/73o/8nawoiMcYn+QPEZ18VI0kTvmOrodN0ORjcj3AV/Mo5gUA5ZK
+SsTcHy/C6i8fulqwFD8QBWUDUQSRQxyREy8Sxoj9IvIIAp1kMGzlhkgHFy+9
+08jN6HsiH2CIfUnVoD3w4O2lHYVEiSbv+y+CyEk7kVsjcrTbhycEtSPyKpDI
+Hyo6lfyw2/52lkyDHqx/BqyXlFRY6VMv3ed9/y5e0hG5GyvO3tZzknmIvJYo
+3pKjvEQu4n86wnJvZctzhmvGfN6AA6tN5dwSqDtkJ/Jaeo2834m8XnSEuRC/
+Xl7EA0fbUWGmi4PU0kQP0lBbEMQut/cxdhNd0nIibY/ULtfe6bQ2D4PR9zVD
+PyVSJh7BCDBsdgaDoRjxBnNZbeLcDSQCY+bGHcehIOLGhGn7++CNsdKsX4z9
+QFE784vMIcpRQXtgO9SlSRSrG+tgPv4VVmEqKCLUiU11lJlZZTpGPPM2tvHl
+6iaGy4vCrJZEURGViV5PDh0pxHLwWa3xFKaCQlONNNdR8WFMpFmJ/DOHfdvw
+8M5AYZPCiEQi76P9yGMRIWcqE2XxW933LxiW4YNwqGmya2BwFEm8ACJ3gOm9
+gHpE5M4o9sox0faIyHO97d0LdYDz+7e8jMiXOJ79fqn8Zdbi8cQMgd2nC/Pe
+nekVkcNlGWinGhNrRiKvf0J7W+fEf19INPcWEotCu/rixsgJVlya2ZErcb/n
+GVspLh+ZiVwYxVfllbhBhDF19AsxjoZ9r5EPXoc/yFhg8mJvFjev1Esij53+
+yaqRK5u6DP4Y6G2XLB46iCQcftIO20rlldI4GsV//gxJ8E7ijYfofPhJCJYo
+HuvtY/YBcY1FzmkH8dCpJOpmQjnmxlQejBjEs5y+kgJxykZXyLsfk9kH5FtG
+2flEcdZwKjG6mXAMYyjzqVReKe2nr5h9QJSbSBTUShYPnUqO440WNxM8X8VZ
+NFbzjTReKa2nr2BlL2wuARFyY5m7H4rX+s2XuK8h9jsDecELiynbfNdEsnhY
+I9WNljr6xJgdv6wRFS95P/IsOLfvlgIiX7DNQjORC7mKrvNODrEWPjHDxVKI
+nEaXUh6Qcjfj9PF92I88NT6oSgXqrgIWNErtflj01iUCjjg8gOPOqbEpp77F
+ioswQpssw8ESqYncSa6j7eK5iLyQhdRIldjvOlLIU+0H+H5noAmDp5EPkQli
+UBONxsHzxpRtBTodkXN1o7mOOjaUTeSFIMLbVA7zS081FukVnCyqUA86pziS
+TOOqwGN/yfv+MxB5sr0dIg+RTySKF0LkLGe4ZAysHvEZg+iGyJ1AnAbiCVMr
+GOZiXKxm8WiOGo2Ep3m6OIS1M+2qVCHVmeUI02XPJcy342cm+gaFDtFbFgdF
+kTH3FJ1r6wC82Ch4KbGynOE8vKTvXZPFe7QfOS9tQssrK2IFltn0pRQVVJQR
+aRv6y6+mMBUUmpXcxDraitFEcXMjEWmfTqMcq8dcVkus4Ez0Cp/0z4bsWXCv
+6lM8/Ng7IjcvS8SKG2r9vq/gDTFw6OV+5LHKZVYiLw2fWSevTpjtq/WR1NCM
+6OFlwDTybrB/xlFdTnMMrbryYyCJfDBnecs0PxwkV6ueK/ceXgogclXtBoDI
+h/gMYhCJXKhrBn+MzU7iPIgwwc0kgqVEccPRKD6PZ0jC6SQepmBOkxtjtVN5
+pYQiAcw+INPGInesDuLhaSpZDj/ZSuWVEorkAS+lm8m5H5PZB0S5iUQxnihu
+N5xKUhx+0kAljVdKw/PFh9kHBN1EDFjsIB46lYyxpMNP2oqOpfFKCUUU8NUX
+xlzQzI3xHbgRKft7rb35hy8PMURKuHgpQgVFDPcjH6Jb1EuIsxQiHymTyIcY
+IhtcvBRA5EpXHkQiH65B3vkYPI18iP4H6z4KER3U511hcPFStEYesy1/XxJ5
+P0OUEisvJdZWlLIokPL988idwuztICeRjySKF0Lk5Sgkg2nX9lmEi5d8RD4W
+Ee+FRj7wVStDbxRhhdUiMuDlCyaitz5Do5mp/c7AHYtyjFzyVs3CmAsRcmPJ
++5GTsrSz8k1KM2U8i2x6sFJibUV/+dUUpoJCU43M4OiKomn7+7w2x7EWIV0h
+3wBlQPvJ3pkflmAw2Bsit4sl8iGGyILCJoUhH5FDsnghRO4jRQ/anyaln7XZ
+x6IxkBr5ED3HgCpZEhYZSCIf/0K6x+tDsJLiLWfQcYdgSORD3PEYRCJXxv4C
+P6X0x5jpJB66Y6gbMYeftOfaSeWVEooEyJAE/pIsHqZgTtM8I0JSeaWEIgHM
+PiCj3JTEcgfxhg9KlsNPZlN5pYSeL3nglDL82coXzOwD4hhP1xQkUZw0nEo6
+H37SALfSeKWEIgHMPiDEqPJyJ1k8dCpxOxx+0lp0dhqvlEBEI3mW14Rk8ZC4
+1A1zB25CgniEHIcYIiuG+5EPcaejFCL31I0hkQ/RHxgS+RB3OoYa+RAloL/s
+yEsh8okhkRcCBmUY/PTAWMmDMuq5m1E+aBPF2dtBPiL3ksXjGkmmPcnL2Ulu
+aJIxKBhq5PuKZLZzS0mzEJvzgfcS6hZsyHFDfCbQy6Ze6Hi0DN2GNX2edpq1
+4kdLSC0veONjbCH0N3+xxsemjPIWmWJGJJrIRSFxheBt31VWx4JvhY1xUCvC
+5jkX3Bgt2UiTlRt9d+CtX/tERREJ9ZSbxLX6ywrNfr0thTIQMI2yyyiKyOea
+v6giGe6oE+IhWeYu2hURAfAs3CtfLcNSiqF2W4pz8MW16RRr/Gpx/wMVFXgf
+f61wTVWu9WzC8bX3yuRYEIG2zpJxHwSdIw9rxb1vyhhXH8r7mP2EbccCsWmD
+Yy2DYNYKLEMVGImxl+JUis8KXzwsHB9baB+GaNoMmPm1XCTkga2IpvenTd9k
+ErKpCDazAnRM3ZiUL2Rbyd8D/22YwNaU6lAn4v7/mfq/+fPPOgn/LPFmcgzB
+/3GYbvnfhVsw3fa/vgn6q/4cvUYiaUvlVlPw9mhNsTXSqgE+nb7q/2vQ8jVd
+UUNt4mf6f30fP+uReqM8G//rn6L/x8GN/B88gi4QaC7PyP1gGqIj8folHH1H
+t1rLv3HF/zn+/3OyFQF8sVar/dK5Wu2hxV889cjZR0990Vadyn/3xv8Pbtkt
+1w==
+
+    
+    
+    
+    </embedded_sof_file>
+  </embedded_sof_files>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="config widget visible" value="1"/>
+    <single attribute="data log widget visible" value="1"/>
+    <single attribute="hierarchy widget visible" value="1"/>
+    <single attribute="instance widget visible" value="1"/>
+    <single attribute="jtag widget visible" value="1"/>
+    <multi attribute="frame size" size="2" value="1372,878"/>
+    <multi attribute="jtag widget size" size="2" value="334,120"/>
+  </global_info>
+</session>

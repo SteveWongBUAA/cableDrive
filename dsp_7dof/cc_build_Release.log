@@ -1,0 +1,135 @@
+--------------------------  cdmcs_3dof.pjt - Release  --------------------------
+[DSP2833x_ADC_cal.asm] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_ADC_cal.asm"
+
+[DSP2833x_CodeStartBranch.asm] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_CodeStartBranch.asm"
+
+[DSP2833x_CpuTimers.c] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_CpuTimers.c"
+"DSP2833x_CpuTimers.c", line 21: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "DSP2833x_CpuTimers.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_DefaultIsr.c] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_DefaultIsr.c"
+"DSP2833x_DefaultIsr.c", line 24: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "DSP2833x_DefaultIsr.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_EPwm.c] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_EPwm.c"
+"DSP2833x_EPwm.c", line 14: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "DSP2833x_EPwm.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_GlobalVariableDefs.c] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_GlobalVariableDefs.c"
+"DSP2833x_GlobalVariableDefs.c", line 14: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "DSP2833x_GlobalVariableDefs.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_PieCtrl.c] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_PieCtrl.c"
+"DSP2833x_PieCtrl.c", line 14: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "DSP2833x_PieCtrl.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_PieVect.c] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_PieVect.c"
+"DSP2833x_PieVect.c", line 14: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "DSP2833x_PieVect.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_Sci.c] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_Sci.c"
+"DSP2833x_Sci.c", line 14: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "DSP2833x_Sci.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_Spi.c] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_Spi.c"
+"DSP2833x_Spi.c", line 14: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "DSP2833x_Spi.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_SysCtrl.c] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_SysCtrl.c"
+"DSP2833x_SysCtrl.c", line 19: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "DSP2833x_SysCtrl.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_usDelay.asm] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_usDelay.asm"
+
+[DSP2833x_Xintf.c] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_Xintf.c"
+"DSP2833x_Xintf.c", line 21: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "DSP2833x_Xintf.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[Algorithm.c] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "Algorithm.c"
+"Algorithm.h", line 4: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "Algorithm.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[CopleyControl.c] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "CopleyControl.c"
+"CopleyControl.c", line 20: warning: function declared implicitly
+"CopleyControl.c", line 24: error: declaration is incompatible with "int InitMotorModel(MotorModel *, float, float)" (declared at line 19 of "CopleyControl.h")
+1 error detected in the compilation of "CopleyControl.c".
+
+>> Compilation failure
+
+[EPwmSetup.c] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "EPwmSetup.c"
+"EPwmSetup.c", line 21: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "EPwmSetup.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[Fpga.c] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "Fpga.c"
+"Fpga.h", line 4: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "Fpga.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[main.c] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "main.c"
+"main.c", line 1: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "main.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[MotorControl.c] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "MotorControl.c"
+"MotorControl.h", line 4: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "MotorControl.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[SciSetup.c] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "SciSetup.c"
+"SciSetup.h", line 4: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "SciSetup.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[TimerSetup.c] "C:\Program Files\C2000 Code Generation Tools 5.1.1\bin\cl2000" -g -pdsw225 -fr"C:/CCStudio_v3.3/MyProjects/7DOF/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "TimerSetup.c"
+"TimerSetup.h", line 4: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "TimerSetup.c".
+Compilation terminated.
+
+>> Compilation failure
+
+Build Complete,
+  18 Errors, 1 Warnings, 0 Remarks.

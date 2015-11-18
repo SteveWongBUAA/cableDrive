@@ -1,0 +1,509 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	xmlns:d3="http://research.microsoft.com/DynamicDataDisplay/1.0"
+    xmlns:local="clr-namespace:ControlPannel"
+    x:Class="ControlPannel.MainWindow"
+	x:Name="Window"
+	Title="MainWindow"
+	Width="1280" Height="900" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" Icon="/ControlPannel;component/icon/Application.ico" WindowState="Maximized">
+
+    <Window.Resources>
+        <local:RobotStatus x:Key="RobotStatus"/>
+    </Window.Resources>
+
+    <DockPanel x:Name="LayoutRoot">
+        <ToolBar Margin="8" VerticalAlignment="Top" IsOverflowOpen="True" Height="Auto" DockPanel.Dock="Top">
+            <ToggleButton x:Name="btnPowerOn" HorizontalAlignment="Stretch" Margin="3,3" 
+				VerticalAlignment="Stretch" Height="Auto" Click="btnPowerOn_Click" >
+                <StackPanel>
+                    <Image Source="Icon\power_48.png" Height="30"/>
+                    <TextBlock x:Name="tbPowerOn" Text="{Binding Path=PowerOnText}" HorizontalAlignment="Center" />
+                </StackPanel>
+            </ToggleButton>
+        </ToolBar>
+        <StatusBar  Height="23" x:Name="stb" Width="Auto" DockPanel.Dock="Bottom" DataContext="{Binding}">
+            <TextBlock x:Name="tbStatusBar" Text="{Binding Path=StatusBarText}"></TextBlock>
+        </StatusBar>
+        <StackPanel DockPanel.Dock="Right" Width="200">
+            <GroupBox Header="关节角">
+                <StackPanel DataContext="{StaticResource ResourceKey=RobotStatus}">
+                    <StackPanel Orientation="Horizontal" Margin="5,0">
+                        <TextBlock Text="力传感器1："/>
+                        <TextBlock Text="{Binding Path=TF1Cal, StringFormat=\{0:F2\}N}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5,0">
+                        <TextBlock Text="力传感器2："/>
+                        <TextBlock Text="{Binding Path=TF2Cal, StringFormat=\{0:F2\}N}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5,0">
+                        <TextBlock Text="力传感器3："/>
+                        <TextBlock Text="{Binding Path=TF3Cal, StringFormat=\{0:F2\}N}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5,0">
+                        <TextBlock Text="力传感器4："/>
+                        <TextBlock Text="{Binding Path=TF4Cal, StringFormat=\{0:F2\}N}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5,0">
+                        <TextBlock Text="力传感器5："/>
+                        <TextBlock Text="{Binding Path=TF5Cal, StringFormat=\{0:F2\}N}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5,0">
+                        <TextBlock Text="力传感器6："/>
+                        <TextBlock Text="{Binding Path=TF6Cal, StringFormat=\{0:F2\}N}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5,0">
+                        <TextBlock Text="力传感器7："/>
+                        <TextBlock Text="{Binding Path=TF7Cal, StringFormat=\{0:F2\}N}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5,0">
+                        <TextBlock Text="力传感器8："/>
+                        <TextBlock Text="{Binding Path=TF8Cal, StringFormat=\{0:F2\}N}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5,0">
+                        <TextBlock Text="IMU1 Euler Angle X："/>
+                        <TextBlock Text="{Binding Path=EulerX1, StringFormat=\{0:F2\} rad}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5,0">
+                        <TextBlock Text="IMU1 Euler Angle Y："/>
+                        <TextBlock Text="{Binding Path=EulerY1, StringFormat=\{0:F2\} rad}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5,0">
+                        <TextBlock Text="IMU1 Euler Angle Z："/>
+                        <TextBlock Text="{Binding Path=EulerZ1, StringFormat=\{0:F2\} rad}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5,0">
+                        <TextBlock Text="IMU2 Euler Angle X："/>
+                        <TextBlock Text="{Binding Path=EulerX2, StringFormat=\{0:F2\} rad}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5,0">
+                        <TextBlock Text="IMU2 Euler Angle Y："/>
+                        <TextBlock Text="{Binding Path=EulerY2, StringFormat=\{0:F2\} rad}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5,0">
+                        <TextBlock Text="IMU2 Euler Angle Z："/>
+                        <TextBlock Text="{Binding Path=EulerZ2, StringFormat=\{0:F2\} rad}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5,0">
+                        <TextBlock Text="IMU3 Euler Angle X："/>
+                        <TextBlock Text="{Binding Path=EulerX3, StringFormat=\{0:F2\} rad}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5,0">
+                        <TextBlock Text="IMU3 Euler Angle Y："/>
+                        <TextBlock Text="{Binding Path=EulerY3, StringFormat=\{0:F2\} rad}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5,0">
+                        <TextBlock Text="IMU3 Euler Angle Z："/>
+                        <TextBlock Text="{Binding Path=EulerZ3, StringFormat=\{0:F2\} rad}" />
+                    </StackPanel>
+
+
+                </StackPanel>
+            </GroupBox>
+            <Button Content="IMU Reset" Height="23" Name="btnResetConfirm" Width="75" Margin="5,0" HorizontalAlignment="Right" Click="btnResetConfirm_Click" />
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="模式选择：" VerticalAlignment="Center"/>
+                <ComboBox x:Name="cbMode" ItemsSource="{Binding}" Loaded="ComboBox_Loaded" VerticalAlignment="Center" HorizontalAlignment="Stretch" SelectedIndex="1" />
+            </StackPanel>
+            <Button Content="模式确认" Height="23" Name="btnModeConfirm" Width="75" Margin="5,0" HorizontalAlignment="Right" Click="btnModeConfirm_Click" />
+            <GroupBox Header="轨迹运动" Name="gbTrajTransfer">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20*" />
+                        <ColumnDefinition Width="40*" />
+                        <ColumnDefinition Width="40*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="tbFileName" Grid.ColumnSpan="3" Margin="5"/>
+                    <TextBlock x:Name="tbFrameCount" Grid.Row="1" Text="0" TextAlignment="Center" VerticalAlignment="Center"/>
+                    <Button x:Name="btnLoadFile" Content="读取文件" Width="75" Click="btnLoadFile_Click" Grid.Column="2" Grid.Row="1" />
+                    <Button x:Name="btnStartTransfer" Content="开始运动" Width="75"  Grid.Row="1" Click="btnStartTransfer_Click" Grid.Column="1"/>
+                </Grid>
+            </GroupBox>
+            <Button Content="运动到起点" Name="btnStartMovement" Width="75" HorizontalAlignment="Right" Click="btnStartMovement_Click" />
+            
+        </StackPanel>
+        <Border BorderBrush="Black" BorderThickness="1" Width="Auto" CornerRadius="5" HorizontalAlignment="Left" Margin="5,0,5,5">
+            <TabControl Margin="2,0">
+                <TabItem Header="电机控制">
+                    <StackPanel PreviewMouseLeftButtonDown="StackPanel_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="StackPanel_PreviewMouseLeftButtonUp" Margin="0,10,0,-44">
+                        <GroupBox Header="肩关节电机控制" Margin="0,5,0,0" BorderBrush="Black" Foreground="DarkBlue">
+                            <Grid Margin="2,5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="45"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="55"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="55"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Content="1号电机" VerticalAlignment="Center" d:LayoutOverrides="Width" Margin="0" UseLayoutRounding="True"/>
+                                <Label Content="2号电机" UseLayoutRounding="True" Grid.Row="1" d:LayoutOverrides="Width" VerticalAlignment="Center"/>
+                                <Label Content="3号电机" UseLayoutRounding="True" Grid.Row="2" d:LayoutOverrides="Width, Height" Margin="0" VerticalAlignment="Center"/>
+                                <Label Content="4号电机" UseLayoutRounding="True" Grid.Row="3" d:LayoutOverrides="Width, Height" Margin="0" VerticalAlignment="Center"/>
+                                <Slider x:Name="sdrS1" VerticalAlignment="Center" Margin="2" Grid.Column="1" UseLayoutRounding="True" Value="200" Maximum="3000" TickFrequency="1" SmallChange="1" TickPlacement="None" />
+                                <Slider x:Name="sdrS2" Grid.Column="1" UseLayoutRounding="True" Grid.Row="1" Margin="2" VerticalAlignment="Center" Value="200" Maximum="3000" TickFrequency="1" SmallChange="1" TickPlacement="None" />
+                                <Slider x:Name="sdrS3" Margin="2" Grid.Column="1" UseLayoutRounding="True" Grid.Row="2" d:LayoutOverrides="Height" Value="200" Maximum="3000" TickFrequency="1" SmallChange="1" TickPlacement="None" />
+                                <Slider x:Name="sdrS4" Grid.Column="1" UseLayoutRounding="True" Grid.Row="3" d:LayoutOverrides="Height" Margin="2" Value="200" Maximum="3000" TickFrequency="1" SmallChange="1" TickPlacement="None" />
+                                <TextBox x:Name="tbS1" Text="{Binding Value, ElementName=sdrS1, StringFormat=\{0:F0\}}" d:LayoutOverrides="Width, Height" Grid.Column="2" Margin="2" UseLayoutRounding="True" HorizontalContentAlignment="Right" />
+                                <TextBox x:Name="tbS2" Text="{Binding Value, ElementName=sdrS2, StringFormat=\{0:F0\}}" Grid.Column="2" UseLayoutRounding="True" Grid.Row="1" d:LayoutOverrides="Width" Margin="2" VerticalAlignment="Center" HorizontalContentAlignment="Right" />
+                                <TextBox x:Name="tbS3" Text="{Binding Value, ElementName=sdrS3, StringFormat=\{0:F0\}}" Grid.Column="2" Margin="2" UseLayoutRounding="True" Grid.Row="2" d:LayoutOverrides="Width, Height" VerticalAlignment="Center" HorizontalContentAlignment="Right" />
+                                <TextBox x:Name="tbS4" Text="{Binding Value, ElementName=sdrS4, StringFormat=\{0:F0\}}" Grid.Column="2" UseLayoutRounding="True" Grid.Row="3" d:LayoutOverrides="Width, Height" VerticalAlignment="Center" Margin="2" HorizontalContentAlignment="Right" />
+                                <Button x:Name="btnPullS1" Content="收" d:LayoutOverrides="Height" Grid.Column="3" Margin="2" UseLayoutRounding="True" VerticalAlignment="Center" Width="55"/>
+                                <Button x:Name="btnReleaseS1" Content="放" Grid.Column="4" d:LayoutOverrides="Height" Margin="2" UseLayoutRounding="True" VerticalAlignment="Center" Width="55"/>
+                                <Button x:Name="btnPullS2" Content="收" Grid.Column="3" UseLayoutRounding="True" Grid.Row="1" Margin="2" VerticalAlignment="Center" Width="55"/>
+                                <Button x:Name="btnReleaseS2" Content="放" Grid.Column="4" UseLayoutRounding="True" Grid.Row="1" Margin="2" VerticalAlignment="Center" Width="55"/>
+                                <Button x:Name="btnPullS3" Content="收" Grid.Column="3" Margin="2" UseLayoutRounding="True" Grid.Row="2" d:LayoutOverrides="Height" VerticalAlignment="Center" Width="55"/>
+                                <Button x:Name="btnReleaseS3" Content="放" Grid.Column="4" Margin="2" UseLayoutRounding="True" Grid.Row="2" d:LayoutOverrides="Height" VerticalAlignment="Center" Width="55"/>
+                                <Button x:Name="btnPullS4" Content="收" Grid.Column="3" UseLayoutRounding="True" Grid.Row="3" d:LayoutOverrides="Height" VerticalAlignment="Center" Margin="2" Width="55"/>
+                                <Button x:Name="btnReleaseS4" Content="放" Grid.Column="4" UseLayoutRounding="True" Grid.Row="3" d:LayoutOverrides="Height" VerticalAlignment="Center" Margin="2" Width="55"/>
+                            </Grid>
+                        </GroupBox>
+                        <GroupBox Header="腕关节电机控制" Margin="0,5,0,0" BorderBrush="Black" BorderThickness="1" Foreground="DarkBlue">
+                            <Grid Margin="2,5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="45"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="55"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="55"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Content="7号电机" VerticalAlignment="Center" d:LayoutOverrides="Width" Margin="0" UseLayoutRounding="True"/>
+                                <Label Content="8号电机" UseLayoutRounding="True" Grid.Row="1" d:LayoutOverrides="Width" VerticalAlignment="Center"/>
+                                <Label Content="9号电机" UseLayoutRounding="True" Grid.Row="2" d:LayoutOverrides="Width, Height" Margin="0" VerticalAlignment="Center"/>
+                                <Label Content="10号电机" UseLayoutRounding="True" Grid.Row="3" d:LayoutOverrides="Width, Height" Margin="0" VerticalAlignment="Center"/>
+                                <Slider x:Name="sdrW1" VerticalAlignment="Center" Margin="2" Grid.Column="1" UseLayoutRounding="True" Value="200" Maximum="3000" TickFrequency="1" SmallChange="1" TickPlacement="None" />
+                                <Slider x:Name="sdrW2" Grid.Column="1" UseLayoutRounding="True" Grid.Row="1" Margin="2" VerticalAlignment="Center" Value="200" Maximum="3000" TickFrequency="1" SmallChange="1" TickPlacement="None" />
+                                <Slider x:Name="sdrW3" Margin="2" Grid.Column="1" UseLayoutRounding="True" Grid.Row="2" d:LayoutOverrides="Height" Value="200" Maximum="3000" TickFrequency="1" SmallChange="1" TickPlacement="None" />
+                                <Slider x:Name="sdrW4" Grid.Column="1" UseLayoutRounding="True" Grid.Row="3" d:LayoutOverrides="Height" Margin="2" Value="200" Maximum="3000" TickFrequency="1" SmallChange="1" TickPlacement="None" />
+                                <TextBox x:Name="tbW1" Text="{Binding ElementName=sdrW1, StringFormat=\{0:F0\}, Path=Value}" d:LayoutOverrides="Width, Height" Grid.Column="2" Margin="2" UseLayoutRounding="True" HorizontalContentAlignment="Right" />
+                                <TextBox x:Name="tbW2" Text="{Binding Value, ElementName=sdrW2, StringFormat=\{0:F0\}}" Grid.Column="2" UseLayoutRounding="True" Grid.Row="1" d:LayoutOverrides="Width" Margin="2" VerticalAlignment="Center" HorizontalContentAlignment="Right" />
+                                <TextBox x:Name="tbW3" Text="{Binding Value, ElementName=sdrW3, StringFormat=\{0:F0\}}" Grid.Column="2" Margin="2" UseLayoutRounding="True" Grid.Row="2" d:LayoutOverrides="Width, Height" VerticalAlignment="Center" HorizontalContentAlignment="Right" />
+                                <TextBox x:Name="tbW4" Text="{Binding Value, ElementName=sdrW4, StringFormat=\{0:F0\}}" Grid.Column="2" UseLayoutRounding="True" Grid.Row="3" d:LayoutOverrides="Width, Height" VerticalAlignment="Center" Margin="2" HorizontalContentAlignment="Right" />
+                                <Button x:Name="btnPullW1" Content="收" d:LayoutOverrides="Height" Grid.Column="3" Margin="2" UseLayoutRounding="True" VerticalAlignment="Center" Width="55" Click="btnPullW1_Click" />
+                                <Button x:Name="btnReleaseW1" Content="放" Grid.Column="4" d:LayoutOverrides="Height" Margin="2" UseLayoutRounding="True" VerticalAlignment="Center" Width="55"/>
+                                <Button x:Name="btnPullW2" Content="收" Grid.Column="3" UseLayoutRounding="True" Grid.Row="1" Margin="2" VerticalAlignment="Center" Width="55"/>
+                                <Button x:Name="btnReleaseW2" Content="放" Grid.Column="4" UseLayoutRounding="True" Grid.Row="1" Margin="2" VerticalAlignment="Center" Width="55"/>
+                                <Button x:Name="btnPullW3" Content="收" Grid.Column="3" Margin="2" UseLayoutRounding="True" Grid.Row="2" d:LayoutOverrides="Height" VerticalAlignment="Center" Width="55"/>
+                                <Button x:Name="btnReleaseW3" Content="放" Grid.Column="4" Margin="2" UseLayoutRounding="True" Grid.Row="2" d:LayoutOverrides="Height" VerticalAlignment="Center" Width="55"/>
+                                <Button x:Name="btnPullW4" Content="收" Grid.Column="3" UseLayoutRounding="True" Grid.Row="3" d:LayoutOverrides="Height" VerticalAlignment="Center" Margin="2" Width="55"/>
+                                <Button x:Name="btnReleaseW4" Content="放" Grid.Column="4" UseLayoutRounding="True" Grid.Row="3" d:LayoutOverrides="Height" VerticalAlignment="Center" Margin="2" Width="55"/>
+                            </Grid>
+                        </GroupBox>
+                        <GroupBox Header="肘关节电机控制" Margin="0,5,0,0" BorderBrush="Black" BorderThickness="1" Foreground="DarkBlue">
+                            <Grid Margin="2,5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="45"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="55"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="55"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Content="5号电机" VerticalAlignment="Center" Grid.Row="0" UseLayoutRounding="True"/>
+                                <Label Content="6号电机" VerticalAlignment="Center" Grid.Row="1" UseLayoutRounding="True"/>
+                                <Slider x:Name="sdrE1" VerticalAlignment="Center" Margin="2" Grid.Column="1" Grid.Row="0" UseLayoutRounding="True" Value="200" Maximum="3000" TickFrequency="1" SmallChange="1" />
+                                <Slider x:Name="sdrE2" VerticalAlignment="Center" Margin="2" Grid.Column="1" Grid.Row="1" UseLayoutRounding="True" Value="200" Maximum="3000" TickFrequency="1" SmallChange="1" />
+                                <TextBox x:Name="tbE1" Text="{Binding ElementName=sdrE1, StringFormat=\{0:F0\}, Path=Value}" Grid.Column="2" Grid.Row="0" Margin="2" UseLayoutRounding="True" HorizontalContentAlignment="Right" />
+                                <TextBox x:Name="tbE2" Text="{Binding ElementName=sdrE2, StringFormat=\{0:F0\}, Path=Value}" Grid.Column="2" Grid.Row="1" Margin="2" UseLayoutRounding="True" HorizontalContentAlignment="Right" />
+                                <Button x:Name="btnPullE1" Content="收" Grid.Column="3" Margin="2" UseLayoutRounding="True" VerticalAlignment="Center" Width="55"/>
+                                <Button x:Name="btnReleaseE1" Content="放" Grid.Column="4" Margin="2" UseLayoutRounding="True" VerticalAlignment="Center" Width="55"/>
+                                <Button x:Name="btnPullE2" Content="收" Grid.Column="3" Grid.Row="1" Margin="2,3,2,0" UseLayoutRounding="True" VerticalAlignment="Top" Width="55" Click="btnPullE2_Click"/>
+                                <Button x:Name="btnReleaseE2" Content="放" Grid.Column="4" Grid.Row="1" Margin="2" UseLayoutRounding="True" VerticalAlignment="Center" Width="55"/>
+                            </Grid>
+                        </GroupBox>
+                        <StackPanel.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF5CAAAA" Offset="0" />
+                                <GradientStop Color="#FF2B6969" Offset="0.505" />
+                                <GradientStop Color="#FF58B1B1" Offset="0.99" />
+                            </LinearGradientBrush>
+                        </StackPanel.Background>
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="关节控制">
+                    <StackPanel>
+                        <GroupBox x:Name="gbSingleJoint" Header="单关节运动">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="40" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+
+                                <Label Content="肩关节Z轴" Grid.Column="0"/>
+                                <Slider x:Name="sdrSZ" Value="0" Minimum="-25" Maximum="25" Grid.Column="1" TickFrequency="0.1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=sdrSZ, Path=Value, StringFormat=\{0:F1\}}" Grid.Column="2" HorizontalContentAlignment="Right" />
+
+                                <Label Content="肩关节Y轴" Grid.Row="1" Grid.Column="0"/>
+                                <Slider x:Name="sdrSY" Value="0" Minimum="-25" Maximum="25" Grid.Row="1"  Grid.Column="1" TickFrequency="0.1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=sdrSY, Path=Value, StringFormat=\{0:F1\}}" Grid.Row="1"  Grid.Column="2" HorizontalContentAlignment="Right" />
+
+                                <Label Content="肩关节X轴" Grid.Row="2" Grid.Column="0"/>
+                                <Slider x:Name="sdrSX" Value="0" Minimum="-25" Maximum="25" Grid.Row="2"  Grid.Column="1" TickFrequency="0.1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=sdrSX, Path=Value, StringFormat=\{0:F1\}}" Grid.Row="2"  Grid.Column="2" HorizontalContentAlignment="Right" />
+
+                                <Label Content="肘关节" Grid.Row="3" Grid.Column="0"/>
+                                <Slider x:Name="sdrE" Value="0" Minimum="0" Maximum="30" Grid.Row="3"  Grid.Column="1" TickFrequency="0.1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=sdrE, Path=Value, StringFormat=\{0:F1\}}" Grid.Row="3"  Grid.Column="2" HorizontalContentAlignment="Right" />
+
+                                <Label Content="腕关节Z轴" Grid.Row="4" Grid.Column="0"/>
+                                <Slider x:Name="sdrWZ" Value="0" Minimum="-25" Maximum="25" Grid.Row="4"  Grid.Column="1" TickFrequency="0.1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=sdrWZ, Path=Value, StringFormat=\{0:F1\}}" Grid.Row="4"  Grid.Column="2" HorizontalContentAlignment="Right" />
+
+                                <Label Content="腕关节Y轴" Grid.Row="5" Grid.Column="0"/>
+                                <Slider x:Name="sdrWY" Value="0" Minimum="-25" Maximum="25" Grid.Row="5"  Grid.Column="1" TickFrequency="0.1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=sdrWY, Path=Value, StringFormat=\{0:F1\}}" Grid.Row="5"  Grid.Column="2" HorizontalContentAlignment="Right" />
+
+                                <Label Content="腕关节X轴" Grid.Row="6" Grid.Column="0"/>
+                                <Slider x:Name="sdrWX" Value="0" Minimum="-25" Maximum="25" Grid.Row="6"  Grid.Column="1" TickFrequency="0.1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=sdrWX, Path=Value, StringFormat=\{0:F1\}}" Grid.Row="6"  Grid.Column="2" HorizontalContentAlignment="Right" />
+
+                                <Button x:Name="btnSingleJointZero" Grid.Row="7" Grid.ColumnSpan="3" Content="关节角清零" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="2,8,2,2" Width="80" Height="25" Click="btnSingleJointZero_Click" />
+                                <Button x:Name="btnSingleJointAction" Content="开始运动" Grid.ColumnSpan="3" HorizontalAlignment="Right" Margin="2,8,2,2" VerticalAlignment="Center" Grid.Column="1" Grid.Row="7" Width="80" Height="25" Click="btnSingleJointAction_Click" />
+                            </Grid>
+                        </GroupBox>
+                        <Button Content="读取起点" Height="23" Name="btnLoadStartPoint" Width="75" Click="btnLoadStartPoint_Click" />
+                        <StackPanel.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF625E5E" Offset="0.516" />
+                                <GradientStop Color="#FFB1B1B1" Offset="0" />
+                                <GradientStop Color="#FF939393" Offset="1" />
+                            </LinearGradientBrush>
+                        </StackPanel.Background>
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="机械结构" Margin="-2,0,-2,-2">
+                    <StackPanel  Margin="0,10,0,-20">
+                        
+                        <GroupBox Header="上肢参数" Margin="0,5,0,0" BorderBrush="Black" BorderThickness="1" Foreground="DarkBlue">
+                            <Grid Margin="2,5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" MinWidth="20"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="100"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="35"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="20"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="20"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="100"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="35"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Content="l1" Grid.Row="0" Grid.Column="0"/>
+                                <Slider x:Name="l1" Value="0" Minimum="0" Maximum="400" Grid.Row="0"  Grid.Column="1" TickFrequency="1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=l1, Path=Value, StringFormat=\{0:F0\}}" Grid.Row="0"  Grid.Column="2" HorizontalContentAlignment="Right" />
+                                <Label Content="l2" Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="2" />
+                                <Slider x:Name="l2" Value="0" Minimum="0" Maximum="400" Grid.Row="0"  Grid.Column="5" TickFrequency="1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=l2, Path=Value, StringFormat=\{0:F0\}}" Grid.Row="0"  Grid.Column="6" HorizontalContentAlignment="Right" />
+                            </Grid>
+                        </GroupBox>
+
+                        <GroupBox Header="袖环位置" Margin="0,5,0,0" BorderBrush="Black" BorderThickness="1" Foreground="DarkBlue">
+                            <Grid Margin="2,5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" MinWidth="20"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="100"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="35"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="20"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="20"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="100"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="35"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Content="h1" Grid.Row="0" Grid.Column="0"/>
+                                <Slider x:Name="h1" Value="0" Minimum="0" Maximum="380" Grid.Row="0"  Grid.Column="1" TickFrequency="1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=h1, Path=Value, StringFormat=\{0:F0\}}" Grid.Row="0"  Grid.Column="2" HorizontalContentAlignment="Right" />
+                                <Label Content="h2" Grid.Row="0" Grid.Column="4"/>
+                                <Slider x:Name="h2" Value="0" Minimum="0" Maximum="380" Grid.Row="0"  Grid.Column="5" TickFrequency="1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=h2, Path=Value, StringFormat=\{0:F0\}}" Grid.Row="0"  Grid.Column="6" HorizontalContentAlignment="Right" />
+                            </Grid>
+                        </GroupBox>
+                        <GroupBox Header="绳索结点A" Margin="0,5,0,0" BorderBrush="Black" BorderThickness="1" Foreground="DarkBlue">
+                            <Grid Margin="2,5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" MinWidth="20"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="100"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="35"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="20"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="20"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="100"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="35"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Content="A1" Grid.Row="0" Grid.Column="0"/>
+                                <Slider x:Name="A1" Value="0" Minimum="-3.0" Maximum="3.0" Grid.Row="0"  Grid.Column="1" TickFrequency="0.1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=A1, Path=Value, StringFormat=\{0:F1\}}" Grid.Row="0"  Grid.Column="2" HorizontalContentAlignment="Right" />
+                                <Label Content="A2" Grid.Row="0" Grid.Column="4"/>
+                                <Slider x:Name="A2" Value="0" Minimum="0" Maximum="120" Grid.Row="0"  Grid.Column="5" TickFrequency="1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=A2, Path=Value, StringFormat=\{0:F0\}}" Grid.Row="0"  Grid.Column="6" HorizontalContentAlignment="Right" />
+                                <Label Content="A3" Grid.Row="1" Grid.Column="0"/>
+                                <Slider x:Name="A3" Value="0" Minimum="0" Maximum="120" Grid.Row="1"  Grid.Column="1" TickFrequency="1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=A3, Path=Value, StringFormat=\{0:F0\}}" Grid.Row="1"  Grid.Column="2" HorizontalContentAlignment="Right" />
+                                <Label Content="A4" Grid.Row="1" Grid.Column="4"/>
+                                <Slider x:Name="A4" Value="0" Minimum="-3.0" Maximum="3.0" Grid.Row="1"  Grid.Column="5" TickFrequency="0.1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=A4, Path=Value, StringFormat=\{0:F1\}}" Grid.Row="1"  Grid.Column="6" HorizontalContentAlignment="Right" />
+                            </Grid>
+                        </GroupBox>
+
+                        <GroupBox Header="绳索结点B" Margin="0,5,0,0" BorderBrush="Black" BorderThickness="1" Foreground="DarkBlue">
+                            <Grid Margin="2,5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" MinWidth="20"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="100"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="35"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="20"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="20"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="100"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="35"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Content="B1" Grid.Row="0" Grid.Column="0"/>
+                                <Slider x:Name="B1" Value="0" Minimum="-3.0" Maximum="3.0" Grid.Row="0"  Grid.Column="1" TickFrequency="0.1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=B1, Path=Value, StringFormat=\{0:F1\}}" Grid.Row="0"  Grid.Column="2" HorizontalContentAlignment="Right" />
+                                <Label Content="B2" Grid.Row="0" Grid.Column="4"/>
+                                <Slider x:Name="B2" Value="0" Minimum="-3.0" Maximum="3.0" Grid.Row="0"  Grid.Column="5" TickFrequency="0.1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=B2, Path=Value, StringFormat=\{0:F1\}}" Grid.Row="0"  Grid.Column="6" HorizontalContentAlignment="Right" />
+                                <Label Content="B3" Grid.Row="1" Grid.Column="0"/>
+                                <Slider x:Name="B3" Value="0" Minimum="-3.0" Maximum="3.0" Grid.Row="1"  Grid.Column="1" TickFrequency="0.1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=B3, Path=Value, StringFormat=\{0:F1\}}" Grid.Row="1"  Grid.Column="2" HorizontalContentAlignment="Right" />
+                                <Label Content="B4" Grid.Row="1" Grid.Column="4"/>
+                                <Slider x:Name="B4" Value="0" Minimum="-3.0" Maximum="3.0" Grid.Row="1"  Grid.Column="5" TickFrequency="0.1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=B4, Path=Value, StringFormat=\{0:F1\}}" Grid.Row="1"  Grid.Column="6" HorizontalContentAlignment="Right" />
+                                <Label Content="B5" Grid.Row="2" Grid.Column="0"/>
+                                <Slider x:Name="B5" Value="0" Minimum="-3.0" Maximum="3.0" Grid.Row="2"  Grid.Column="1" TickFrequency="0.1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=B5, Path=Value, StringFormat=\{0:F1\}}" Grid.Row="2"  Grid.Column="2" HorizontalContentAlignment="Right" />
+                                <Label Content="B6" Grid.Row="2" Grid.Column="4"/>
+                                <Slider x:Name="B6" Value="0" Minimum="-3.0" Maximum="3.0" Grid.Row="2"  Grid.Column="5" TickFrequency="0.1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=B6, Path=Value, StringFormat=\{0:F1\}}" Grid.Row="2"  Grid.Column="6" HorizontalContentAlignment="Right" />
+                            </Grid>
+                        </GroupBox>
+
+                        <GroupBox Header="绳索结点C" Margin="0,5,0,0" BorderBrush="Black" BorderThickness="1" Foreground="DarkBlue">
+                            <Grid Margin="2,5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" MinWidth="20"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="100"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="35"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="20"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="20"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="100"/>
+                                    <ColumnDefinition Width="Auto" MinWidth="35"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Content="C1" Grid.Row="0" Grid.Column="0"/>
+                                <Slider x:Name="C1" Value="0" Minimum="-3.0" Maximum="3.0" Grid.Row="0"  Grid.Column="1" TickFrequency="0.1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=C1, Path=Value, StringFormat=\{0:F1\}}" Grid.Row="0"  Grid.Column="2" HorizontalContentAlignment="Right" />
+                                <Label Content="C2" Grid.Row="0" Grid.Column="4"/>
+                                <Slider x:Name="C2" Value="0" Minimum="-3.0" Maximum="3.0" Grid.Row="0"  Grid.Column="5" TickFrequency="0.1" IsSnapToTickEnabled="True" />
+                                <TextBox Text="{Binding ElementName=C2, Path=Value, StringFormat=\{0:F1\}}" Grid.Row="0"  Grid.Column="6" HorizontalContentAlignment="Right" />
+
+                                
+                            </Grid>
+                        </GroupBox>
+                    
+                        <Button x:Name="btnMechPara" Content="确定"  Click="btnMechPara_Click" Grid.Row="1"  Grid.Column="1" Width="100" />
+
+                    </StackPanel>
+                    
+                </TabItem>
+            </TabControl>
+        </Border>
+        <Grid Margin="0,5,5,5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.9*"/>
+                <RowDefinition Height="0.1*"/>
+            </Grid.RowDefinitions>
+            <TabControl>
+                <TabItem Header="关节角" Height="21" VerticalAlignment="Top">
+                    <Grid Background="#FFE5E5E5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="13*"/>
+                            <ColumnDefinition Width="87*"/>
+                        </Grid.ColumnDefinitions>
+                        <d3:ChartPlotter x:Name="plotterJointAngle" Grid.ColumnSpan="2">
+                            <d3:Header Content="关节角"/>
+                            <d3:VerticalAxisTitle Content="Degree"/>
+                        </d3:ChartPlotter>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="IMU">
+                    <Grid Background="#FFE5E5E5" Margin="0,0,0,0" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.33*"/>
+                            <RowDefinition Height="0.34*"/>
+                            <RowDefinition Height="0.33*"/>
+                        </Grid.RowDefinitions>
+
+                        <d3:ChartPlotter x:Name="plotterIMU1"  Grid.Row="0">
+                            <d3:Header Content="IMU1"/>
+                            <d3:VerticalAxisTitle Content="Degree"/>
+                        </d3:ChartPlotter>
+                        <d3:ChartPlotter x:Name="plotterIMU2"  Grid.Row="1">
+                            <d3:Header Content="IMU2"/>
+                            <d3:VerticalAxisTitle Content="Degree"/>
+                        </d3:ChartPlotter>
+                        <d3:ChartPlotter x:Name="plotterIMU3"  Grid.Row="2">
+                            <d3:Header Content="IMU3"/>
+                            <d3:VerticalAxisTitle Content="Degree"/>
+                        </d3:ChartPlotter>
+
+                    </Grid>
+
+                </TabItem>
+            </TabControl>
+            <RichTextBox x:Name="rtbConsole" Grid.Row="1" HorizontalAlignment="Left" Margin="2" VerticalScrollBarVisibility="Visible">
+                <FlowDocument>
+                    <Paragraph x:Name ="paraConsole">
+                        <Run/>
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+        </Grid>
+    </DockPanel>
+</Window>

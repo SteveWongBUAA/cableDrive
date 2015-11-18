@@ -1,0 +1,786 @@
+Partition Merge report for sample_dsp
+Fri May 25 22:47:11 2012
+Quartus II Version 11.0 Build 157 04/27/2011 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Connections to In-System Debugging Instance "auto_signaltap_0"
+  5. Partition Merge Partition Statistics
+  6. Partition Merge Resource Usage Summary
+  7. Partition Merge RAM Summary
+  8. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------+
+; Partition Merge Summary                                                        ;
++------------------------------------+-------------------------------------------+
+; Partition Merge Status             ; Successful - Fri May 25 22:47:10 2012     ;
+; Quartus II Version                 ; 11.0 Build 157 04/27/2011 SJ Full Version ;
+; Revision Name                      ; sample_dsp                                ;
+; Top-level Entity Name              ; sample_dsp                                ;
+; Family                             ; Cyclone II                                ;
+; Total logic elements               ; 5,129 / 8,256 ( 62 % )                    ;
+;     Total combinational functions  ; 1,744 / 8,256 ( 21 % )                    ;
+;     Dedicated logic registers      ; 4,332 / 8,256 ( 52 % )                    ;
+; Total registers                    ; 4332                                      ;
+; Total pins                         ; 68 / 138 ( 49 % )                         ;
+; Total virtual pins                 ; 0                                         ;
+; Total memory bits                  ; 73,216 / 165,888 ( 44 % )                 ;
+; Embedded Multiplier 9-bit elements ; 0 / 36 ( 0 % )                            ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                             ;
++------------------------------------+-------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                            ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Post-Fit          ; Post-Fit               ;                                ;
+; sld_hub:auto_hub               ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_hub:auto_hub               ;
+; sld_signaltap:auto_signaltap_0 ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_signaltap:auto_signaltap_0 ;
+; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                 ;
++--------------------------------+---------------+-----------+----------------+-------------------+------------------------------------+---------+
+; Name                           ; Type          ; Status    ; Partition Name ; Netlist Type Used ; Actual Connection                  ; Details ;
++--------------------------------+---------------+-----------+----------------+-------------------+------------------------------------+---------+
+; AbsEncoder:inst1|clk_rd        ; pre-synthesis ; connected ; Top            ; post-fit          ; ParaBus:ParaBusInst|Control_reg[0] ; N/A     ;
+; AbsEncoder:inst1|clk_rd        ; pre-synthesis ; connected ; Top            ; post-fit          ; ParaBus:ParaBusInst|Control_reg[0] ; N/A     ;
+; AbsEncoder:inst1|cs0_n         ; pre-synthesis ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|cs0_n~_wirecell   ; N/A     ;
+; AbsEncoder:inst1|cs0_n         ; pre-synthesis ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|cs0_n~_wirecell   ; N/A     ;
+; AbsEncoder:inst1|cs1_n         ; pre-synthesis ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|cs1_n~_wirecell   ; N/A     ;
+; AbsEncoder:inst1|cs1_n         ; pre-synthesis ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|cs1_n~_wirecell   ; N/A     ;
+; AbsEncoder:inst1|data_in[0]    ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[0]                         ; N/A     ;
+; AbsEncoder:inst1|data_in[0]    ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[0]                         ; N/A     ;
+; AbsEncoder:inst1|data_in[10]   ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[10]                        ; N/A     ;
+; AbsEncoder:inst1|data_in[10]   ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[10]                        ; N/A     ;
+; AbsEncoder:inst1|data_in[11]   ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[11]                        ; N/A     ;
+; AbsEncoder:inst1|data_in[11]   ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[11]                        ; N/A     ;
+; AbsEncoder:inst1|data_in[12]   ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[12]                        ; N/A     ;
+; AbsEncoder:inst1|data_in[12]   ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[12]                        ; N/A     ;
+; AbsEncoder:inst1|data_in[13]   ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[13]                        ; N/A     ;
+; AbsEncoder:inst1|data_in[13]   ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[13]                        ; N/A     ;
+; AbsEncoder:inst1|data_in[14]   ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[14]                        ; N/A     ;
+; AbsEncoder:inst1|data_in[14]   ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[14]                        ; N/A     ;
+; AbsEncoder:inst1|data_in[15]   ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[15]                        ; N/A     ;
+; AbsEncoder:inst1|data_in[15]   ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[15]                        ; N/A     ;
+; AbsEncoder:inst1|data_in[1]    ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[1]                         ; N/A     ;
+; AbsEncoder:inst1|data_in[1]    ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[1]                         ; N/A     ;
+; AbsEncoder:inst1|data_in[2]    ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[2]                         ; N/A     ;
+; AbsEncoder:inst1|data_in[2]    ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[2]                         ; N/A     ;
+; AbsEncoder:inst1|data_in[3]    ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[3]                         ; N/A     ;
+; AbsEncoder:inst1|data_in[3]    ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[3]                         ; N/A     ;
+; AbsEncoder:inst1|data_in[4]    ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[4]                         ; N/A     ;
+; AbsEncoder:inst1|data_in[4]    ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[4]                         ; N/A     ;
+; AbsEncoder:inst1|data_in[5]    ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[5]                         ; N/A     ;
+; AbsEncoder:inst1|data_in[5]    ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[5]                         ; N/A     ;
+; AbsEncoder:inst1|data_in[6]    ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[6]                         ; N/A     ;
+; AbsEncoder:inst1|data_in[6]    ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[6]                         ; N/A     ;
+; AbsEncoder:inst1|data_in[7]    ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[7]                         ; N/A     ;
+; AbsEncoder:inst1|data_in[7]    ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[7]                         ; N/A     ;
+; AbsEncoder:inst1|data_in[8]    ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[8]                         ; N/A     ;
+; AbsEncoder:inst1|data_in[8]    ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[8]                         ; N/A     ;
+; AbsEncoder:inst1|data_in[9]    ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[9]                         ; N/A     ;
+; AbsEncoder:inst1|data_in[9]    ; pre-synthesis ; connected ; Top            ; post-fit          ; data_in[9]                         ; N/A     ;
+; AbsEncoder:inst1|outputflag    ; pre-synthesis ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|outputflag        ; N/A     ;
+; AbsEncoder:inst1|outputflag    ; pre-synthesis ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|outputflag        ; N/A     ;
+; AbsEncoder:inst1|rd_start      ; pre-synthesis ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|rd_start          ; N/A     ;
+; AbsEncoder:inst1|rd_start      ; pre-synthesis ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|rd_start          ; N/A     ;
+; busy0                          ; pre-synthesis ; connected ; Top            ; post-fit          ; busy0                              ; N/A     ;
+; busy0                          ; pre-synthesis ; connected ; Top            ; post-fit          ; busy0                              ; N/A     ;
+; clk_20M                        ; pre-synthesis ; connected ; Top            ; post-fit          ; clk_20M                            ; N/A     ;
+; AbsEncoder:inst1|data_cnt[0]   ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_cnt[0]       ; N/A     ;
+; AbsEncoder:inst1|data_cnt[0]   ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_cnt[0]       ; N/A     ;
+; AbsEncoder:inst1|data_cnt[1]   ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_cnt[1]       ; N/A     ;
+; AbsEncoder:inst1|data_cnt[1]   ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_cnt[1]       ; N/A     ;
+; AbsEncoder:inst1|data_cnt[2]   ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_cnt[2]       ; N/A     ;
+; AbsEncoder:inst1|data_cnt[2]   ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_cnt[2]       ; N/A     ;
+; AbsEncoder:inst1|data_cnt[3]   ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_cnt[3]       ; N/A     ;
+; AbsEncoder:inst1|data_cnt[3]   ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_cnt[3]       ; N/A     ;
+; AbsEncoder:inst1|data_cnt[4]   ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_cnt[4]       ; N/A     ;
+; AbsEncoder:inst1|data_cnt[4]   ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_cnt[4]       ; N/A     ;
+; AbsEncoder:inst1|data_cnt[5]   ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_cnt[5]       ; N/A     ;
+; AbsEncoder:inst1|data_cnt[5]   ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_cnt[5]       ; N/A     ;
+; AbsEncoder:inst1|data_cnt[6]   ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_cnt[6]       ; N/A     ;
+; AbsEncoder:inst1|data_cnt[6]   ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_cnt[6]       ; N/A     ;
+; AbsEncoder:inst1|data_cnt[7]   ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_cnt[7]       ; N/A     ;
+; AbsEncoder:inst1|data_cnt[7]   ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_cnt[7]       ; N/A     ;
+; AbsEncoder:inst1|data_out0[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[0]      ; N/A     ;
+; AbsEncoder:inst1|data_out0[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[0]      ; N/A     ;
+; AbsEncoder:inst1|data_out0[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[10]     ; N/A     ;
+; AbsEncoder:inst1|data_out0[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[10]     ; N/A     ;
+; AbsEncoder:inst1|data_out0[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[11]     ; N/A     ;
+; AbsEncoder:inst1|data_out0[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[11]     ; N/A     ;
+; AbsEncoder:inst1|data_out0[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[12]     ; N/A     ;
+; AbsEncoder:inst1|data_out0[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[12]     ; N/A     ;
+; AbsEncoder:inst1|data_out0[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[13]     ; N/A     ;
+; AbsEncoder:inst1|data_out0[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[13]     ; N/A     ;
+; AbsEncoder:inst1|data_out0[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[14]     ; N/A     ;
+; AbsEncoder:inst1|data_out0[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[14]     ; N/A     ;
+; AbsEncoder:inst1|data_out0[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[15]     ; N/A     ;
+; AbsEncoder:inst1|data_out0[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[15]     ; N/A     ;
+; AbsEncoder:inst1|data_out0[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[1]      ; N/A     ;
+; AbsEncoder:inst1|data_out0[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[1]      ; N/A     ;
+; AbsEncoder:inst1|data_out0[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[2]      ; N/A     ;
+; AbsEncoder:inst1|data_out0[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[2]      ; N/A     ;
+; AbsEncoder:inst1|data_out0[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[3]      ; N/A     ;
+; AbsEncoder:inst1|data_out0[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[3]      ; N/A     ;
+; AbsEncoder:inst1|data_out0[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[4]      ; N/A     ;
+; AbsEncoder:inst1|data_out0[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[4]      ; N/A     ;
+; AbsEncoder:inst1|data_out0[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[5]      ; N/A     ;
+; AbsEncoder:inst1|data_out0[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[5]      ; N/A     ;
+; AbsEncoder:inst1|data_out0[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[6]      ; N/A     ;
+; AbsEncoder:inst1|data_out0[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[6]      ; N/A     ;
+; AbsEncoder:inst1|data_out0[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[7]      ; N/A     ;
+; AbsEncoder:inst1|data_out0[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[7]      ; N/A     ;
+; AbsEncoder:inst1|data_out0[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[8]      ; N/A     ;
+; AbsEncoder:inst1|data_out0[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[8]      ; N/A     ;
+; AbsEncoder:inst1|data_out0[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[9]      ; N/A     ;
+; AbsEncoder:inst1|data_out0[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out0[9]      ; N/A     ;
+; AbsEncoder:inst1|data_out1[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[0]      ; N/A     ;
+; AbsEncoder:inst1|data_out1[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[0]      ; N/A     ;
+; AbsEncoder:inst1|data_out1[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[10]     ; N/A     ;
+; AbsEncoder:inst1|data_out1[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[10]     ; N/A     ;
+; AbsEncoder:inst1|data_out1[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[11]     ; N/A     ;
+; AbsEncoder:inst1|data_out1[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[11]     ; N/A     ;
+; AbsEncoder:inst1|data_out1[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[12]     ; N/A     ;
+; AbsEncoder:inst1|data_out1[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[12]     ; N/A     ;
+; AbsEncoder:inst1|data_out1[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[13]     ; N/A     ;
+; AbsEncoder:inst1|data_out1[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[13]     ; N/A     ;
+; AbsEncoder:inst1|data_out1[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[14]     ; N/A     ;
+; AbsEncoder:inst1|data_out1[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[14]     ; N/A     ;
+; AbsEncoder:inst1|data_out1[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[15]     ; N/A     ;
+; AbsEncoder:inst1|data_out1[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[15]     ; N/A     ;
+; AbsEncoder:inst1|data_out1[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[1]      ; N/A     ;
+; AbsEncoder:inst1|data_out1[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[1]      ; N/A     ;
+; AbsEncoder:inst1|data_out1[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[2]      ; N/A     ;
+; AbsEncoder:inst1|data_out1[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[2]      ; N/A     ;
+; AbsEncoder:inst1|data_out1[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[3]      ; N/A     ;
+; AbsEncoder:inst1|data_out1[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[3]      ; N/A     ;
+; AbsEncoder:inst1|data_out1[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[4]      ; N/A     ;
+; AbsEncoder:inst1|data_out1[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[4]      ; N/A     ;
+; AbsEncoder:inst1|data_out1[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[5]      ; N/A     ;
+; AbsEncoder:inst1|data_out1[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[5]      ; N/A     ;
+; AbsEncoder:inst1|data_out1[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[6]      ; N/A     ;
+; AbsEncoder:inst1|data_out1[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[6]      ; N/A     ;
+; AbsEncoder:inst1|data_out1[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[7]      ; N/A     ;
+; AbsEncoder:inst1|data_out1[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[7]      ; N/A     ;
+; AbsEncoder:inst1|data_out1[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[8]      ; N/A     ;
+; AbsEncoder:inst1|data_out1[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[8]      ; N/A     ;
+; AbsEncoder:inst1|data_out1[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[9]      ; N/A     ;
+; AbsEncoder:inst1|data_out1[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out1[9]      ; N/A     ;
+; AbsEncoder:inst1|data_out2[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[0]      ; N/A     ;
+; AbsEncoder:inst1|data_out2[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[0]      ; N/A     ;
+; AbsEncoder:inst1|data_out2[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[10]     ; N/A     ;
+; AbsEncoder:inst1|data_out2[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[10]     ; N/A     ;
+; AbsEncoder:inst1|data_out2[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[11]     ; N/A     ;
+; AbsEncoder:inst1|data_out2[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[11]     ; N/A     ;
+; AbsEncoder:inst1|data_out2[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[12]     ; N/A     ;
+; AbsEncoder:inst1|data_out2[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[12]     ; N/A     ;
+; AbsEncoder:inst1|data_out2[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[13]     ; N/A     ;
+; AbsEncoder:inst1|data_out2[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[13]     ; N/A     ;
+; AbsEncoder:inst1|data_out2[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[14]     ; N/A     ;
+; AbsEncoder:inst1|data_out2[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[14]     ; N/A     ;
+; AbsEncoder:inst1|data_out2[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[15]     ; N/A     ;
+; AbsEncoder:inst1|data_out2[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[15]     ; N/A     ;
+; AbsEncoder:inst1|data_out2[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[1]      ; N/A     ;
+; AbsEncoder:inst1|data_out2[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[1]      ; N/A     ;
+; AbsEncoder:inst1|data_out2[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[2]      ; N/A     ;
+; AbsEncoder:inst1|data_out2[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[2]      ; N/A     ;
+; AbsEncoder:inst1|data_out2[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[3]      ; N/A     ;
+; AbsEncoder:inst1|data_out2[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[3]      ; N/A     ;
+; AbsEncoder:inst1|data_out2[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[4]      ; N/A     ;
+; AbsEncoder:inst1|data_out2[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[4]      ; N/A     ;
+; AbsEncoder:inst1|data_out2[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[5]      ; N/A     ;
+; AbsEncoder:inst1|data_out2[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[5]      ; N/A     ;
+; AbsEncoder:inst1|data_out2[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[6]      ; N/A     ;
+; AbsEncoder:inst1|data_out2[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[6]      ; N/A     ;
+; AbsEncoder:inst1|data_out2[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[7]      ; N/A     ;
+; AbsEncoder:inst1|data_out2[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[7]      ; N/A     ;
+; AbsEncoder:inst1|data_out2[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[8]      ; N/A     ;
+; AbsEncoder:inst1|data_out2[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[8]      ; N/A     ;
+; AbsEncoder:inst1|data_out2[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[9]      ; N/A     ;
+; AbsEncoder:inst1|data_out2[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out2[9]      ; N/A     ;
+; AbsEncoder:inst1|data_out3[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[0]      ; N/A     ;
+; AbsEncoder:inst1|data_out3[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[0]      ; N/A     ;
+; AbsEncoder:inst1|data_out3[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[10]     ; N/A     ;
+; AbsEncoder:inst1|data_out3[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[10]     ; N/A     ;
+; AbsEncoder:inst1|data_out3[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[11]     ; N/A     ;
+; AbsEncoder:inst1|data_out3[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[11]     ; N/A     ;
+; AbsEncoder:inst1|data_out3[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[12]     ; N/A     ;
+; AbsEncoder:inst1|data_out3[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[12]     ; N/A     ;
+; AbsEncoder:inst1|data_out3[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[13]     ; N/A     ;
+; AbsEncoder:inst1|data_out3[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[13]     ; N/A     ;
+; AbsEncoder:inst1|data_out3[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[14]     ; N/A     ;
+; AbsEncoder:inst1|data_out3[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[14]     ; N/A     ;
+; AbsEncoder:inst1|data_out3[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[15]     ; N/A     ;
+; AbsEncoder:inst1|data_out3[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[15]     ; N/A     ;
+; AbsEncoder:inst1|data_out3[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[1]      ; N/A     ;
+; AbsEncoder:inst1|data_out3[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[1]      ; N/A     ;
+; AbsEncoder:inst1|data_out3[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[2]      ; N/A     ;
+; AbsEncoder:inst1|data_out3[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[2]      ; N/A     ;
+; AbsEncoder:inst1|data_out3[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[3]      ; N/A     ;
+; AbsEncoder:inst1|data_out3[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[3]      ; N/A     ;
+; AbsEncoder:inst1|data_out3[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[4]      ; N/A     ;
+; AbsEncoder:inst1|data_out3[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[4]      ; N/A     ;
+; AbsEncoder:inst1|data_out3[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[5]      ; N/A     ;
+; AbsEncoder:inst1|data_out3[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[5]      ; N/A     ;
+; AbsEncoder:inst1|data_out3[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[6]      ; N/A     ;
+; AbsEncoder:inst1|data_out3[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[6]      ; N/A     ;
+; AbsEncoder:inst1|data_out3[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[7]      ; N/A     ;
+; AbsEncoder:inst1|data_out3[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[7]      ; N/A     ;
+; AbsEncoder:inst1|data_out3[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[8]      ; N/A     ;
+; AbsEncoder:inst1|data_out3[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[8]      ; N/A     ;
+; AbsEncoder:inst1|data_out3[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[9]      ; N/A     ;
+; AbsEncoder:inst1|data_out3[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out3[9]      ; N/A     ;
+; AbsEncoder:inst1|data_out4[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[0]      ; N/A     ;
+; AbsEncoder:inst1|data_out4[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[0]      ; N/A     ;
+; AbsEncoder:inst1|data_out4[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[10]     ; N/A     ;
+; AbsEncoder:inst1|data_out4[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[10]     ; N/A     ;
+; AbsEncoder:inst1|data_out4[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[11]     ; N/A     ;
+; AbsEncoder:inst1|data_out4[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[11]     ; N/A     ;
+; AbsEncoder:inst1|data_out4[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[12]     ; N/A     ;
+; AbsEncoder:inst1|data_out4[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[12]     ; N/A     ;
+; AbsEncoder:inst1|data_out4[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[13]     ; N/A     ;
+; AbsEncoder:inst1|data_out4[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[13]     ; N/A     ;
+; AbsEncoder:inst1|data_out4[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[14]     ; N/A     ;
+; AbsEncoder:inst1|data_out4[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[14]     ; N/A     ;
+; AbsEncoder:inst1|data_out4[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[15]     ; N/A     ;
+; AbsEncoder:inst1|data_out4[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[15]     ; N/A     ;
+; AbsEncoder:inst1|data_out4[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[1]      ; N/A     ;
+; AbsEncoder:inst1|data_out4[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[1]      ; N/A     ;
+; AbsEncoder:inst1|data_out4[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[2]      ; N/A     ;
+; AbsEncoder:inst1|data_out4[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[2]      ; N/A     ;
+; AbsEncoder:inst1|data_out4[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[3]      ; N/A     ;
+; AbsEncoder:inst1|data_out4[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[3]      ; N/A     ;
+; AbsEncoder:inst1|data_out4[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[4]      ; N/A     ;
+; AbsEncoder:inst1|data_out4[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[4]      ; N/A     ;
+; AbsEncoder:inst1|data_out4[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[5]      ; N/A     ;
+; AbsEncoder:inst1|data_out4[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[5]      ; N/A     ;
+; AbsEncoder:inst1|data_out4[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[6]      ; N/A     ;
+; AbsEncoder:inst1|data_out4[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[6]      ; N/A     ;
+; AbsEncoder:inst1|data_out4[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[7]      ; N/A     ;
+; AbsEncoder:inst1|data_out4[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[7]      ; N/A     ;
+; AbsEncoder:inst1|data_out4[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[8]      ; N/A     ;
+; AbsEncoder:inst1|data_out4[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[8]      ; N/A     ;
+; AbsEncoder:inst1|data_out4[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[9]      ; N/A     ;
+; AbsEncoder:inst1|data_out4[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out4[9]      ; N/A     ;
+; AbsEncoder:inst1|data_out5[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[0]      ; N/A     ;
+; AbsEncoder:inst1|data_out5[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[0]      ; N/A     ;
+; AbsEncoder:inst1|data_out5[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[10]     ; N/A     ;
+; AbsEncoder:inst1|data_out5[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[10]     ; N/A     ;
+; AbsEncoder:inst1|data_out5[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[11]     ; N/A     ;
+; AbsEncoder:inst1|data_out5[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[11]     ; N/A     ;
+; AbsEncoder:inst1|data_out5[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[12]     ; N/A     ;
+; AbsEncoder:inst1|data_out5[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[12]     ; N/A     ;
+; AbsEncoder:inst1|data_out5[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[13]     ; N/A     ;
+; AbsEncoder:inst1|data_out5[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[13]     ; N/A     ;
+; AbsEncoder:inst1|data_out5[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[14]     ; N/A     ;
+; AbsEncoder:inst1|data_out5[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[14]     ; N/A     ;
+; AbsEncoder:inst1|data_out5[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[15]     ; N/A     ;
+; AbsEncoder:inst1|data_out5[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[15]     ; N/A     ;
+; AbsEncoder:inst1|data_out5[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[1]      ; N/A     ;
+; AbsEncoder:inst1|data_out5[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[1]      ; N/A     ;
+; AbsEncoder:inst1|data_out5[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[2]      ; N/A     ;
+; AbsEncoder:inst1|data_out5[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[2]      ; N/A     ;
+; AbsEncoder:inst1|data_out5[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[3]      ; N/A     ;
+; AbsEncoder:inst1|data_out5[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[3]      ; N/A     ;
+; AbsEncoder:inst1|data_out5[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[4]      ; N/A     ;
+; AbsEncoder:inst1|data_out5[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[4]      ; N/A     ;
+; AbsEncoder:inst1|data_out5[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[5]      ; N/A     ;
+; AbsEncoder:inst1|data_out5[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[5]      ; N/A     ;
+; AbsEncoder:inst1|data_out5[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[6]      ; N/A     ;
+; AbsEncoder:inst1|data_out5[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[6]      ; N/A     ;
+; AbsEncoder:inst1|data_out5[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[7]      ; N/A     ;
+; AbsEncoder:inst1|data_out5[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[7]      ; N/A     ;
+; AbsEncoder:inst1|data_out5[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[8]      ; N/A     ;
+; AbsEncoder:inst1|data_out5[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[8]      ; N/A     ;
+; AbsEncoder:inst1|data_out5[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[9]      ; N/A     ;
+; AbsEncoder:inst1|data_out5[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out5[9]      ; N/A     ;
+; AbsEncoder:inst1|data_out6[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[0]      ; N/A     ;
+; AbsEncoder:inst1|data_out6[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[0]      ; N/A     ;
+; AbsEncoder:inst1|data_out6[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[10]     ; N/A     ;
+; AbsEncoder:inst1|data_out6[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[10]     ; N/A     ;
+; AbsEncoder:inst1|data_out6[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[11]     ; N/A     ;
+; AbsEncoder:inst1|data_out6[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[11]     ; N/A     ;
+; AbsEncoder:inst1|data_out6[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[12]     ; N/A     ;
+; AbsEncoder:inst1|data_out6[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[12]     ; N/A     ;
+; AbsEncoder:inst1|data_out6[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[13]     ; N/A     ;
+; AbsEncoder:inst1|data_out6[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[13]     ; N/A     ;
+; AbsEncoder:inst1|data_out6[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[14]     ; N/A     ;
+; AbsEncoder:inst1|data_out6[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[14]     ; N/A     ;
+; AbsEncoder:inst1|data_out6[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[15]     ; N/A     ;
+; AbsEncoder:inst1|data_out6[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[15]     ; N/A     ;
+; AbsEncoder:inst1|data_out6[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[1]      ; N/A     ;
+; AbsEncoder:inst1|data_out6[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[1]      ; N/A     ;
+; AbsEncoder:inst1|data_out6[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[2]      ; N/A     ;
+; AbsEncoder:inst1|data_out6[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[2]      ; N/A     ;
+; AbsEncoder:inst1|data_out6[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[3]      ; N/A     ;
+; AbsEncoder:inst1|data_out6[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[3]      ; N/A     ;
+; AbsEncoder:inst1|data_out6[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[4]      ; N/A     ;
+; AbsEncoder:inst1|data_out6[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[4]      ; N/A     ;
+; AbsEncoder:inst1|data_out6[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[5]      ; N/A     ;
+; AbsEncoder:inst1|data_out6[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[5]      ; N/A     ;
+; AbsEncoder:inst1|data_out6[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[6]      ; N/A     ;
+; AbsEncoder:inst1|data_out6[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[6]      ; N/A     ;
+; AbsEncoder:inst1|data_out6[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[7]      ; N/A     ;
+; AbsEncoder:inst1|data_out6[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[7]      ; N/A     ;
+; AbsEncoder:inst1|data_out6[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[8]      ; N/A     ;
+; AbsEncoder:inst1|data_out6[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[8]      ; N/A     ;
+; AbsEncoder:inst1|data_out6[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[9]      ; N/A     ;
+; AbsEncoder:inst1|data_out6[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out6[9]      ; N/A     ;
+; AbsEncoder:inst1|data_out7[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[0]      ; N/A     ;
+; AbsEncoder:inst1|data_out7[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[0]      ; N/A     ;
+; AbsEncoder:inst1|data_out7[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[10]     ; N/A     ;
+; AbsEncoder:inst1|data_out7[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[10]     ; N/A     ;
+; AbsEncoder:inst1|data_out7[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[11]     ; N/A     ;
+; AbsEncoder:inst1|data_out7[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[11]     ; N/A     ;
+; AbsEncoder:inst1|data_out7[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[12]     ; N/A     ;
+; AbsEncoder:inst1|data_out7[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[12]     ; N/A     ;
+; AbsEncoder:inst1|data_out7[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[13]     ; N/A     ;
+; AbsEncoder:inst1|data_out7[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[13]     ; N/A     ;
+; AbsEncoder:inst1|data_out7[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[14]     ; N/A     ;
+; AbsEncoder:inst1|data_out7[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[14]     ; N/A     ;
+; AbsEncoder:inst1|data_out7[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[15]     ; N/A     ;
+; AbsEncoder:inst1|data_out7[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[15]     ; N/A     ;
+; AbsEncoder:inst1|data_out7[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[1]      ; N/A     ;
+; AbsEncoder:inst1|data_out7[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[1]      ; N/A     ;
+; AbsEncoder:inst1|data_out7[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[2]      ; N/A     ;
+; AbsEncoder:inst1|data_out7[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[2]      ; N/A     ;
+; AbsEncoder:inst1|data_out7[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[3]      ; N/A     ;
+; AbsEncoder:inst1|data_out7[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[3]      ; N/A     ;
+; AbsEncoder:inst1|data_out7[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[4]      ; N/A     ;
+; AbsEncoder:inst1|data_out7[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[4]      ; N/A     ;
+; AbsEncoder:inst1|data_out7[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[5]      ; N/A     ;
+; AbsEncoder:inst1|data_out7[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[5]      ; N/A     ;
+; AbsEncoder:inst1|data_out7[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[6]      ; N/A     ;
+; AbsEncoder:inst1|data_out7[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[6]      ; N/A     ;
+; AbsEncoder:inst1|data_out7[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[7]      ; N/A     ;
+; AbsEncoder:inst1|data_out7[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[7]      ; N/A     ;
+; AbsEncoder:inst1|data_out7[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[8]      ; N/A     ;
+; AbsEncoder:inst1|data_out7[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[8]      ; N/A     ;
+; AbsEncoder:inst1|data_out7[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[9]      ; N/A     ;
+; AbsEncoder:inst1|data_out7[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out7[9]      ; N/A     ;
+; AbsEncoder:inst1|data_out8[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[0]      ; N/A     ;
+; AbsEncoder:inst1|data_out8[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[0]      ; N/A     ;
+; AbsEncoder:inst1|data_out8[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[10]     ; N/A     ;
+; AbsEncoder:inst1|data_out8[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[10]     ; N/A     ;
+; AbsEncoder:inst1|data_out8[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[11]     ; N/A     ;
+; AbsEncoder:inst1|data_out8[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[11]     ; N/A     ;
+; AbsEncoder:inst1|data_out8[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[12]     ; N/A     ;
+; AbsEncoder:inst1|data_out8[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[12]     ; N/A     ;
+; AbsEncoder:inst1|data_out8[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[13]     ; N/A     ;
+; AbsEncoder:inst1|data_out8[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[13]     ; N/A     ;
+; AbsEncoder:inst1|data_out8[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[14]     ; N/A     ;
+; AbsEncoder:inst1|data_out8[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[14]     ; N/A     ;
+; AbsEncoder:inst1|data_out8[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[15]     ; N/A     ;
+; AbsEncoder:inst1|data_out8[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[15]     ; N/A     ;
+; AbsEncoder:inst1|data_out8[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[1]      ; N/A     ;
+; AbsEncoder:inst1|data_out8[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[1]      ; N/A     ;
+; AbsEncoder:inst1|data_out8[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[2]      ; N/A     ;
+; AbsEncoder:inst1|data_out8[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[2]      ; N/A     ;
+; AbsEncoder:inst1|data_out8[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[3]      ; N/A     ;
+; AbsEncoder:inst1|data_out8[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[3]      ; N/A     ;
+; AbsEncoder:inst1|data_out8[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[4]      ; N/A     ;
+; AbsEncoder:inst1|data_out8[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[4]      ; N/A     ;
+; AbsEncoder:inst1|data_out8[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[5]      ; N/A     ;
+; AbsEncoder:inst1|data_out8[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[5]      ; N/A     ;
+; AbsEncoder:inst1|data_out8[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[6]      ; N/A     ;
+; AbsEncoder:inst1|data_out8[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[6]      ; N/A     ;
+; AbsEncoder:inst1|data_out8[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[7]      ; N/A     ;
+; AbsEncoder:inst1|data_out8[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[7]      ; N/A     ;
+; AbsEncoder:inst1|data_out8[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[8]      ; N/A     ;
+; AbsEncoder:inst1|data_out8[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[8]      ; N/A     ;
+; AbsEncoder:inst1|data_out8[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[9]      ; N/A     ;
+; AbsEncoder:inst1|data_out8[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out8[9]      ; N/A     ;
+; AbsEncoder:inst1|data_out9[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[0]      ; N/A     ;
+; AbsEncoder:inst1|data_out9[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[0]      ; N/A     ;
+; AbsEncoder:inst1|data_out9[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[10]     ; N/A     ;
+; AbsEncoder:inst1|data_out9[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[10]     ; N/A     ;
+; AbsEncoder:inst1|data_out9[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[11]     ; N/A     ;
+; AbsEncoder:inst1|data_out9[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[11]     ; N/A     ;
+; AbsEncoder:inst1|data_out9[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[12]     ; N/A     ;
+; AbsEncoder:inst1|data_out9[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[12]     ; N/A     ;
+; AbsEncoder:inst1|data_out9[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[13]     ; N/A     ;
+; AbsEncoder:inst1|data_out9[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[13]     ; N/A     ;
+; AbsEncoder:inst1|data_out9[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[14]     ; N/A     ;
+; AbsEncoder:inst1|data_out9[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[14]     ; N/A     ;
+; AbsEncoder:inst1|data_out9[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[15]     ; N/A     ;
+; AbsEncoder:inst1|data_out9[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[15]     ; N/A     ;
+; AbsEncoder:inst1|data_out9[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[1]      ; N/A     ;
+; AbsEncoder:inst1|data_out9[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[1]      ; N/A     ;
+; AbsEncoder:inst1|data_out9[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[2]      ; N/A     ;
+; AbsEncoder:inst1|data_out9[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[2]      ; N/A     ;
+; AbsEncoder:inst1|data_out9[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[3]      ; N/A     ;
+; AbsEncoder:inst1|data_out9[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[3]      ; N/A     ;
+; AbsEncoder:inst1|data_out9[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[4]      ; N/A     ;
+; AbsEncoder:inst1|data_out9[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[4]      ; N/A     ;
+; AbsEncoder:inst1|data_out9[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[5]      ; N/A     ;
+; AbsEncoder:inst1|data_out9[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[5]      ; N/A     ;
+; AbsEncoder:inst1|data_out9[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[6]      ; N/A     ;
+; AbsEncoder:inst1|data_out9[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[6]      ; N/A     ;
+; AbsEncoder:inst1|data_out9[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[7]      ; N/A     ;
+; AbsEncoder:inst1|data_out9[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[7]      ; N/A     ;
+; AbsEncoder:inst1|data_out9[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[8]      ; N/A     ;
+; AbsEncoder:inst1|data_out9[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[8]      ; N/A     ;
+; AbsEncoder:inst1|data_out9[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[9]      ; N/A     ;
+; AbsEncoder:inst1|data_out9[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_out9[9]      ; N/A     ;
+; AbsEncoder:inst1|data_outA[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[0]      ; N/A     ;
+; AbsEncoder:inst1|data_outA[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[0]      ; N/A     ;
+; AbsEncoder:inst1|data_outA[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[10]     ; N/A     ;
+; AbsEncoder:inst1|data_outA[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[10]     ; N/A     ;
+; AbsEncoder:inst1|data_outA[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[11]     ; N/A     ;
+; AbsEncoder:inst1|data_outA[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[11]     ; N/A     ;
+; AbsEncoder:inst1|data_outA[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[12]     ; N/A     ;
+; AbsEncoder:inst1|data_outA[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[12]     ; N/A     ;
+; AbsEncoder:inst1|data_outA[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[13]     ; N/A     ;
+; AbsEncoder:inst1|data_outA[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[13]     ; N/A     ;
+; AbsEncoder:inst1|data_outA[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[14]     ; N/A     ;
+; AbsEncoder:inst1|data_outA[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[14]     ; N/A     ;
+; AbsEncoder:inst1|data_outA[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[15]     ; N/A     ;
+; AbsEncoder:inst1|data_outA[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[15]     ; N/A     ;
+; AbsEncoder:inst1|data_outA[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[1]      ; N/A     ;
+; AbsEncoder:inst1|data_outA[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[1]      ; N/A     ;
+; AbsEncoder:inst1|data_outA[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[2]      ; N/A     ;
+; AbsEncoder:inst1|data_outA[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[2]      ; N/A     ;
+; AbsEncoder:inst1|data_outA[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[3]      ; N/A     ;
+; AbsEncoder:inst1|data_outA[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[3]      ; N/A     ;
+; AbsEncoder:inst1|data_outA[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[4]      ; N/A     ;
+; AbsEncoder:inst1|data_outA[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[4]      ; N/A     ;
+; AbsEncoder:inst1|data_outA[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[5]      ; N/A     ;
+; AbsEncoder:inst1|data_outA[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[5]      ; N/A     ;
+; AbsEncoder:inst1|data_outA[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[6]      ; N/A     ;
+; AbsEncoder:inst1|data_outA[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[6]      ; N/A     ;
+; AbsEncoder:inst1|data_outA[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[7]      ; N/A     ;
+; AbsEncoder:inst1|data_outA[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[7]      ; N/A     ;
+; AbsEncoder:inst1|data_outA[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[8]      ; N/A     ;
+; AbsEncoder:inst1|data_outA[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[8]      ; N/A     ;
+; AbsEncoder:inst1|data_outA[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[9]      ; N/A     ;
+; AbsEncoder:inst1|data_outA[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outA[9]      ; N/A     ;
+; AbsEncoder:inst1|data_outB[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[0]      ; N/A     ;
+; AbsEncoder:inst1|data_outB[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[0]      ; N/A     ;
+; AbsEncoder:inst1|data_outB[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[10]     ; N/A     ;
+; AbsEncoder:inst1|data_outB[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[10]     ; N/A     ;
+; AbsEncoder:inst1|data_outB[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[11]     ; N/A     ;
+; AbsEncoder:inst1|data_outB[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[11]     ; N/A     ;
+; AbsEncoder:inst1|data_outB[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[12]     ; N/A     ;
+; AbsEncoder:inst1|data_outB[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[12]     ; N/A     ;
+; AbsEncoder:inst1|data_outB[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[13]     ; N/A     ;
+; AbsEncoder:inst1|data_outB[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[13]     ; N/A     ;
+; AbsEncoder:inst1|data_outB[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[14]     ; N/A     ;
+; AbsEncoder:inst1|data_outB[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[14]     ; N/A     ;
+; AbsEncoder:inst1|data_outB[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[15]     ; N/A     ;
+; AbsEncoder:inst1|data_outB[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[15]     ; N/A     ;
+; AbsEncoder:inst1|data_outB[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[1]      ; N/A     ;
+; AbsEncoder:inst1|data_outB[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[1]      ; N/A     ;
+; AbsEncoder:inst1|data_outB[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[2]      ; N/A     ;
+; AbsEncoder:inst1|data_outB[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[2]      ; N/A     ;
+; AbsEncoder:inst1|data_outB[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[3]      ; N/A     ;
+; AbsEncoder:inst1|data_outB[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[3]      ; N/A     ;
+; AbsEncoder:inst1|data_outB[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[4]      ; N/A     ;
+; AbsEncoder:inst1|data_outB[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[4]      ; N/A     ;
+; AbsEncoder:inst1|data_outB[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[5]      ; N/A     ;
+; AbsEncoder:inst1|data_outB[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[5]      ; N/A     ;
+; AbsEncoder:inst1|data_outB[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[6]      ; N/A     ;
+; AbsEncoder:inst1|data_outB[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[6]      ; N/A     ;
+; AbsEncoder:inst1|data_outB[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[7]      ; N/A     ;
+; AbsEncoder:inst1|data_outB[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[7]      ; N/A     ;
+; AbsEncoder:inst1|data_outB[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[8]      ; N/A     ;
+; AbsEncoder:inst1|data_outB[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[8]      ; N/A     ;
+; AbsEncoder:inst1|data_outB[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[9]      ; N/A     ;
+; AbsEncoder:inst1|data_outB[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outB[9]      ; N/A     ;
+; AbsEncoder:inst1|data_outC[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[0]      ; N/A     ;
+; AbsEncoder:inst1|data_outC[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[0]      ; N/A     ;
+; AbsEncoder:inst1|data_outC[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[10]     ; N/A     ;
+; AbsEncoder:inst1|data_outC[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[10]     ; N/A     ;
+; AbsEncoder:inst1|data_outC[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[11]     ; N/A     ;
+; AbsEncoder:inst1|data_outC[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[11]     ; N/A     ;
+; AbsEncoder:inst1|data_outC[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[12]     ; N/A     ;
+; AbsEncoder:inst1|data_outC[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[12]     ; N/A     ;
+; AbsEncoder:inst1|data_outC[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[13]     ; N/A     ;
+; AbsEncoder:inst1|data_outC[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[13]     ; N/A     ;
+; AbsEncoder:inst1|data_outC[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[14]     ; N/A     ;
+; AbsEncoder:inst1|data_outC[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[14]     ; N/A     ;
+; AbsEncoder:inst1|data_outC[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[15]     ; N/A     ;
+; AbsEncoder:inst1|data_outC[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[15]     ; N/A     ;
+; AbsEncoder:inst1|data_outC[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[1]      ; N/A     ;
+; AbsEncoder:inst1|data_outC[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[1]      ; N/A     ;
+; AbsEncoder:inst1|data_outC[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[2]      ; N/A     ;
+; AbsEncoder:inst1|data_outC[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[2]      ; N/A     ;
+; AbsEncoder:inst1|data_outC[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[3]      ; N/A     ;
+; AbsEncoder:inst1|data_outC[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[3]      ; N/A     ;
+; AbsEncoder:inst1|data_outC[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[4]      ; N/A     ;
+; AbsEncoder:inst1|data_outC[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[4]      ; N/A     ;
+; AbsEncoder:inst1|data_outC[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[5]      ; N/A     ;
+; AbsEncoder:inst1|data_outC[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[5]      ; N/A     ;
+; AbsEncoder:inst1|data_outC[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[6]      ; N/A     ;
+; AbsEncoder:inst1|data_outC[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[6]      ; N/A     ;
+; AbsEncoder:inst1|data_outC[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[7]      ; N/A     ;
+; AbsEncoder:inst1|data_outC[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[7]      ; N/A     ;
+; AbsEncoder:inst1|data_outC[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[8]      ; N/A     ;
+; AbsEncoder:inst1|data_outC[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[8]      ; N/A     ;
+; AbsEncoder:inst1|data_outC[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[9]      ; N/A     ;
+; AbsEncoder:inst1|data_outC[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outC[9]      ; N/A     ;
+; AbsEncoder:inst1|data_outD[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[0]      ; N/A     ;
+; AbsEncoder:inst1|data_outD[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[0]      ; N/A     ;
+; AbsEncoder:inst1|data_outD[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[10]     ; N/A     ;
+; AbsEncoder:inst1|data_outD[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[10]     ; N/A     ;
+; AbsEncoder:inst1|data_outD[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[11]     ; N/A     ;
+; AbsEncoder:inst1|data_outD[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[11]     ; N/A     ;
+; AbsEncoder:inst1|data_outD[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[12]     ; N/A     ;
+; AbsEncoder:inst1|data_outD[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[12]     ; N/A     ;
+; AbsEncoder:inst1|data_outD[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[13]     ; N/A     ;
+; AbsEncoder:inst1|data_outD[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[13]     ; N/A     ;
+; AbsEncoder:inst1|data_outD[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[14]     ; N/A     ;
+; AbsEncoder:inst1|data_outD[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[14]     ; N/A     ;
+; AbsEncoder:inst1|data_outD[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[15]     ; N/A     ;
+; AbsEncoder:inst1|data_outD[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[15]     ; N/A     ;
+; AbsEncoder:inst1|data_outD[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[1]      ; N/A     ;
+; AbsEncoder:inst1|data_outD[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[1]      ; N/A     ;
+; AbsEncoder:inst1|data_outD[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[2]      ; N/A     ;
+; AbsEncoder:inst1|data_outD[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[2]      ; N/A     ;
+; AbsEncoder:inst1|data_outD[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[3]      ; N/A     ;
+; AbsEncoder:inst1|data_outD[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[3]      ; N/A     ;
+; AbsEncoder:inst1|data_outD[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[4]      ; N/A     ;
+; AbsEncoder:inst1|data_outD[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[4]      ; N/A     ;
+; AbsEncoder:inst1|data_outD[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[5]      ; N/A     ;
+; AbsEncoder:inst1|data_outD[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[5]      ; N/A     ;
+; AbsEncoder:inst1|data_outD[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[6]      ; N/A     ;
+; AbsEncoder:inst1|data_outD[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[6]      ; N/A     ;
+; AbsEncoder:inst1|data_outD[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[7]      ; N/A     ;
+; AbsEncoder:inst1|data_outD[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[7]      ; N/A     ;
+; AbsEncoder:inst1|data_outD[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[8]      ; N/A     ;
+; AbsEncoder:inst1|data_outD[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[8]      ; N/A     ;
+; AbsEncoder:inst1|data_outD[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[9]      ; N/A     ;
+; AbsEncoder:inst1|data_outD[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outD[9]      ; N/A     ;
+; AbsEncoder:inst1|data_outE[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[0]      ; N/A     ;
+; AbsEncoder:inst1|data_outE[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[0]      ; N/A     ;
+; AbsEncoder:inst1|data_outE[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[10]     ; N/A     ;
+; AbsEncoder:inst1|data_outE[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[10]     ; N/A     ;
+; AbsEncoder:inst1|data_outE[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[11]     ; N/A     ;
+; AbsEncoder:inst1|data_outE[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[11]     ; N/A     ;
+; AbsEncoder:inst1|data_outE[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[12]     ; N/A     ;
+; AbsEncoder:inst1|data_outE[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[12]     ; N/A     ;
+; AbsEncoder:inst1|data_outE[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[13]     ; N/A     ;
+; AbsEncoder:inst1|data_outE[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[13]     ; N/A     ;
+; AbsEncoder:inst1|data_outE[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[14]     ; N/A     ;
+; AbsEncoder:inst1|data_outE[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[14]     ; N/A     ;
+; AbsEncoder:inst1|data_outE[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[15]     ; N/A     ;
+; AbsEncoder:inst1|data_outE[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[15]     ; N/A     ;
+; AbsEncoder:inst1|data_outE[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[1]      ; N/A     ;
+; AbsEncoder:inst1|data_outE[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[1]      ; N/A     ;
+; AbsEncoder:inst1|data_outE[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[2]      ; N/A     ;
+; AbsEncoder:inst1|data_outE[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[2]      ; N/A     ;
+; AbsEncoder:inst1|data_outE[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[3]      ; N/A     ;
+; AbsEncoder:inst1|data_outE[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[3]      ; N/A     ;
+; AbsEncoder:inst1|data_outE[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[4]      ; N/A     ;
+; AbsEncoder:inst1|data_outE[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[4]      ; N/A     ;
+; AbsEncoder:inst1|data_outE[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[5]      ; N/A     ;
+; AbsEncoder:inst1|data_outE[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[5]      ; N/A     ;
+; AbsEncoder:inst1|data_outE[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[6]      ; N/A     ;
+; AbsEncoder:inst1|data_outE[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[6]      ; N/A     ;
+; AbsEncoder:inst1|data_outE[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[7]      ; N/A     ;
+; AbsEncoder:inst1|data_outE[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[7]      ; N/A     ;
+; AbsEncoder:inst1|data_outE[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[8]      ; N/A     ;
+; AbsEncoder:inst1|data_outE[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[8]      ; N/A     ;
+; AbsEncoder:inst1|data_outE[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[9]      ; N/A     ;
+; AbsEncoder:inst1|data_outE[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outE[9]      ; N/A     ;
+; AbsEncoder:inst1|data_outF[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[0]      ; N/A     ;
+; AbsEncoder:inst1|data_outF[0]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[0]      ; N/A     ;
+; AbsEncoder:inst1|data_outF[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[10]     ; N/A     ;
+; AbsEncoder:inst1|data_outF[10] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[10]     ; N/A     ;
+; AbsEncoder:inst1|data_outF[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[11]     ; N/A     ;
+; AbsEncoder:inst1|data_outF[11] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[11]     ; N/A     ;
+; AbsEncoder:inst1|data_outF[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[12]     ; N/A     ;
+; AbsEncoder:inst1|data_outF[12] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[12]     ; N/A     ;
+; AbsEncoder:inst1|data_outF[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[13]     ; N/A     ;
+; AbsEncoder:inst1|data_outF[13] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[13]     ; N/A     ;
+; AbsEncoder:inst1|data_outF[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[14]     ; N/A     ;
+; AbsEncoder:inst1|data_outF[14] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[14]     ; N/A     ;
+; AbsEncoder:inst1|data_outF[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[15]     ; N/A     ;
+; AbsEncoder:inst1|data_outF[15] ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[15]     ; N/A     ;
+; AbsEncoder:inst1|data_outF[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[1]      ; N/A     ;
+; AbsEncoder:inst1|data_outF[1]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[1]      ; N/A     ;
+; AbsEncoder:inst1|data_outF[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[2]      ; N/A     ;
+; AbsEncoder:inst1|data_outF[2]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[2]      ; N/A     ;
+; AbsEncoder:inst1|data_outF[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[3]      ; N/A     ;
+; AbsEncoder:inst1|data_outF[3]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[3]      ; N/A     ;
+; AbsEncoder:inst1|data_outF[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[4]      ; N/A     ;
+; AbsEncoder:inst1|data_outF[4]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[4]      ; N/A     ;
+; AbsEncoder:inst1|data_outF[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[5]      ; N/A     ;
+; AbsEncoder:inst1|data_outF[5]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[5]      ; N/A     ;
+; AbsEncoder:inst1|data_outF[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[6]      ; N/A     ;
+; AbsEncoder:inst1|data_outF[6]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[6]      ; N/A     ;
+; AbsEncoder:inst1|data_outF[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[7]      ; N/A     ;
+; AbsEncoder:inst1|data_outF[7]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[7]      ; N/A     ;
+; AbsEncoder:inst1|data_outF[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[8]      ; N/A     ;
+; AbsEncoder:inst1|data_outF[8]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[8]      ; N/A     ;
+; AbsEncoder:inst1|data_outF[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[9]      ; N/A     ;
+; AbsEncoder:inst1|data_outF[9]  ; post-fitting  ; connected ; Top            ; post-fit          ; AbsEncoder:inst1|data_outF[9]      ; N/A     ;
++--------------------------------+---------------+-----------+----------------+-------------------+------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                                                                      ;
++---------------------------------------------+---------------------+---------------------+--------------------------------+--------------------------------+
+; Statistic                                   ; Top                 ; sld_hub:auto_hub    ; sld_signaltap:auto_signaltap_0 ; hard_block:auto_generated_inst ;
++---------------------------------------------+---------------------+---------------------+--------------------------------+--------------------------------+
+; Estimated Total logic elements              ; 885 / 8256 ( 10 % ) ; 115 / 8256 ( 1 % )  ; 4132 / 8256 ( 50 % )           ; 0 / 8256 ( 0 % )               ;
+;                                             ;                     ;                     ;                                ;                                ;
+; Total combinational functions               ; 465                 ; 105                 ; 1174                           ; 0                              ;
+; Logic element usage by number of LUT inputs ;                     ;                     ;                                ;                                ;
+;     -- 4 input functions                    ; 267                 ; 42                  ; 740                            ; 0                              ;
+;     -- 3 input functions                    ; 142                 ; 41                  ; 362                            ; 0                              ;
+;     -- <=2 input functions                  ; 56                  ; 22                  ; 72                             ; 0                              ;
+;                                             ;                     ;                     ;                                ;                                ;
+; Logic elements by mode                      ;                     ;                     ;                                ;                                ;
+;     -- normal mode                          ; 346                 ; 101                 ; 1130                           ; 0                              ;
+;     -- arithmetic mode                      ; 119                 ; 4                   ; 44                             ; 0                              ;
+;                                             ;                     ;                     ;                                ;                                ;
+; Total registers                             ; 592                 ; 73                  ; 3667                           ; 0                              ;
+;     -- Dedicated logic registers            ; 592 / 8256 ( 7 % )  ; 73 / 8256 ( < 1 % ) ; 3667 / 8256 ( 44 % )           ; 0 / 8256 ( 0 % )               ;
+;     -- I/O registers                        ; 0                   ; 0                   ; 0                              ; 0                              ;
+;                                             ;                     ;                     ;                                ;                                ;
+; Virtual pins                                ; 0                   ; 0                   ; 0                              ; 0                              ;
+; I/O pins                                    ; 68                  ; 0                   ; 0                              ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0 / 36 ( 0 % )      ; 0 / 36 ( 0 % )      ; 0 / 36 ( 0 % )                 ; 0 / 36 ( 0 % )                 ;
+; Total memory bits                           ; 0                   ; 0                   ; 73216                          ; 0                              ;
+; Total RAM block bits                        ; 0                   ; 0                   ; 73728                          ; 0                              ;
+; JTAG                                        ; 1 / 1 ( 100 % )     ; 0 / 1 ( 0 % )       ; 0 / 1 ( 0 % )                  ; 0 / 1 ( 0 % )                  ;
+; M4K                                         ; 0 / 36 ( 0 % )      ; 0 / 36 ( 0 % )      ; 16 / 36 ( 44 % )               ; 0 / 36 ( 0 % )                 ;
+;                                             ;                     ;                     ;                                ;                                ;
+; Connections                                 ;                     ;                     ;                                ;                                ;
+;     -- Input Connections                    ; 1                   ; 112                 ; 5201                           ; 0                              ;
+;     -- Registered Input Connections         ; 0                   ; 82                  ; 4258                           ; 0                              ;
+;     -- Output Connections                   ; 4918                ; 395                 ; 1                              ; 0                              ;
+;     -- Registered Output Connections        ; 532                 ; 394                 ; 0                              ; 0                              ;
+;                                             ;                     ;                     ;                                ;                                ;
+; Internal Connections                        ;                     ;                     ;                                ;                                ;
+;     -- Total Connections                    ; 9069                ; 965                 ; 20113                          ; 0                              ;
+;     -- Registered Connections               ; 1401                ; 789                 ; 16205                          ; 0                              ;
+;                                             ;                     ;                     ;                                ;                                ;
+; External Connections                        ;                     ;                     ;                                ;                                ;
+;     -- Top                                  ; 0                   ; 104                 ; 4815                           ; 0                              ;
+;     -- sld_hub:auto_hub                     ; 104                 ; 16                  ; 387                            ; 0                              ;
+;     -- sld_signaltap:auto_signaltap_0       ; 4815                ; 387                 ; 0                              ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 0                   ; 0                   ; 0                              ; 0                              ;
+;                                             ;                     ;                     ;                                ;                                ;
+; Partition Interface                         ;                     ;                     ;                                ;                                ;
+;     -- Input Ports                          ; 47                  ; 18                  ; 629                            ; 0                              ;
+;     -- Output Ports                         ; 30                  ; 36                  ; 582                            ; 0                              ;
+;     -- Bidir Ports                          ; 16                  ; 0                   ; 0                              ; 0                              ;
+;                                             ;                     ;                     ;                                ;                                ;
+; Registered Ports                            ;                     ;                     ;                                ;                                ;
+;     -- Registered Input Ports               ; 0                   ; 4                   ; 577                            ; 0                              ;
+;     -- Registered Output Ports              ; 0                   ; 26                  ; 1                              ; 0                              ;
+;                                             ;                     ;                     ;                                ;                                ;
+; Port Connectivity                           ;                     ;                     ;                                ;                                ;
+;     -- Input Ports driven by GND            ; 0                   ; 1                   ; 0                              ; 0                              ;
+;     -- Output Ports driven by GND           ; 0                   ; 0                   ; 0                              ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0                   ; 0                   ; 0                              ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0                   ; 0                   ; 0                              ; 0                              ;
+;     -- Input Ports with no Source           ; 0                   ; 0                   ; 35                             ; 0                              ;
+;     -- Output Ports with no Source          ; 0                   ; 0                   ; 0                              ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0                   ; 1                   ; 40                             ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0                   ; 14                  ; 573                            ; 0                              ;
++---------------------------------------------+---------------------+---------------------+--------------------------------+--------------------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++----------------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                               ;
++---------------------------------------------+------------------------+
+; Resource                                    ; Usage                  ;
++---------------------------------------------+------------------------+
+; Estimated Total logic elements              ; 5,129 / 8,256 ( 62 % ) ;
+;                                             ;                        ;
+; Total combinational functions               ; 1744                   ;
+; Logic element usage by number of LUT inputs ;                        ;
+;     -- 4 input functions                    ; 1049                   ;
+;     -- 3 input functions                    ; 545                    ;
+;     -- <=2 input functions                  ; 150                    ;
+;                                             ;                        ;
+; Logic elements by mode                      ;                        ;
+;     -- normal mode                          ; 1577                   ;
+;     -- arithmetic mode                      ; 167                    ;
+;                                             ;                        ;
+; Total registers                             ; 4332                   ;
+;     -- Dedicated logic registers            ; 4332                   ;
+;     -- I/O registers                        ; 0                      ;
+;                                             ;                        ;
+; I/O pins                                    ; 68                     ;
+; Total memory bits                           ; 73216                  ;
+; Maximum fan-out node                        ; clk_20M                ;
+; Maximum fan-out                             ; 2686                   ;
+; Total fan-out                               ; 24545                  ;
+; Average fan-out                             ; 3.75                   ;
++---------------------------------------------+------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                                                                                   ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+-------+------+
+; Name                                                                                                                                                                                       ; Type ; Mode           ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF  ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+-------+------+
+; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_gt14:auto_generated|altsyncram_ohq1:altsyncram1|ALTSYNCRAM ; AUTO ; True Dual Port ; 256          ; 286          ; 256          ; 286          ; 73216 ; None ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+-------+------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Partition Merge
+    Info: Version 11.0 Build 157 04/27/2011 SJ Full Version
+    Info: Processing started: Fri May 25 22:47:08 2012
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off sample_dsp -c sample_dsp --merge=on
+Info: Using previously generated Fitter netlist for partition "Top"
+Info: Using synthesis netlist for partition "sld_hub:auto_hub"
+Info: Using synthesis netlist for partition "sld_signaltap:auto_signaltap_0"
+Info: Succesfully connected in-system debug instance "auto_signaltap_0" to all 573 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
+Info: Resolved and merged 3 partition(s)
+Info: Generating hard_block partition "hard_block:auto_generated_inst"
+Info: Optimize away 5 nodes that do not fanout to OUTPUT or BIDIR pins
+    Info: Node: "sld_signaltap:auto_signaltap_0"
+Info: Implemented 5508 device resources after synthesis - the final resource count might be different
+    Info: Implemented 47 input pins
+    Info: Implemented 9 output pins
+    Info: Implemented 16 bidirectional pins
+    Info: Implemented 5146 logic cells
+    Info: Implemented 286 RAM segments
+Info: Quartus II Partition Merge was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 269 megabytes
+    Info: Processing ended: Fri May 25 22:47:11 2012
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+

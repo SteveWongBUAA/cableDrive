@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Nov 18 09:47:32 2015
+Quartus II 64-Bit Version : 11.0 Build 208 07/03/2011 SP 1 SJ Full Version
+Revision Name : sample_dsp
+Top-level Entity Name : sample_dsp
+Family : Cyclone II
+Device : EP2C8Q208C8
+Timing Models : Final
+Total logic elements : 672 / 8,256 ( 8 % )
+    Total combinational functions : 461 / 8,256 ( 6 % )
+    Dedicated logic registers : 592 / 8,256 ( 7 % )
+Total registers : 592
+Total pins : 68 / 138 ( 49 % )
+Total virtual pins : 0
+Total memory bits : 0 / 165,888 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 36 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

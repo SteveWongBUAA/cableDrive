@@ -1,0 +1,296 @@
+Quartus II 64-Bit
+Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Full Version
+14
+1012
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+sample_dsp
+# storage
+db|sample_dsp.(0).cnf
+db|sample_dsp.(0).cnf
+# case_insensitive
+# source_file
+src|sample_dsp.bdf
+bdfd58756475afd994be298a4c96891
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+AbsEncoder
+# storage
+db|sample_dsp.(1).cnf
+db|sample_dsp.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+src|absencoder.v
+34ef58fb58b7b5b2e53ce3864e5074
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+AbsEncoder:inst1
+}
+# macro_sequence
+
+# end
+# entity
+ParaBus
+# storage
+db|sample_dsp.(2).cnf
+db|sample_dsp.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+src|parabus.v
+1187a82ade3d5dd836282558244945ab
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+ParaBus:ParaBusInst
+}
+# macro_sequence
+ControlAdd6'h00LedAdd6'h01ControlAdd6'h00IncEncoder1Add6'h10IncEncoder2Add6'h11IncEncoder3Add6'h12IncEncoder4Add6'h13IncEncoder5Add6'h14IncEncoder6Add6'h15IncEncoder7Add6'h16AbsEncoder0Add6'h20AbsEncoder1Add6'h21AbsEncoder2Add6'h22AbsEncoder3Add6'h23AbsEncoder4Add6'h24AbsEncoder5Add6'h25AbsEncoder6Add6'h26AbsEncoder7Add6'h27AbsEncoder8Add6'h28AbsEncoder9Add6'h29AbsEncoderAAdd6'h2AAbsEncoderBAdd6'h2BAbsEncoderCAdd6'h2CAbsEncoderDAdd6'h2DAbsEncoderEAdd6'h2EAbsEncoderFAdd6'h2F
+# end
+# entity
+IncEncoderGroup
+# storage
+db|sample_dsp.(3).cnf
+db|sample_dsp.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+src|incencodergroup.v
+421868339a8cf7ef4e26fb63f93f8f
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+IncEncoderGroup:inst
+}
+# macro_sequence
+
+# end
+# entity
+Encoder
+# storage
+db|sample_dsp.(4).cnf
+db|sample_dsp.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+src|encoder.v
+f488b4951220122767154e8d59967d7
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+IncEncoderGroup:inst|Encoder:encoder_0
+IncEncoderGroup:inst|Encoder:encoder_1
+IncEncoderGroup:inst|Encoder:encoder_2
+IncEncoderGroup:inst|Encoder:encoder_3
+IncEncoderGroup:inst|Encoder:encoder_4
+IncEncoderGroup:inst|Encoder:encoder_5
+IncEncoderGroup:inst|Encoder:encoder_6
+}
+# macro_sequence
+
+# end
+# entity
+clk_1M
+# storage
+db|sample_dsp.(5).cnf
+db|sample_dsp.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+src|clk_1m.v
+d29fff4784a95d6938e26de171bc868a
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+clk_1M:inst45
+}
+# macro_sequence
+
+# end
+# entity
+LPM_INV
+# storage
+db|sample_dsp.(6).cnf
+db|sample_dsp.(6).cnf
+# case_insensitive
+# source_file
+lpm_inv.tdf
+7a96e891225f4ae3e2be8b37f28f59a7
+7
+# user_parameter {
+LPM_WIDTH
+7
+PARAMETER_SIGNED_DEC
+USR
+}
+# used_port {
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+lpm_inv:chA_Invert
+lpm_inv:chA_Invert51
+}
+# macro_sequence
+
+# end
+# complete
+

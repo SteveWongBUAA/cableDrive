@@ -1,0 +1,1570 @@
+<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@1: EP2C8 (0x020B20DD)" sof_file="../sample_dsp.sof">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <position_info>
+      <single attribute="active tab" value="1"/>
+      <single attribute="data horizontal scroll position" value="0"/>
+      <single attribute="data vertical scroll position" value="0"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="1"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="130944"/>
+    </position_info>
+    <signal_set global_temp="1" name="signal_set: 2012/05/26 09:26:46  #0">
+      <clock name="clk_20M" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="CS0" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[0]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[1]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[2]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[3]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[4]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[5]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[6]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[7]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Data[0]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[10]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[11]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[12]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[13]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[14]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[15]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[1]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[2]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[3]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[4]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[5]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[6]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[7]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[8]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[9]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="RD" tap_mode="classic" type="input pin"/>
+          <wire name="WR" tap_mode="classic" type="input pin"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="CS0" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[0]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[1]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[2]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[3]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[4]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[5]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[6]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[7]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Data[0]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[10]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[11]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[12]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[13]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[14]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[15]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[1]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[2]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[3]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[4]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[5]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[6]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[7]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[8]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[9]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="RD" tap_mode="classic" type="input pin"/>
+          <wire name="WR" tap_mode="classic" type="input pin"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="CS0" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[0]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[1]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[2]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[3]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[4]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[5]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[6]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Add[7]" tap_mode="classic" type="input pin"/>
+          <wire name="DSP_Data[0]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[10]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[11]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[12]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[13]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[14]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[15]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[1]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[2]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[3]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[4]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[5]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[6]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[7]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[8]" tap_mode="classic" type="bidir pin"/>
+          <wire name="DSP_Data[9]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder0[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder1[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder2[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder3[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder4[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder5[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder6[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder7[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder8[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoder9[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderA[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderB[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderC[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderD[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderE[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ParaBus:ParaBusInst|AbsEncoderF[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="RD" tap_mode="classic" type="input pin"/>
+          <wire name="WR" tap_mode="classic" type="input pin"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <net is_signal_inverted="no" name="CS0"/>
+          <bus is_signal_inverted="no" link="all" name="DSP_Add" order="msb_to_lsb" radix="hex" state="collapse" type="input pin">
+            <net is_signal_inverted="no" name="DSP_Add[7]"/>
+            <net is_signal_inverted="no" name="DSP_Add[6]"/>
+            <net is_signal_inverted="no" name="DSP_Add[5]"/>
+            <net is_signal_inverted="no" name="DSP_Add[4]"/>
+            <net is_signal_inverted="no" name="DSP_Add[3]"/>
+            <net is_signal_inverted="no" name="DSP_Add[2]"/>
+            <net is_signal_inverted="no" name="DSP_Add[1]"/>
+            <net is_signal_inverted="no" name="DSP_Add[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="DSP_Data" order="msb_to_lsb" radix="hex" state="collapse" type="bidir pin">
+            <net is_signal_inverted="no" name="DSP_Data[15]"/>
+            <net is_signal_inverted="no" name="DSP_Data[14]"/>
+            <net is_signal_inverted="no" name="DSP_Data[13]"/>
+            <net is_signal_inverted="no" name="DSP_Data[12]"/>
+            <net is_signal_inverted="no" name="DSP_Data[11]"/>
+            <net is_signal_inverted="no" name="DSP_Data[10]"/>
+            <net is_signal_inverted="no" name="DSP_Data[9]"/>
+            <net is_signal_inverted="no" name="DSP_Data[8]"/>
+            <net is_signal_inverted="no" name="DSP_Data[7]"/>
+            <net is_signal_inverted="no" name="DSP_Data[6]"/>
+            <net is_signal_inverted="no" name="DSP_Data[5]"/>
+            <net is_signal_inverted="no" name="DSP_Data[4]"/>
+            <net is_signal_inverted="no" name="DSP_Data[3]"/>
+            <net is_signal_inverted="no" name="DSP_Data[2]"/>
+            <net is_signal_inverted="no" name="DSP_Data[1]"/>
+            <net is_signal_inverted="no" name="DSP_Data[0]"/>
+          </bus>
+          <net is_signal_inverted="no" name="RD"/>
+          <net is_signal_inverted="no" name="WR"/>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoder0" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoder1" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoder2" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoder3" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoder4" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoder5" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoder6" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoder7" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoder8" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoder9" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoderA" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoderB" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoderC" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoderD" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoderE" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoderF" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[0]"/>
+          </bus>
+        </data_view>
+        <setup_view>
+          <net is_signal_inverted="no" name="CS0"/>
+          <bus is_signal_inverted="no" link="all" name="DSP_Add" order="msb_to_lsb" radix="hex" state="collapse" type="input pin">
+            <net is_signal_inverted="no" name="DSP_Add[7]"/>
+            <net is_signal_inverted="no" name="DSP_Add[6]"/>
+            <net is_signal_inverted="no" name="DSP_Add[5]"/>
+            <net is_signal_inverted="no" name="DSP_Add[4]"/>
+            <net is_signal_inverted="no" name="DSP_Add[3]"/>
+            <net is_signal_inverted="no" name="DSP_Add[2]"/>
+            <net is_signal_inverted="no" name="DSP_Add[1]"/>
+            <net is_signal_inverted="no" name="DSP_Add[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="DSP_Data" order="msb_to_lsb" radix="hex" state="collapse" type="bidir pin">
+            <net is_signal_inverted="no" name="DSP_Data[15]"/>
+            <net is_signal_inverted="no" name="DSP_Data[14]"/>
+            <net is_signal_inverted="no" name="DSP_Data[13]"/>
+            <net is_signal_inverted="no" name="DSP_Data[12]"/>
+            <net is_signal_inverted="no" name="DSP_Data[11]"/>
+            <net is_signal_inverted="no" name="DSP_Data[10]"/>
+            <net is_signal_inverted="no" name="DSP_Data[9]"/>
+            <net is_signal_inverted="no" name="DSP_Data[8]"/>
+            <net is_signal_inverted="no" name="DSP_Data[7]"/>
+            <net is_signal_inverted="no" name="DSP_Data[6]"/>
+            <net is_signal_inverted="no" name="DSP_Data[5]"/>
+            <net is_signal_inverted="no" name="DSP_Data[4]"/>
+            <net is_signal_inverted="no" name="DSP_Data[3]"/>
+            <net is_signal_inverted="no" name="DSP_Data[2]"/>
+            <net is_signal_inverted="no" name="DSP_Data[1]"/>
+            <net is_signal_inverted="no" name="DSP_Data[0]"/>
+          </bus>
+          <net is_signal_inverted="no" name="RD"/>
+          <net is_signal_inverted="no" name="WR"/>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoder0" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder0[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoder1" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder1[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoder2" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder2[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoder3" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder3[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoder4" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder4[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoder5" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder5[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoder6" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder6[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoder7" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder7[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoder8" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder8[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoder9" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoder9[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoderA" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderA[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoderB" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderB[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoderC" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderC[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoderD" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderD[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoderE" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderE[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ParaBus:ParaBusInst|AbsEncoderF" order="msb_to_lsb" radix="sign_magnitude_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[15]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[14]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[13]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[12]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[11]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[10]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[9]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[8]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[7]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[6]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[5]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[4]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[3]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[2]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[1]"/>
+            <net is_signal_inverted="no" name="ParaBus:ParaBusInst|AbsEncoderF[0]"/>
+          </bus>
+        </setup_view>
+      </presentation>
+      <trigger CRC="6BF3292B" attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2012/05/26 09:26:46  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="128" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">'CS0' == falling edge
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+            <pwr_up_transitional>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+        <log>
+          <data global_temp="1" name="log: 2012/05/26 09:31:48  #0" power_up_mode="false" sample_depth="127" trigger_position="-1">11111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101111111101001111111111111111011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110111111110100111111111111111101101001111000011110100110010001111010011001000101101000011100011110100000110001011010011001000101101000101100011111110111111111001100011000110110110001001011011011000110101101001100010001110100110001111101010011000000011101101100010001110110110000100111011111111010011111111111111110110100111100001111010011001000111101001100100010110100001110001111010000011000101101001100100010110100010110001111111011111111100110001100011011011000100101101101100011010110100110001000111010011000111110101001100000001110110110001000111011011000010011101110010101001011000110101101011010011110000111101001100100011110100110010001011010000111000111101000001100010110100110010001011010001011000111111101111111110011000110001101101100010010110110110001101011010011000100011101001100011111010100110000000111011011000100011101101100001001110101</data>
+          <extradata>11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</extradata>
+        </log>
+      </trigger>
+    </signal_set>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="config widget visible" value="1"/>
+    <single attribute="data log widget visible" value="1"/>
+    <single attribute="hierarchy widget visible" value="1"/>
+    <single attribute="instance widget visible" value="1"/>
+    <single attribute="jtag widget visible" value="1"/>
+    <multi attribute="column width" size="23" value="34,34,140,74,68,399,88,88,98,98,88,88,110,101,101,101,101,101,101,101,101,107,78"/>
+    <multi attribute="frame size" size="2" value="1366,878"/>
+    <multi attribute="jtag widget size" size="2" value="334,120"/>
+  </global_info>
+</session>

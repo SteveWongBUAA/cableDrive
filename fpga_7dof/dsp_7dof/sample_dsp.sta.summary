@@ -1,0 +1,85 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'RD'
+Slack : -5.089
+TNS   : -66.626
+
+Type  : Slow Model Setup 'clk_20M'
+Slack : -5.085
+TNS   : -1110.653
+
+Type  : Slow Model Setup 'clk_1M:inst45|clk_1M'
+Slack : -4.206
+TNS   : -747.751
+
+Type  : Slow Model Hold 'clk_20M'
+Slack : -2.627
+TNS   : -2.627
+
+Type  : Slow Model Hold 'RD'
+Slack : -0.068
+TNS   : -0.068
+
+Type  : Slow Model Hold 'clk_1M:inst45|clk_1M'
+Slack : 0.741
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clk_20M'
+Slack : -1.941
+TNS   : -429.333
+
+Type  : Slow Model Minimum Pulse Width 'WR'
+Slack : -1.777
+TNS   : -31.457
+
+Type  : Slow Model Minimum Pulse Width 'RD'
+Slack : -1.777
+TNS   : -25.521
+
+Type  : Slow Model Minimum Pulse Width 'clk_1M:inst45|clk_1M'
+Slack : -0.742
+TNS   : -397.712
+
+Type  : Fast Model Setup 'RD'
+Slack : -1.397
+TNS   : -17.505
+
+Type  : Fast Model Setup 'clk_20M'
+Slack : -1.098
+TNS   : -201.774
+
+Type  : Fast Model Setup 'clk_1M:inst45|clk_1M'
+Slack : -0.720
+TNS   : -104.594
+
+Type  : Fast Model Hold 'clk_20M'
+Slack : -1.406
+TNS   : -1.406
+
+Type  : Fast Model Hold 'clk_1M:inst45|clk_1M'
+Slack : 0.238
+TNS   : 0.000
+
+Type  : Fast Model Hold 'RD'
+Slack : 0.366
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clk_20M'
+Slack : -1.380
+TNS   : -289.380
+
+Type  : Fast Model Minimum Pulse Width 'WR'
+Slack : -1.222
+TNS   : -21.222
+
+Type  : Fast Model Minimum Pulse Width 'RD'
+Slack : -1.222
+TNS   : -17.222
+
+Type  : Fast Model Minimum Pulse Width 'clk_1M:inst45|clk_1M'
+Slack : -0.500
+TNS   : -268.000
+
+------------------------------------------------------------
