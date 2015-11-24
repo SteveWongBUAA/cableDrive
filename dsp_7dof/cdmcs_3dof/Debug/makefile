@@ -8,32 +8,32 @@ CG_TOOL_ROOT := E:/TI/ccsv5/tools/compiler/c2000_6.1.3
 
 ORDERED_OBJS += \
 $(GEN_CMDS__FLAG) \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/CMD/28335_RAM_lnk.cmd" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/CMD/DSP2833x_Headers_nonBIOS.cmd" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/DSP2833x_usDelay.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/DSP2833x_Xintf.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/DSP2833x_SysCtrl.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/DSP2833x_Spi.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/DSP2833x_Sci.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/DSP2833x_PieVect.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/DSP2833x_PieCtrl.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/DSP2833x_GlobalVariableDefs.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/DSP2833x_EPwm.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/DSP2833x_ECan.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/DSP2833x_DefaultIsr.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/DSP2833x_CpuTimers.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/DSP2833x_CodeStartBranch.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/DSP2833x_ADC_cal.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/main.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/TimerSetup.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/SciSetup.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/QP_1.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/MotorControl.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/Fpga.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/Ecan.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/EPwmSetup.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/CopleyControl.obj" \
-"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/Algorithm.obj" \
+"F:/cableDrive/dsp_7dof/CMD/28335_RAM_lnk.cmd" \
+"F:/cableDrive/dsp_7dof/CMD/DSP2833x_Headers_nonBIOS.cmd" \
+"F:/cableDrive/dsp_7dof/Debug/DSP2833x_usDelay.obj" \
+"F:/cableDrive/dsp_7dof/Debug/DSP2833x_Xintf.obj" \
+"F:/cableDrive/dsp_7dof/Debug/DSP2833x_SysCtrl.obj" \
+"F:/cableDrive/dsp_7dof/Debug/DSP2833x_Spi.obj" \
+"F:/cableDrive/dsp_7dof/Debug/DSP2833x_Sci.obj" \
+"F:/cableDrive/dsp_7dof/Debug/DSP2833x_PieVect.obj" \
+"F:/cableDrive/dsp_7dof/Debug/DSP2833x_PieCtrl.obj" \
+"F:/cableDrive/dsp_7dof/Debug/DSP2833x_GlobalVariableDefs.obj" \
+"F:/cableDrive/dsp_7dof/Debug/DSP2833x_EPwm.obj" \
+"F:/cableDrive/dsp_7dof/Debug/DSP2833x_ECan.obj" \
+"F:/cableDrive/dsp_7dof/Debug/DSP2833x_DefaultIsr.obj" \
+"F:/cableDrive/dsp_7dof/Debug/DSP2833x_CpuTimers.obj" \
+"F:/cableDrive/dsp_7dof/Debug/DSP2833x_CodeStartBranch.obj" \
+"F:/cableDrive/dsp_7dof/Debug/DSP2833x_ADC_cal.obj" \
+"F:/cableDrive/dsp_7dof/Debug/main.obj" \
+"F:/cableDrive/dsp_7dof/Debug/TimerSetup.obj" \
+"F:/cableDrive/dsp_7dof/Debug/SciSetup.obj" \
+"F:/cableDrive/dsp_7dof/Debug/QP_1.obj" \
+"F:/cableDrive/dsp_7dof/Debug/MotorControl.obj" \
+"F:/cableDrive/dsp_7dof/Debug/Fpga.obj" \
+"F:/cableDrive/dsp_7dof/Debug/Ecan.obj" \
+"F:/cableDrive/dsp_7dof/Debug/EPwmSetup.obj" \
+"F:/cableDrive/dsp_7dof/Debug/CopleyControl.obj" \
+"F:/cableDrive/dsp_7dof/Debug/Algorithm.obj" \
 -l"rts2800_fpu32.lib" \
 -l"rts2800_fpu32_fast_supplement.lib" \
 
@@ -138,23 +138,22 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/cdmcs_3dof/../Debug/cdmcs.out
+all: F:/cableDrive/dsp_7dof/cdmcs_3dof/../Debug/cdmcs.out
 
 # Tool invocations
-F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/cdmcs_3dof/../Debug/cdmcs.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
+F:/cableDrive/dsp_7dof/cdmcs_3dof/../Debug/cdmcs.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: C2000 Linker'
-	"E:/TI/ccsv5/tools/compiler/c2000_6.1.3/bin/cl2000" -v28 -ml --float_support=fpu32 -g --define="_DEBUG" --define="LARGE_MODEL" --diag_warning=225 --display_error_number --diag_wrap=off --obj_directory="F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug" -z --stack_size=1000 -m"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/cdmcs.map" --heap_size=1000 --warn_sections -i"E:/TI/ccsv5/tools/compiler/c2000_6.1.3/lib" -i"E:/TI/ccsv5/tools/compiler/c2000_6.1.3/include" -i"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/cdmcs_3dof" -i"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF" -i"F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/LIB" --reread_libs --display_error_number --diag_wrap=off --xml_link_info="cdmcs_3dof_linkInfo.xml" --absolute_exe --rom_model -o "F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/cdmcs_3dof/../Debug/cdmcs.out" $(ORDERED_OBJS)
+	"E:/TI/ccsv5/tools/compiler/c2000_6.1.3/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --define="_DEBUG" --define="LARGE_MODEL" --diag_warning=225 --display_error_number --diag_wrap=off --obj_directory="F:/cableDrive/dsp_7dof/Debug" -z --stack_size=0x300 -m"F:/cableDrive/dsp_7dof/Debug/cdmcs.map" --heap_size=1000 --warn_sections -i"E:/TI/ccsv5/tools/compiler/c2000_6.1.3/lib" -i"E:/TI/ccsv5/tools/compiler/c2000_6.1.3/include" -i"F:/cableDrive/dsp_7dof/cdmcs_3dof" -i"F:/cableDrive/dsp_7dof" -i"F:/cableDrive/dsp_7dof/LIB" --reread_libs --display_error_number --diag_wrap=off --xml_link_info="cdmcs_3dof_linkInfo.xml" --absolute_exe --rom_model -o "F:/cableDrive/dsp_7dof/cdmcs_3dof/../Debug/cdmcs.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(C2000_EXECUTABLE_OUTPUTS__QUOTED) "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\cdmcs.out"
+	-$(RM) $(C2000_EXECUTABLE_OUTPUTS__QUOTED) "F:\cableDrive\dsp_7dof\Debug\cdmcs.out"
 	-$(RM) "USERFILE\Algorithm.pp" "USERFILE\CopleyControl.pp" "USERFILE\EPwmSetup.pp" "USERFILE\Ecan.pp" "USERFILE\Fpga.pp" "USERFILE\MotorControl.pp" "USERFILE\QP_1.pp" "USERFILE\SciSetup.pp" "USERFILE\TimerSetup.pp" "USERFILE\main.pp" "SRC\DSP2833x_CpuTimers.pp" "SRC\DSP2833x_DefaultIsr.pp" "SRC\DSP2833x_ECan.pp" "SRC\DSP2833x_EPwm.pp" "SRC\DSP2833x_GlobalVariableDefs.pp" "SRC\DSP2833x_PieCtrl.pp" "SRC\DSP2833x_PieVect.pp" "SRC\DSP2833x_Sci.pp" "SRC\DSP2833x_Spi.pp" "SRC\DSP2833x_SysCtrl.pp" "SRC\DSP2833x_Xintf.pp" 
-	-$(RM) "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\Algorithm.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\CopleyControl.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\EPwmSetup.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\Ecan.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\Fpga.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\MotorControl.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\QP_1.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\SciSetup.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\TimerSetup.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\main.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\DSP2833x_ADC_cal.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\DSP2833x_CodeStartBranch.obj" 
-	-$(RM) "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\DSP2833x_CpuTimers.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\DSP2833x_DefaultIsr.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\DSP2833x_ECan.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\DSP2833x_EPwm.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\DSP2833x_GlobalVariableDefs.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\DSP2833x_PieCtrl.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\DSP2833x_PieVect.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\DSP2833x_Sci.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\DSP2833x_Spi.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\DSP2833x_SysCtrl.obj" "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\DSP2833x_Xintf.obj" 
-	-$(RM) "F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\DSP2833x_usDelay.obj" 
+	-$(RM) "F:\cableDrive\dsp_7dof\Debug\Algorithm.obj" "F:\cableDrive\dsp_7dof\Debug\CopleyControl.obj" "F:\cableDrive\dsp_7dof\Debug\EPwmSetup.obj" "F:\cableDrive\dsp_7dof\Debug\Ecan.obj" "F:\cableDrive\dsp_7dof\Debug\Fpga.obj" "F:\cableDrive\dsp_7dof\Debug\MotorControl.obj" "F:\cableDrive\dsp_7dof\Debug\QP_1.obj" "F:\cableDrive\dsp_7dof\Debug\SciSetup.obj" "F:\cableDrive\dsp_7dof\Debug\TimerSetup.obj" "F:\cableDrive\dsp_7dof\Debug\main.obj" "F:\cableDrive\dsp_7dof\Debug\DSP2833x_ADC_cal.obj" "F:\cableDrive\dsp_7dof\Debug\DSP2833x_CodeStartBranch.obj" "F:\cableDrive\dsp_7dof\Debug\DSP2833x_CpuTimers.obj" "F:\cableDrive\dsp_7dof\Debug\DSP2833x_DefaultIsr.obj" "F:\cableDrive\dsp_7dof\Debug\DSP2833x_ECan.obj" "F:\cableDrive\dsp_7dof\Debug\DSP2833x_EPwm.obj" "F:\cableDrive\dsp_7dof\Debug\DSP2833x_GlobalVariableDefs.obj" "F:\cableDrive\dsp_7dof\Debug\DSP2833x_PieCtrl.obj" "F:\cableDrive\dsp_7dof\Debug\DSP2833x_PieVect.obj" "F:\cableDrive\dsp_7dof\Debug\DSP2833x_Sci.obj" "F:\cableDrive\dsp_7dof\Debug\DSP2833x_Spi.obj" 
+	-$(RM) "F:\cableDrive\dsp_7dof\Debug\DSP2833x_SysCtrl.obj" "F:\cableDrive\dsp_7dof\Debug\DSP2833x_Xintf.obj" "F:\cableDrive\dsp_7dof\Debug\DSP2833x_usDelay.obj" 
 	-$(RM) "SRC\DSP2833x_ADC_cal.pp" "SRC\DSP2833x_CodeStartBranch.pp" "SRC\DSP2833x_usDelay.pp" 
 	-@echo 'Finished clean'
 	-@echo ' '

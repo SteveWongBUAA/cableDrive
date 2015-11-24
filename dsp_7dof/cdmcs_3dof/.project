@@ -26,11 +26,6 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>NewTargetConfiguration.ccxml</name>
-			<type>1</type>
-			<location>C:/Users/stevewong/ti/CCSTargetConfigurations/NewTargetConfiguration.ccxml</location>
-		</link>
-		<link>
 			<name>cdmcs_3dof.pjt</name>
 			<type>1</type>
 			<locationURI>SRC_ROOT/cdmcs_3dof.pjt</locationURI>
@@ -124,7 +119,7 @@
 	<variableList>
 		<variable>
 			<name>SRC_ROOT</name>
-			<value>$%7BPARENT-1-PROJECT_LOC%7D/</value>
+			<value>$%7BPARENT-1-PROJECT_LOC%7D</value>
 		</variable>
 	</variableList>
 </projectDescription>

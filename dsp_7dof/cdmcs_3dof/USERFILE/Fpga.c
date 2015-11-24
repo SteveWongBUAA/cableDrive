@@ -17,7 +17,7 @@ void EncoderRd(void)
 	DELAY_US(10);
 	*ENCODER_RD = 0x0000;
 }
-/*
+
 void ReadIncEncoder(int16 *encoder)
 {
 	int i = 0;
@@ -39,7 +39,7 @@ void ReadAbsEncoder(int16 *encoder)
 	}
 	return;
 }
-*/
+
 void BlinkLED(void)
 {
 	led = ~led;
@@ -79,26 +79,26 @@ void ReadTension(int16 *tension)
 	}
 }
 
-/*
-void ReadAllSensor(int16 *absEncoder, int16* tension, int16 *incEncoder)
-{
-	int i = 0;
-	EncoderRd();	// 读取FPGA中的编码器数据
-	for (; i < 7; i++)
-	{
-		incEncoder[i] = *(INC_ENCODER + i);
-	}
-	for (i = 0; i < 8; i++)
-	{
-		absEncoder[i] = *(ABS_ENCODER + i);
-	}
-	for (i = 0; i < 8; i++)
-	{
-		tension[i] = *(TENSION_SENSOR + i);
-	}
+//
+//void ReadAllSensor(int16 *absEncoder, int16* tension, int16 *incEncoder)
+//{
+//	int i = 0;
+//	EncoderRd();	// 读取FPGA中的编码器数据
+//	for (; i < 7; i++)//白色端子
+//	{
+//		incEncoder[i] = *(INC_ENCODER + i);
+//	}
+//	for (i = 0; i < 8; i++)
+//	{
+//		absEncoder[i] = *(ABS_ENCODER + i);
+//	}
+//	for (i = 0; i < 8; i++)
+//	{
+//		tension[i] = *(TENSION_SENSOR + i);
+//	}
+//
+//}
 
-}
-*/
 // No More
 
 

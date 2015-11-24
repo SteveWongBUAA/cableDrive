@@ -8,4 +8,5 @@
 	<isElfFormat value="false"/>
 	<rts value=""/>
 	<isTargetManual value="false"/>
+	<connection value="common/targetdb/connections/SEED-XDS510PLUS_Connection.xml"/>
 </projectOptions>

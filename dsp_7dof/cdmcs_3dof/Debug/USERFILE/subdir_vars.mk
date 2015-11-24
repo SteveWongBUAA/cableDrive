@@ -16,16 +16,16 @@ C_SRCS += \
 ../USERFILE/main.c 
 
 OBJS += \
-F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/Algorithm.obj \
-F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/CopleyControl.obj \
-F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/EPwmSetup.obj \
-F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/Ecan.obj \
-F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/Fpga.obj \
-F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/MotorControl.obj \
-F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/QP_1.obj \
-F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/SciSetup.obj \
-F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/TimerSetup.obj \
-F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/15-7-16-7DOF/Debug/main.obj 
+F:/cableDrive/dsp_7dof/Debug/Algorithm.obj \
+F:/cableDrive/dsp_7dof/Debug/CopleyControl.obj \
+F:/cableDrive/dsp_7dof/Debug/EPwmSetup.obj \
+F:/cableDrive/dsp_7dof/Debug/Ecan.obj \
+F:/cableDrive/dsp_7dof/Debug/Fpga.obj \
+F:/cableDrive/dsp_7dof/Debug/MotorControl.obj \
+F:/cableDrive/dsp_7dof/Debug/QP_1.obj \
+F:/cableDrive/dsp_7dof/Debug/SciSetup.obj \
+F:/cableDrive/dsp_7dof/Debug/TimerSetup.obj \
+F:/cableDrive/dsp_7dof/Debug/main.obj 
 
 C_DEPS += \
 ./USERFILE/Algorithm.pp \
@@ -52,16 +52,16 @@ C_DEPS__QUOTED += \
 "USERFILE\main.pp" 
 
 OBJS__QUOTED += \
-"F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\Algorithm.obj" \
-"F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\CopleyControl.obj" \
-"F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\EPwmSetup.obj" \
-"F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\Ecan.obj" \
-"F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\Fpga.obj" \
-"F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\MotorControl.obj" \
-"F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\QP_1.obj" \
-"F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\SciSetup.obj" \
-"F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\TimerSetup.obj" \
-"F:\studying\graduate\2014-9-22\lab\driveboard\mine\soft\15-7-16-7DOF\Debug\main.obj" 
+"F:\cableDrive\dsp_7dof\Debug\Algorithm.obj" \
+"F:\cableDrive\dsp_7dof\Debug\CopleyControl.obj" \
+"F:\cableDrive\dsp_7dof\Debug\EPwmSetup.obj" \
+"F:\cableDrive\dsp_7dof\Debug\Ecan.obj" \
+"F:\cableDrive\dsp_7dof\Debug\Fpga.obj" \
+"F:\cableDrive\dsp_7dof\Debug\MotorControl.obj" \
+"F:\cableDrive\dsp_7dof\Debug\QP_1.obj" \
+"F:\cableDrive\dsp_7dof\Debug\SciSetup.obj" \
+"F:\cableDrive\dsp_7dof\Debug\TimerSetup.obj" \
+"F:\cableDrive\dsp_7dof\Debug\main.obj" 
 
 C_SRCS__QUOTED += \
 "../USERFILE/Algorithm.c" \

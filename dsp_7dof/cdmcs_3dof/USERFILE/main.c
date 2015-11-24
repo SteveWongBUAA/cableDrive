@@ -29,6 +29,7 @@ void ScicXmtTransferStatus(int status, Uint16 count);
 
 #define CPR 1024	// count per revolution
 #define MOTOR_ACC 2.5 // rpm/ms
+#define maxWaitIMU 3 //最多尝试3次进入IMU COMMAND MODE，否则跳出循环
 
 const float CONTROL_FREQ = 200.0;
 
@@ -45,6 +46,8 @@ MotorModel MM[10];			// 电机模型
 const float ZeroDutyCycleArray[10] = {0.5100, 0.5105, 0.5105, 0.5085, 0.5105, 
 								      0.5120, 0.5110, 0.5110, 0.5110, 0.5110};
 int16 tension[8];				// 当前力传感器AD值
+int16 incEncoder[7];			// 当前增量编码器值,来自FPGA,白色端子
+int16 absEncoder[8];			// 当前绝对编码器值
 float TensionT[8];				// 当前的拉力(kg)
 float MechPara[20];				// 从上位机传过来的机械参数
 float IMUdata[9];	//IMU数据，三个IMU的欧拉角xyz
@@ -54,14 +57,13 @@ Uint32 IMUhex[9];//IMU数据（十六进制）
 //float R2[9];//旋转矩阵R2
 
 //float jacob_e[6];
-float ans=0;
-float x[4];
+//float ans=0;
+//float x[4];
 
 
 
 //int16 JointEncCnts[7];			// 当前关节角编码器AD值
 //int16 absEncoder[7];			// 当前绝对编码器AD值
-//int16 incEncoder[7];			// 当前增量编码器AD值
 //float JointAngles[7];			// 当前的关节角度(rad)
 //float TargetJointAngles[7];		// 期望的关节角
 //Uint32 gotoCmdFlag[3];
@@ -156,20 +158,23 @@ void main(void)
 
 
 
+//    int wait = 0;
+//    while(1)
+//    {
+//    	//IMU进入命令模式，成功返回1，失败返回0
+//    	wait ++;
+//    	if(IMU1_GotoCmd() && IMU2_GotoCmd() &&  IMU3_GotoCmd())
+//    		break;
+//    	if(wait > maxWaitIMU)
+//    		break;
+//    }
 
-    while(1)
-    {
-    	//IMU进入命令模式，成功返回1，失败返回0
-    	if(IMU1_GotoCmd() && IMU2_GotoCmd() &&  IMU3_GotoCmd())
-    		break;
-    }
 
-
-    float J[12] = { 0.0000 , 111.7128, -135.5402, -0.0000,
-    84.4020, - 79.7948, - 96.8144,   47.1136,
-    - 0.5231, - 62.2949,   41.0156,   58.4505 };
-    float tt[3] = {500,500,800};
-    ans = QP(J,tt,x);
+//    float J[12] = { 0.0000 , 111.7128, -135.5402, -0.0000,
+//    84.4020, - 79.7948, - 96.8144,   47.1136,
+//    - 0.5231, - 62.2949,   41.0156,   58.4505 };
+//    float tt[3] = {500,500,800};
+//    ans = QP(J,tt,x);
 
 
 
@@ -177,8 +182,7 @@ void main(void)
     EINT;   // Enable Global interrupt INTM
     ERTM;   // Enable Global realtime interrupt DBGM
 
-
-
+    int led = 0;
     while(1)
     {
 
@@ -193,9 +197,9 @@ void main(void)
 
         	//读取Euler角，IMUdata[0]-[9]代表第一个IMU的欧拉角X,Y,Z,第二个IMU的欧拉角X,Y,Z,第三个IMU的欧拉角X,Y,Z
         	//返回一个数，这个数大于missCountTolerated（在Ecan.c中设置）则表示错误，同时IMUdata[n]=4,超过正常的欧拉角范围
-        	IMU1_read_LpCan(IMUhex,IMUdata);
-        	IMU2_read_LpCan(IMUhex,IMUdata);
-        	IMU3_read_LpCan(IMUhex,IMUdata);
+//        	IMU1_read_LpCan(IMUhex,IMUdata);
+//        	IMU2_read_LpCan(IMUhex,IMUdata);
+//        	IMU3_read_LpCan(IMUhex,IMUdata);
 
         	//读取上位机传过来的机械参数
         	for(i = 0; i < 20; i++)
@@ -203,6 +207,8 @@ void main(void)
 
         	//读取下位机测到的拉力AD值
         	ReadTension(tension);
+        	//ReadIncEncoder(incEncoder);
+        	//ReadAbsEncoder(absEncoder);
         	for(i = 0; i < 8; i++)
 			{
 				// 转换为实际测到的力(kg)
@@ -324,7 +330,11 @@ void main(void)
 		/* 0.5s 与上位机通讯 */
         if(IsTimer2Up())
         {
-            BlinkLED();			// 0.5秒闪烁LED
+            //BlinkLED();			// 0.5秒闪烁LED
+            SetLED(led);
+            led ++;
+            if(led > 15)
+            	led = 0;
 			ScicXmtStatus();	// 发送机器人状态
             ClrTimer2Flag();
         }
