@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EPCS4) Path("F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/dsp_7dof1/dsp_7dof/") File("sample_dsp.pof") MfrSpec(OpMask(7) Child_OpMask(1 7));
+		Device PartName(EPCS4) Path("F:/cableDrive/fpga_7dof/") File("sample_dsp.pof") MfrSpec(OpMask(1) Child_OpMask(1 1));
 
 ChainEnd;
 

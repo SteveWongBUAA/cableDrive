@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sample_dsp
-Wed Nov 18 09:47:23 2015
+Tue Nov 24 16:19:52 2015
 Quartus II 64-Bit Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Full Version
 
 
@@ -47,7 +47,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 18 09:47:23 2015          ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov 24 16:19:52 2015          ;
 ; Quartus II 64-Bit Version          ; 11.0 Build 208 07/03/2011 SP 1 SJ Full Version ;
 ; Revision Name                      ; sample_dsp                                     ;
 ; Top-level Entity Name              ; sample_dsp                                     ;
@@ -163,19 +163,19 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------+
-; src/AbsEncoder.v                 ; yes             ; User Verilog HDL File              ; F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/Git/fpga_7dof/dsp_7dof/src/AbsEncoder.v      ;
-; src/sample_dsp.bdf               ; yes             ; User Block Diagram/Schematic File  ; F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/Git/fpga_7dof/dsp_7dof/src/sample_dsp.bdf    ;
-; src/ParaBus.v                    ; yes             ; User Verilog HDL File              ; F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/Git/fpga_7dof/dsp_7dof/src/ParaBus.v         ;
-; src/Encoder.v                    ; yes             ; User Verilog HDL File              ; F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/Git/fpga_7dof/dsp_7dof/src/Encoder.v         ;
-; src/clk_1M.v                     ; yes             ; User Verilog HDL File              ; F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/Git/fpga_7dof/dsp_7dof/src/clk_1M.v          ;
-; src/IncEncoderGroup.v            ; yes             ; User Verilog HDL File              ; F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/Git/fpga_7dof/dsp_7dof/src/IncEncoderGroup.v ;
-; lpm_inv.tdf                      ; yes             ; Megafunction                       ; e:/altera1/11.0/quartus/libraries/megafunctions/lpm_inv.tdf                                          ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+
+; src/AbsEncoder.v                 ; yes             ; User Verilog HDL File              ; F:/cableDrive/fpga_7dof/src/AbsEncoder.v                    ;
+; src/sample_dsp.bdf               ; yes             ; User Block Diagram/Schematic File  ; F:/cableDrive/fpga_7dof/src/sample_dsp.bdf                  ;
+; src/ParaBus.v                    ; yes             ; User Verilog HDL File              ; F:/cableDrive/fpga_7dof/src/ParaBus.v                       ;
+; src/Encoder.v                    ; yes             ; User Verilog HDL File              ; F:/cableDrive/fpga_7dof/src/Encoder.v                       ;
+; src/clk_1M.v                     ; yes             ; User Verilog HDL File              ; F:/cableDrive/fpga_7dof/src/clk_1M.v                        ;
+; src/IncEncoderGroup.v            ; yes             ; User Verilog HDL File              ; F:/cableDrive/fpga_7dof/src/IncEncoderGroup.v               ;
+; lpm_inv.tdf                      ; yes             ; Megafunction                       ; e:/altera1/11.0/quartus/libraries/megafunctions/lpm_inv.tdf ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -325,7 +325,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -335,7 +335,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Full Version
-    Info: Processing started: Wed Nov 18 09:47:18 2015
+    Info: Processing started: Tue Nov 24 16:19:40 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sample_dsp -c sample_dsp
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info: Found 1 design units, including 1 entities, in source file src/absencoder.v
@@ -362,7 +362,7 @@ Info: Instantiated megafunction "LPM_INV:chA_Invert" with the following paramete
     Info: Parameter "LPM_WIDTH" = "7"
 Info: Registers with preset signals will power-up high
 Info: DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Info: Generated suppressed messages file F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/Git/fpga_7dof/dsp_7dof/sample_dsp.map.smsg
+Info: Generated suppressed messages file F:/cableDrive/fpga_7dof/sample_dsp.map.smsg
 Info: Generating hard_block partition "hard_block:auto_generated_inst"
 Info: Implemented 949 device resources after synthesis - the final resource count might be different
     Info: Implemented 44 input pins
@@ -371,14 +371,14 @@ Info: Implemented 949 device resources after synthesis - the final resource coun
     Info: Implemented 881 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 357 megabytes
-    Info: Processing ended: Wed Nov 18 09:47:24 2015
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Processing ended: Tue Nov 24 16:19:53 2015
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:04
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in F:/studying/graduate/2014-9-22/lab/driveboard/mine/soft/Git/fpga_7dof/dsp_7dof/sample_dsp.map.smsg.
+The suppressed messages can be found in F:/cableDrive/fpga_7dof/sample_dsp.map.smsg.
 
 

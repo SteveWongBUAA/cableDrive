@@ -151,7 +151,7 @@ void main(void)
 	for(i = 0; i < 0x7000; ++i)
 		*((float *)0x100000 + i) = 0;
 
-    InitMyEcan();//初始化CAN
+    //InitMyEcan();//初始化CAN
 
 	//GenerateSineWave(Wave, 5, 200, 0.2, 0.0, 2000);
     //GenerateSquareWave(Wave, -500, 500, FS, 5, 2000);
@@ -207,7 +207,7 @@ void main(void)
 
         	//读取下位机测到的拉力AD值
         	ReadTension(tension);
-        	//ReadIncEncoder(incEncoder);
+        	ReadIncEncoder(incEncoder);
         	//ReadAbsEncoder(absEncoder);
         	for(i = 0; i < 8; i++)
 			{
@@ -216,10 +216,10 @@ void main(void)
 			}
 
         	//test
-        	float P1[3] = {0,0,0};
-        	float P2[3] = {1,1,1};
+//        	float P1[3] = {0,0,0};
+//        	float P2[3] = {1,1,1};
 
-        	ControlT(P1, P2, MechPara, IMUdata, TensionT);
+        	//ControlT(P1, P2, MechPara, IMUdata, TensionT);
 
 			//COM_REG[0x300] = 0x01;//原来是上位机给命令，如果要测试可以用这个强行写命令
 			// 0x01：表示电机速度控制，0x02：表示关节角度控制
