@@ -1,0 +1,75 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="C:\CCStudio_v3.3\MyProjects\7DOF\"
+ProjectType=Executable
+CPUFamily=TMS320C28XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="INCLUDE\C28x_FPU_FastRTS.h"
+Source="SRC\DSP2833x_ADC_cal.asm"
+Source="SRC\DSP2833x_CodeStartBranch.asm"
+Source="SRC\DSP2833x_CpuTimers.c"
+Source="SRC\DSP2833x_DefaultIsr.c"
+Source="SRC\DSP2833x_EPwm.c"
+Source="SRC\DSP2833x_GlobalVariableDefs.c"
+Source="SRC\DSP2833x_PieCtrl.c"
+Source="SRC\DSP2833x_PieVect.c"
+Source="SRC\DSP2833x_Sci.c"
+Source="SRC\DSP2833x_Spi.c"
+Source="SRC\DSP2833x_SysCtrl.c"
+Source="SRC\DSP2833x_usDelay.asm"
+Source="SRC\DSP2833x_Xintf.c"
+Source="USERFILE\Algorithm.c"
+Source="USERFILE\CopleyControl.c"
+Source="USERFILE\EPwmSetup.c"
+Source="USERFILE\Fpga.c"
+Source="USERFILE\main.c"
+Source="USERFILE\SciSetup.c"
+Source="USERFILE\SciSetup.h"
+Source="USERFILE\TimerSetup.c"
+Source="CMD\28335_RAM_lnk.cmd"
+Source="CMD\DSP2833x_Headers_nonBIOS.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -pdsw225 -fr"$(Proj_dir)\Debug" -i"..\include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32
+
+["Compiler" Settings: "Release"]
+Options=-g -pdsw225 -fr"$(Proj_dir)\Release" -d"LARGE_MODEL" -ml -v28
+
+["Linker" Settings: "Debug"]
+Options=-a -c -ecode_start -heap1000 -m".\Debug\cdmcs.map" -o".\Debug\cdmcs.out" -stack1000 -w -x -i".\LIB\" -l"rts2800_fpu32.lib" -l"rts2800_fpu32_fast_supplement.lib"
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\SCI.map" -o".\Release\SCI.out" -w -x
+
+["INCLUDE\C28x_FPU_FastRTS.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["INCLUDE\C28x_FPU_FastRTS.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["USERFILE\SciSetup.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["USERFILE\SciSetup.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["CMD\28335_RAM_lnk.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["CMD\28335_RAM_lnk.cmd" Settings: "Release"]
+LinkOrder=1
+
+["CMD\DSP2833x_Headers_nonBIOS.cmd" Settings: "Debug"]
+LinkOrder=2
+
+["CMD\DSP2833x_Headers_nonBIOS.cmd" Settings: "Release"]
+LinkOrder=1
+

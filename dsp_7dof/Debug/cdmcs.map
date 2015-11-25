@@ -1,7 +1,7 @@
 ******************************************************************************
              TMS320C2000 Linker PC v6.1.3                      
 ******************************************************************************
->> Linked Tue Nov 24 16:38:41 2015
+>> Linked Wed Nov 25 21:13:18 2015
 
 OUTPUT FILE NAME:   <F:/cableDrive/dsp_7dof/cdmcs_3dof/../Debug/cdmcs.out>
 ENTRY POINT SYMBOL: "_c_int00"  address: 0000bb2c
@@ -15,7 +15,7 @@ PAGE 0:
   BEGIN                 00000000   00000002  00000002  00000000  RWIX
   BOOT_RSVD             00000002   0000004e  00000000  0000004e  RWIX
   RAMM0                 00000050   000003b0  00000000  000003b0  RWIX
-  RAML                  00008000   00004000  00003fd6  0000002a  RWIX
+  RAML                  00008000   00004000  00003fda  00000026  RWIX
   ZONE7A                00200000   0000fc00  00000000  0000fc00  RWIX
   CSM_RSVD              0033ff80   00000076  00000000  00000076  RWIX
   CSM_PWL               0033fff8   00000008  00000000  00000008  RWIX
@@ -101,10 +101,10 @@ codestart
                   0000a038    0000037e     MotorControl.obj (.text)
                   0000a3b6    00000375     EPwmSetup.obj (.text)
                   0000a72b    00000323     DSP2833x_DefaultIsr.obj (.text:retain)
-                  0000aa4e    000002c4     main.obj (.text)
-                  0000ad12    000001c2     SciSetup.obj (.text)
-                  0000aed4    0000012c     DSP2833x_ECan.obj (.text)
-                  0000b000    00000116     CopleyControl.obj (.text)
+                  0000aa4e    000002c3     main.obj (.text)
+                  0000ad11    000001c2     SciSetup.obj (.text)
+                  0000aed3    0000012c     DSP2833x_ECan.obj (.text)
+                  0000afff    00000117     CopleyControl.obj (.text)
                   0000b116    00000107     rts2800_fpu32.lib : ll_div.obj (.text)
                   0000b21d    000000f6     DSP2833x_Xintf.obj (.text)
                   0000b313    000000f3     DSP2833x_SysCtrl.obj (.text)
@@ -157,20 +157,20 @@ codestart
                   0000bf0f    00000007                       : memset.obj (.text)
                   0000bf16    00000005                       : strcpy.obj (.text)
 
-.cinit     0    0000bf1b    0000009c     
-                  0000bf1b    00000027     main.obj (.cinit)
-                  0000bf42    00000022     Fpga.obj (.cinit)
-                  0000bf64    00000019     MotorControl.obj (.cinit)
-                  0000bf7d    00000014     SciSetup.obj (.cinit)
-                  0000bf91    0000000c     TimerSetup.obj (.cinit)
-                  0000bf9d    0000000a     rts2800_fpu32.lib : _lock.obj (.cinit)
-                  0000bfa7    0000000a                       : exit.obj (.cinit)
-                  0000bfb1    00000004                       : errno.obj (.cinit)
-                  0000bfb5    00000002     --HOLE-- [fill = 0]
+.cinit     0    0000bf1b    000000a0     
+                  0000bf1b    0000002b     main.obj (.cinit)
+                  0000bf46    00000022     Fpga.obj (.cinit)
+                  0000bf68    00000019     MotorControl.obj (.cinit)
+                  0000bf81    00000014     SciSetup.obj (.cinit)
+                  0000bf95    0000000c     TimerSetup.obj (.cinit)
+                  0000bfa1    0000000a     rts2800_fpu32.lib : _lock.obj (.cinit)
+                  0000bfab    0000000a                       : exit.obj (.cinit)
+                  0000bfb5    00000004                       : errno.obj (.cinit)
+                  0000bfb9    00000002     --HOLE-- [fill = 0]
 
-ramfuncs   0    0000bfb7    0000001f     
-                  0000bfb7    0000001b     DSP2833x_SysCtrl.obj (ramfuncs)
-                  0000bfd2    00000004     DSP2833x_usDelay.obj (ramfuncs)
+ramfuncs   0    0000bfbb    0000001f     
+                  0000bfbb    0000001b     DSP2833x_SysCtrl.obj (ramfuncs)
+                  0000bfd6    00000004     DSP2833x_usDelay.obj (ramfuncs)
 
 csm_rsvd   0    0033ff80    00000000     DSECT
 
@@ -451,8 +451,8 @@ address    name
 00380080   _ADC_cal
 00000b00   _AdcMirror
 00007100   _AdcRegs
-0000c81a   _AddrTrajCurrJointAngles
-0000c828   _AddrTrajJointAngles
+0000c81c   _AddrTrajCurrJointAngles
+0000c82a   _AddrTrajJointAngles
 0000cbb0   _B
 0000b872   _BlinkLED
 0000cc08   _C2R
@@ -482,7 +482,7 @@ address    name
 0000a951   _DINTCH4_ISR
 0000a95b   _DINTCH5_ISR
 0000a965   _DINTCH6_ISR
-0000bfd2   _DSP28x_usDelay
+0000bfd6   _DSP28x_usDelay
 0000cc24   _DUTY_CYCLE_ZERO
 00000880   _DevEmuRegs
 0000b326   _DisableDog
@@ -551,7 +551,7 @@ address    name
 0000c964   _ExRamStart
 0000cc0a   _FS
 0000a0fc   _FilterIIR
-0000ae21   _FindFrameHeader
+0000ae20   _FindFrameHeader
 00000a80   _FlashRegs
 000083c6   _FootPoint
 0000a6e1   _GetDutyCycle
@@ -574,8 +574,8 @@ address    name
 00009863   _IMU3_read_LpCan
 00009955   _IMU_GotoStream
 00009474   _IMU_read_CANopen
-0000c850   _IMUdata
-0000c862   _IMUhex
+0000c862   _IMUdata
+0000c850   _IMUhex
 0000c966   _INC_ENCODER
 0000a72b   _INT13_ISR
 0000a735   _INT14_ISR
@@ -583,14 +583,14 @@ address    name
 0000b406   _ISRScicRx
 0000b471   _ISRScicTx
 0000ba29   _ISRTimer0
-0000ab91   _InitAllMotor
+0000ab90   _InitAllMotor
 0000b7af   _InitCpuTimers
-0000aed4   _InitECan
-0000afd7   _InitECanGpio
-0000aed9   _InitECana
-0000afdc   _InitECanaGpio
-0000af58   _InitECanb
-0000afec   _InitECanbGpio
+0000aed3   _InitECan
+0000afd6   _InitECanGpio
+0000aed8   _InitECana
+0000afdb   _InitECanaGpio
+0000af57   _InitECanb
+0000afeb   _InitECanbGpio
 0000b4dc   _InitEPwm
 0000b4ea   _InitEPwm1Gpio
 0000b4fc   _InitEPwm2Gpio
@@ -600,7 +600,7 @@ address    name
 0000b548   _InitEPwm6Gpio
 0000b4dd   _InitEPwmGpio
 0000b55a   _InitEPwmSyncGpio
-0000bfb7   _InitFlash
+0000bfbb   _InitFlash
 0000a0cd   _InitIIR2
 0000a038   _InitMVP
 0000a154   _InitMotor
@@ -644,7 +644,7 @@ address    name
 00008000   _Matrix33Mult
 00005000   _McbspaRegs
 00005040   _McbspbRegs
-0000c880   _MechPara
+0000c894   _MechPara
 0000c6c0   _Motor
 0000c64a   _MotorEncCnt
 0000a75d   _NMI_ISR
@@ -659,7 +659,7 @@ address    name
 0000c692   _QzIIR
 0000cbfc   _RR
 0000a749   _RTOSINT_ISR
-0000ad8d   _RcvMsg2DutyCycle
+0000ad8c   _RcvMsg2DutyCycle
 0000b859   _ReadAbsEncoder
 0000b840   _ReadIncEncoder
 0000b888   _ReadTension
@@ -676,25 +676,25 @@ address    name
 0000a901   _SPITXINTA_ISR
 00007050   _SciaRegs
 00007750   _ScibRegs
-0000ade2   _ScicFifoInit
-0000ad12   _ScicInit
+0000ade1   _ScicFifoInit
+0000ad11   _ScicInit
 0000c440   _ScicRcvBuf
 0000c403   _ScicRcvBufIndex
 0000c402   _ScicRcvBufNum
 00007770   _ScicRegs
-0000ad35   _ScicXmt
+0000ad34   _ScicXmt
 0000c540   _ScicXmtBuf
 0000c401   _ScicXmtBufIndex
 0000c400   _ScicXmtBufNum
-0000ae1c   _ScicXmtStart
-0000ac23   _ScicXmtStatus
-0000acf6   _ScicXmtTransferStatus
+0000ae1b   _ScicXmtStart
+0000ac22   _ScicXmtStatus
+0000acf5   _ScicXmtTransferStatus
 0000b31c   _ServiceDog
 0000a669   _SetEPwm
 0000b87f   _SetLED
 0000a1bc   _SetMotorSpeed
 0000a2df   _SetMotorTorque
-0000b000   _SetVelocity
+0000afff   _SetVelocity
 000085c7   _SolveJacob
 000083ab   _SolveP
 000085a4   _SolveTmpVec
@@ -763,16 +763,17 @@ ffffffff   ___pinit__
 00000400   __stack
 0000c7f8   __unlock
 0000be8f   _abort
-0000c811   _absEncoder
+0000c813   _absEncoder
 0000bc25   _atoi
 0000bb2c   _c_int00
 0000b96e   _cos
+0000c880   _duty
 0000c971   _errno
 0000be91   _exit
 0000b8a1   _exp
 0000bea8   _frexp
 00009983   _fun2
-0000c802   _incEncoder
+0000c804   _incEncoder
 0000bbf0   _ldexp
 0000c960   _led
 0000b90b   _log
@@ -780,21 +781,22 @@ ffffffff   ___pinit__
 0000aa4e   _main
 0000bee0   _memccpy
 0000bf0f   _memset
-0000c800   _msg
+0000c802   _msg
 0000c640   _pQxIIR
 0000c642   _pQyIIR
 0000c646   _pQzIIR
 0000b9cf   _pow
 0000aa44   _rsvd_ISR
-0000ad5e   _scic_msg
-0000ad24   _scic_xmit
+0000ad5d   _scic_msg
+0000ad23   _scic_xmit
 0000ba81   _sin
 0000bc56   _sprintf
 0000bd5a   _sqrt
 0000bf16   _strcpy
 0000bf07   _strlen
-0000c809   _tension
+0000c80b   _tension
 0000c662   _torqueOutIIR2
+0000c800   _v
 ffffffff   binit
 0000bf1b   cinit
 00000000   code_start
@@ -994,24 +996,24 @@ address    name
 0000aa3a   _PIE_RESERVED
 0000aa44   _rsvd_ISR
 0000aa4e   _main
-0000ab91   _InitAllMotor
-0000ac23   _ScicXmtStatus
-0000acf6   _ScicXmtTransferStatus
-0000ad12   _ScicInit
-0000ad24   _scic_xmit
-0000ad35   _ScicXmt
-0000ad5e   _scic_msg
-0000ad8d   _RcvMsg2DutyCycle
-0000ade2   _ScicFifoInit
-0000ae1c   _ScicXmtStart
-0000ae21   _FindFrameHeader
-0000aed4   _InitECan
-0000aed9   _InitECana
-0000af58   _InitECanb
-0000afd7   _InitECanGpio
-0000afdc   _InitECanaGpio
-0000afec   _InitECanbGpio
-0000b000   _SetVelocity
+0000ab90   _InitAllMotor
+0000ac22   _ScicXmtStatus
+0000acf5   _ScicXmtTransferStatus
+0000ad11   _ScicInit
+0000ad23   _scic_xmit
+0000ad34   _ScicXmt
+0000ad5d   _scic_msg
+0000ad8c   _RcvMsg2DutyCycle
+0000ade1   _ScicFifoInit
+0000ae1b   _ScicXmtStart
+0000ae20   _FindFrameHeader
+0000aed3   _InitECan
+0000aed8   _InitECana
+0000af57   _InitECanb
+0000afd6   _InitECanGpio
+0000afdb   _InitECanaGpio
+0000afeb   _InitECanbGpio
+0000afff   _SetVelocity
 0000b0c1   _InitMotorModel
 0000b116   LL$$DIV
 0000b152   LL$$MOD
@@ -1115,8 +1117,8 @@ address    name
 0000bf1b   ___etext__
 0000bf1b   cinit
 0000bf1b   etext
-0000bfb7   _InitFlash
-0000bfd2   _DSP28x_usDelay
+0000bfbb   _InitFlash
+0000bfd6   _DSP28x_usDelay
 0000c000   _COM_REG
 0000c400   _ScicXmtBufNum
 0000c401   _ScicXmtBufIndex
@@ -1142,16 +1144,18 @@ address    name
 0000c7fa   __lock
 0000c7fc   __cleanup_ptr
 0000c7fe   __dtors_ptr
-0000c800   _msg
-0000c802   _incEncoder
-0000c809   _tension
-0000c811   _absEncoder
-0000c81a   _AddrTrajCurrJointAngles
-0000c828   _AddrTrajJointAngles
+0000c800   _v
+0000c802   _msg
+0000c804   _incEncoder
+0000c80b   _tension
+0000c813   _absEncoder
+0000c81c   _AddrTrajCurrJointAngles
+0000c82a   _AddrTrajJointAngles
 0000c840   _TensionT
-0000c850   _IMUdata
-0000c862   _IMUhex
-0000c880   _MechPara
+0000c850   _IMUhex
+0000c862   _IMUdata
+0000c880   _duty
+0000c894   _MechPara
 0000c8c0   _MM
 0000c960   _led
 0000c962   _ENCODER_RD
@@ -1187,4 +1191,4 @@ ffffffff   ___pinit__
 ffffffff   binit
 ffffffff   pinit
 
-[380 symbols]
+[382 symbols]

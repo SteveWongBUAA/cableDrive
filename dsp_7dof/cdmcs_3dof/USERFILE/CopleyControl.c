@@ -15,7 +15,7 @@ float SetVelocity(MotorModel *mm, float vel)
 	else
 		mm->velocity = vel;
 	
-	if(mm->velocity > mm->maxVel)
+	if(mm->velocity > mm->maxVel)//速度限制
 		mm->velocity = mm->maxVel;
 	else if(mm->velocity < -mm->maxVel)
 		mm->velocity = -mm->maxVel;
@@ -34,7 +34,8 @@ float SetVelocity(MotorModel *mm, float vel)
 	{
 		SetEPwm(mm->index, mm->dutyCycle);
 	}
-	return mm->velocity;
+	//return mm->velocity;
+	return mm->dutyCycle;
 }
 
 int InitMotorModel(MotorModel *mm, int index, int dir, float maxVel, float maxAcc, float zeroDutyCycle)

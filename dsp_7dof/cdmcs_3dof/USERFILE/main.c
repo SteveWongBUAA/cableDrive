@@ -18,6 +18,7 @@
 #define pi 3.14159
 #define TRUE	1
 #define FALSE	0
+#define MAXACC 1000
 
 
 /* µç»ú·½ÏòºÍÉþ×Ó·½Ïò¹ØÏµ£ºµç»úÕý×ª¶ÔÓ¦Éþ×ÓÊÕ½ô£¬·´×ª¶ÔÓ¦Éþ×ÓÊÍ·Å */
@@ -52,6 +53,8 @@ float TensionT[8];				// µ±Ç°µÄÀ­Á¦(kg)
 float MechPara[20];				// ´ÓÉÏÎ»»ú´«¹ýÀ´µÄ»úÐµ²ÎÊý
 float IMUdata[9];	//IMUÊý¾Ý£¬Èý¸öIMUµÄÅ·À­½Çxyz
 Uint32 IMUhex[9];//IMUÊý¾Ý£¨Ê®Áù½øÖÆ£©
+int16 v = 0;
+float duty[10];
 
 //float R1[9];//Ðý×ª¾ØÕóR1
 //float R2[9];//Ðý×ª¾ØÕóR2
@@ -87,7 +90,7 @@ float motorVelForFeedback[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};	// ·´À¡Ëã·¨µÃµ½µ
 int TrajCounter = 0;
 */
 void main(void)
-{
+  {
 	int i;
 
     // Step 1. Initialize System Control:
@@ -150,14 +153,9 @@ void main(void)
 		COM_REG[i] = 0;
 	for(i = 0; i < 0x7000; ++i)
 		*((float *)0x100000 + i) = 0;
-
     //InitMyEcan();//³õÊ¼»¯CAN
-
 	//GenerateSineWave(Wave, 5, 200, 0.2, 0.0, 2000);
     //GenerateSquareWave(Wave, -500, 500, FS, 5, 2000);
-
-
-
 //    int wait = 0;
 //    while(1)
 //    {
@@ -168,24 +166,16 @@ void main(void)
 //    	if(wait > maxWaitIMU)
 //    		break;
 //    }
-
-
 //    float J[12] = { 0.0000 , 111.7128, -135.5402, -0.0000,
 //    84.4020, - 79.7948, - 96.8144,   47.1136,
 //    - 0.5231, - 62.2949,   41.0156,   58.4505 };
 //    float tt[3] = {500,500,800};
 //    ans = QP(J,tt,x);
-
-
-
     // Enable global Interrupts and higher priority real-time debug events:
     EINT;   // Enable Global interrupt INTM
     ERTM;   // Enable Global realtime interrupt DBGM
-
-    int led = 0;
     while(1)
     {
-
     	// 5msÖÐ¶Ï
         if(IsTimesUp())
         {  
@@ -194,17 +184,14 @@ void main(void)
         	//ReadAbsEncoder(JointEncCnts);
         	// ¶ÁÈ¡ËùÓÐ´«¸ÐÆ÷Êý¾Ý
         	//ReadAllSensor(absEncoder,tension,incEncoder);
-
         	//¶ÁÈ¡Euler½Ç£¬IMUdata[0]-[9]´ú±íµÚÒ»¸öIMUµÄÅ·À­½ÇX,Y,Z,µÚ¶þ¸öIMUµÄÅ·À­½ÇX,Y,Z,µÚÈý¸öIMUµÄÅ·À­½ÇX,Y,Z
         	//·µ»ØÒ»¸öÊý£¬Õâ¸öÊý´óÓÚmissCountTolerated£¨ÔÚEcan.cÖÐÉèÖÃ£©Ôò±íÊ¾´íÎó£¬Í¬Ê±IMUdata[n]=4,³¬¹ýÕý³£µÄÅ·À­½Ç·¶Î§
 //        	IMU1_read_LpCan(IMUhex,IMUdata);
 //        	IMU2_read_LpCan(IMUhex,IMUdata);
 //        	IMU3_read_LpCan(IMUhex,IMUdata);
-
         	//¶ÁÈ¡ÉÏÎ»»ú´«¹ýÀ´µÄ»úÐµ²ÎÊý
-        	for(i = 0; i < 20; i++)
-        		MechPara[i] = ((int16)COM_REG[0x60 + i]) / 100.0;
-
+//        	for(i = 0; i < 20; i++)
+//        		MechPara[i] = ((int16)COM_REG[0x60 + i]) / 100.0;
         	//¶ÁÈ¡ÏÂÎ»»ú²âµ½µÄÀ­Á¦ADÖµ
         	ReadTension(tension);
         	ReadIncEncoder(incEncoder);
@@ -214,15 +201,17 @@ void main(void)
 				// ×ª»»ÎªÊµ¼Ê²âµ½µÄÁ¦(kg)
 				TensionT[i] = tension[i] * TENSION_FACTOR ;//1/65536
 			}
-
         	//test
 //        	float P1[3] = {0,0,0};
 //        	float P2[3] = {1,1,1};
-
         	//ControlT(P1, P2, MechPara, IMUdata, TensionT);
-
 			//COM_REG[0x300] = 0x01;//Ô­À´ÊÇÉÏÎ»»ú¸øÃüÁî£¬Èç¹ûÒª²âÊÔ¿ÉÒÔÓÃÕâ¸öÇ¿ÐÐÐ´ÃüÁî
 			// 0x01£º±íÊ¾µç»úËÙ¶È¿ØÖÆ£¬0x02£º±íÊ¾¹Ø½Ú½Ç¶È¿ØÖÆ
+        	for (i = 0; i < 10; i++)
+        	{
+        		duty[i] = SetVelocity((MM + i), ((int16)v));//¸øMM+iºÅµç»úÐ´vÕâÃ´´óµÄËÙ¶È
+        		SetLED((int)(v/100));
+        	}
 			if (COM_REG[0x300] == 0x01)
 			{
 				// ·¢ËÍËÙ¶ÈÖ¸Áî
@@ -330,11 +319,11 @@ void main(void)
 		/* 0.5s ÓëÉÏÎ»»úÍ¨Ñ¶ */
         if(IsTimer2Up())
         {
-            //BlinkLED();			// 0.5ÃëÉÁË¸LED
-            SetLED(led);
-            led ++;
-            if(led > 15)
-            	led = 0;
+              //BlinkLED();			// 0.5ÃëÉÁË¸LED
+//            SetLED(led);
+//            led ++;
+//            if(led > 15)
+//            	led = 0;
 			ScicXmtStatus();	// ·¢ËÍ»úÆ÷ÈË×´Ì¬
             ClrTimer2Flag();
         }
@@ -344,18 +333,18 @@ void main(void)
 void InitAllMotor(void)
 {
 	// ¼ç¹Ø½Úµç»ú
-	InitMotorModel(&MM[0], 1, 1, 1000.0, 10, ZeroDutyCycleArray[0]);	// ×î´óËÙ¶È3000 rpm, ×î´ó¼ÓËÙ¶È 100 rpm/s = 0.5 rpm / 5ms;
-	InitMotorModel(&MM[1], 2, 1, 1000.0, 10, ZeroDutyCycleArray[1]);
-	InitMotorModel(&MM[2], 3, -1, 1000.0, 10, ZeroDutyCycleArray[2]);
-	InitMotorModel(&MM[3], 4, -1, 1000.0, 10, ZeroDutyCycleArray[3]);
+	InitMotorModel(&MM[0], 1, 1, 1000.0, MAXACC, ZeroDutyCycleArray[0]);	// ×î´óËÙ¶È3000 rpm, ×î´ó¼ÓËÙ¶È 100 rpm/s = 0.5 rpm / 5ms;
+	InitMotorModel(&MM[1], 2, 1, 1000.0, MAXACC, ZeroDutyCycleArray[1]);
+	InitMotorModel(&MM[2], 3, -1, 1000.0, MAXACC, ZeroDutyCycleArray[2]);
+	InitMotorModel(&MM[3], 4, -1, 1000.0, MAXACC, ZeroDutyCycleArray[3]);
 	// Öâ¹Ø½Úµç»ú
-	InitMotorModel(&MM[4], 5, 1, 1000.0, 10, ZeroDutyCycleArray[4]);
-	InitMotorModel(&MM[5], 6, -1, 1000.0, 10, ZeroDutyCycleArray[5]);
+	InitMotorModel(&MM[4], 5, 1, 1000.0, MAXACC, ZeroDutyCycleArray[4]);
+	InitMotorModel(&MM[5], 6, -1, 1000.0, MAXACC, ZeroDutyCycleArray[5]);
 	// Íó¹Ø½Úµç»ú
-	InitMotorModel(&MM[6], 7, -1, 1000.0, 10, ZeroDutyCycleArray[6]);
-	InitMotorModel(&MM[7], 8, -1, 1000.0, 10, ZeroDutyCycleArray[7]);
-	InitMotorModel(&MM[8], 9,  1, 1000.0, 10, ZeroDutyCycleArray[8]);
-	InitMotorModel(&MM[9], 10, 1, 1000.0, 10, ZeroDutyCycleArray[9]);
+	InitMotorModel(&MM[6], 7, -1, 1000.0, MAXACC, ZeroDutyCycleArray[6]);
+	InitMotorModel(&MM[7], 8, -1, 1000.0, MAXACC, ZeroDutyCycleArray[7]);
+	InitMotorModel(&MM[8], 9,  1, 1000.0, MAXACC, ZeroDutyCycleArray[8]);
+	InitMotorModel(&MM[9], 10, 1, 1000.0, MAXACC, ZeroDutyCycleArray[9]);
 }
 
 // ·¢ËÍ×´Ì¬
