@@ -21,7 +21,7 @@ float SetVelocity(MotorModel *mm, float vel)
 		mm->velocity = -mm->maxVel;
 
 	mm->preVelocity = mm->velocity;
-	mm->dutyCycle = mm->velocity / COPLEY_MAX_VELOCITY + mm->zeroDutyCycle;	
+	mm->dutyCycle = mm->velocity / COPLEY_MAX_VELOCITY + mm->zeroDutyCycle;
 
 	if(mm->index != 2 && mm->index != 3 && mm->index != 5 && mm->index != 6)
 	{

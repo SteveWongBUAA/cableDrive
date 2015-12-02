@@ -25,6 +25,7 @@ void ScicXmtTransferStatus(int status, Uint16 count);
 
 #define CPR 1024	// count per revolution
 #define MOTOR_ACC 2.5 // rpm/ms
+#define vFactor 0.054054
 
 const float CONTROL_FREQ = 200.0;
 
@@ -44,10 +45,12 @@ int16 TensionBackup[8];			//后备的四个力传感器AD值
 float TensionReal[8];			//真实的力传感器值（kg）
 float JointAngles[7];			// 当前的关节角度(rad)
 float TargetJointAngles[7];		// 期望的关节角
+float ourv[7];
 const int16 JointEncCntsZero[7] = 
 		{25237, 6659, 11645, 17500, 21344, 17645, 9200 };		// 10645
 float motorVelForFeedback[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};	// 反馈算法得到的电机速度
 int TrajCounter = 0;
+int16 v = 0;
 
 void main(void)
 {
@@ -139,6 +142,7 @@ void main(void)
 				TensionReal[i] = Tension[i] * TENSION_FACTOR;
 				// 读取上位机发送的期望关节角(rad)
 				TargetJointAngles[i] = ((int16)COM_REG[0x40 + i]) / 10.0 * 0.017453;
+				ourv[i] = JointEncCnts[i] * vFactor;
 			}
 
 			COM_REG[0x300] = 0x01;
@@ -148,7 +152,7 @@ void main(void)
 				// 发送速度指令
 				for (i = 0; i < 10; i++)
 					//SetVelocity((MM + i), ((int16)COM_REG[0x50 + i]));
-					SetVelocity((MM + i), 100);
+					SetVelocity((MM + i), v);
 			}
 			else if(COM_REG[0x300] == 0x02)
 			{
