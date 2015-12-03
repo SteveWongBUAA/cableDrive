@@ -26,6 +26,8 @@ void ScicXmtTransferStatus(int status, Uint16 count);
 #define CPR 1024	// count per revolution
 #define MOTOR_ACC 2.5 // rpm/ms
 #define vFactor 0.054054
+#define vk -55.457//拟合NO.4pwm输出和测得脉冲数的参数k
+#define vb -8.9931//拟合NO.4pwm输出和测得脉冲数的参数b
 
 const float CONTROL_FREQ = 200.0;
 
@@ -152,7 +154,7 @@ void main(void)
 				// 发送速度指令
 				for (i = 0; i < 10; i++)
 					//SetVelocity((MM + i), ((int16)COM_REG[0x50 + i]));
-					SetVelocity((MM + i), v);
+					SetVelocity((MM + i), vk*v+vb);
 			}
 			else if(COM_REG[0x300] == 0x02)
 			{
